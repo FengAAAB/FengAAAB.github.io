@@ -160,7 +160,20 @@ function toggleAbstract(btn) {
 
 
 My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ) profile.
-<h2 id="publications" style="scroll-margin-top: 80px; display: inline-block; margin-right: 10px;">Publications</h2> [ <a href="#">Full List</a> ] 
+<td style="padding:16px;width:100%;vertical-align:middle">
+	<h2 id="publications" style="scroll-margin-top: 80px;">Publications</h2>
+	<p style="margin-top: 5px; margin-bottom: 5px;">
+		<span style="font-weight: bold;">Year:</span>
+		<a href="#year-2025">2025</a> / 
+        <a href="#year-2024">2024</a> / 
+        <a href="#year-2023">2023</a> / 
+        <a href="#year-2022">2022</a> / 
+        <a href="#year-2021">2021</a> / 
+        <a href="#year-2020">2020</a>
+    </p>
+    <p style="font-size: small; color: #666; margin-bottom: 20px;">
+        (* Equal Contribution, # Corresponding Author)
+    </p>
 <h3 id="year-2025" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2025</h3>
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
@@ -413,6 +426,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
