@@ -187,12 +187,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
 	<tr class="publication-entry" data-year="2025" data-topics="softrobotics,deformationestimation" data-selected="true"> 
-		<td style="padding:16px;width:30%;vertical-align:top;text-align: right;">
+		<td style="padding:16px;width:25%;vertical-align:top;text-align: right;">
 			<div class="one">
 				<img src='/images/publications_image/iros2025_gripper.jpg' alt="Multimodal Deformation Estimation Thumbnail"> 
 			</div>
 		</td>
-		<td style="padding:8px;width:70%;vertical-align:top;">
+		<td style="padding:8px;width:75%;vertical-align:top;">
 			<a href="https://your_domain.com/path/to/paper.pdf"> 
 				<span class="papertitle">Multimodal Deformation Estimation of Soft Pneumatic Gripper During Operation</span>
 			</a>
@@ -207,7 +207,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 		</td>
 	</tr>
 	<tr onmouseover="balloon_robot_uist25_gif_start()" onmouseout="balloon_robot_uist25_gif_stop()" class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux" data-selected="true"> 
-	    <td style="padding:16px;width:30%;vertical-align: top;text-align: right;">
+	    <td style="padding:16px;width:25%;vertical-align: top;text-align: right;">
 	        <div class="one">
 	            <div class="two" id='balloon_robot_uist25_gif'> 
 	                <img src="/images/publications_gif/balloon_robot_uist25.gif" style="width:100%; height:100%; object-fit: contain;" alt="Social Balloon Robot Animation"> 
@@ -224,7 +224,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 	            balloon_robot_uist25_gif_stop(); // 页面加载时默认隐藏 GIF
 	        </script>
 	    </td>
-	    <td style="padding:8px;width:70%;vertical-align:top;">
+	    <td style="padding:8px;width:75%;vertical-align:top;">
 	        <a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666"> 
 	            <span class="papertitle">Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study</span>
 	        </a>
@@ -244,7 +244,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 				<img src='/images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
 			</div>
 		</td>
-		<td style="padding:8px;width:70%;vertical-align:top;"> <a href="https://aclanthology.org/2025.findings-acl.1261/"> 
+		<td style="padding:8px;width:75%;vertical-align:top;"> <a href="https://aclanthology.org/2025.findings-acl.1261/"> 
 			<span class="papertitle">Entrospect: Information-Theoretic Self-Reflection Elicits Better Response Refinement of Small Language Models</span>
 		</a>
 			<br>
@@ -257,12 +257,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 		</td>
 	</tr>
 	<tr class="publication-entry" data-year="2025" data-topics="droneperception,semisupervisedlearning,knowledgetransfer" data-selected="true"> 
-		<td style="padding:16px;width:30%;vertical-align:top;text-align: right;"> 
+		<td style="padding:16px;width:25%;vertical-align:top;text-align: right;"> 
 			<div class="one">
 				<img src='/images/publications_image/tits2025_droneperception.jpg' alt="Drone Perception T-ITS Thumbnail"> 
 			</div>
 		</td>
-		<td style="padding:8px;width:70%;vertical-align:top;"> 
+		<td style="padding:8px;width:75%;vertical-align:top;"> 
 			<a href="https://ieeexplore.ieee.org/abstract/document/11005613"> 
 				<span class="papertitle">Unlocking Drone Perception in Low AGL Heights: Progressive Semi-Supervised Learning for Ground-to-Aerial Perception Knowledge Transfer</span>
 			</a>
@@ -276,12 +276,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 		</td>
 	</tr>
 	<tr class="publication-entry" data-year="2025" data-topics="robotics,localization,smrs" data-selected="true"> 
-    	<td style="padding:16px;width:30%;vertical-align:top; text-align: right;"> 
+    	<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
         	<div class="one">
             	<img src='/images/publications_image/icra2025_smrslocalization.jpg' alt="SMSR Localization Thumbnail"> 
             </div>
     	</td>
-    	<td style="padding:8px;width:70%;vertical-align:top;"> 
+    	<td style="padding:8px;width:75%;vertical-align:top;"> 
         	<a href="https://ieeexplore.ieee.org/abstract/document/11127871"> 
             	<span class="papertitle">Configuration-Adaptive Visual Relative Localization for Spherical Modular Self-Reconfigurable Robots</span>
         	</a>
@@ -295,12 +295,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
     	</td>
 	</tr>
 	<tr class="publication-entry" data-year="2025" data-topics="multiagent,selforganization,llm,multimodal" data-selected="true"> 
-		<td style="padding:16px;width:30%;vertical-align:top; text-align: right;"> 
+		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
 			<div class="one">
 				<img src='/images/publications_image/iotj2025_ochmas.jpg' alt="OC-HMAS Thumbnail"> 
             </div>
 		</td>
-		<td style="padding:8px;width:70%;vertical-align:top;"> 
+		<td style="padding:8px;width:75%;vertical-align:top;"> 
 			<a href="https://ieeexplore.ieee.org/abstract/document/10909066"> 
             	<span class="papertitle">OC-HMAS: Dynamic Self-Organization and Self-Correction in Heterogeneous Multiagent Systems Using Multimodal Large Models</span>
         	</a>
@@ -319,12 +319,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	<tr class="publication-entry" data-year="2024" data-topics="robotics,llm,vlm,perception,reasoning" data-selected="true"> 
-    	<td style="padding:16px;width:30%;vertical-align:top; text-align: right;"> 
+    	<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
         	<div class="one">
             	<img src='/images/publications_image/iros2024_liquidperception.jpg' alt="Robot Liquid Perception Thumbnail"> 
             </div>
     	</td>
-    	<td style="padding:8px;width:70%;vertical-align:top;"> 
+    	<td style="padding:8px;width:75%;vertical-align:top;"> 
         	<a href="https://ieeexplore.ieee.org/abstract/document/10801833"> 
             	<span class="papertitle">Vision-Language Model-based Physical Reasoning for Robot Liquid Perception</span>
         	</a>
@@ -338,12 +338,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
     	</td>
 	</tr>
 	<tr class="publication-entry" data-year="2024" data-topics="robotics,metarl,inspection,multirobot" data-selected="true"> 
-		<td style="padding:16px;width:30%;vertical-align:top; text-align: right;"> 
+		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
         	<div class="one">
             	<img src='/images/publications_image/icra2024_metarlinspection.jpg' alt="Meta-RL Inspection Thumbnail"> 
             </div>
     	</td>
-    	<td style="padding:8px;width:70%;vertical-align:top;"> 
+    	<td style="padding:8px;width:75%;vertical-align:top;"> 
         	<a href="https://ieeexplore.ieee.org/abstract/document/10610420"> 
             	<span class="papertitle">Meta-Reinforcement Learning Based Cooperative Surface Inspection of 3D Uncertain Structures using Multi-robot Systems</span>
         	</a>
@@ -357,12 +357,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
     	</td>
 	</tr>
 	<tr class="publication-entry" data-year="2024" data-topics="hri,poseestimation,companionrobot,chi" data-selected="true"> 
-    	<td style="padding:16px;width:30%;vertical-align:top; text-align: right;"> 
+    	<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
         	<div class="one">
             	<img src='/images/publications_image/chi2024_pepperpose.jpg' alt="PepperPose Thumbnail"> 
             </div>
     	</td>
-    	<td style="padding:8px;width:70%;vertical-align:top;"> 
+    	<td style="padding:8px;width:75%;vertical-align:top;"> 
         	<a href="https://dl.acm.org/doi/full/10.1145/3613904.3642231"> 
             	<span class="papertitle">PepperPose: Full-Body Pose Estimation with a Companion Robot</span>
         	</a>
@@ -376,12 +376,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
     	</td>
 	</tr>
 	<tr class="publication-entry" data-year="2024" data-topics="robotics,inspectionrobot,pipelinerobot,transformable" data-selected="true"> 
-    	<td style="padding:16px;width:30%;vertical-align:top; text-align: right;"> 
+    	<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
        		<div class="one">
             	<img src='/images/publications_image/ral2024_transformablerobot.jpg' alt="Transformable Inspection Robot Thumbnail"> 
             </div>
     	</td>
-    	<td style="padding:8px;width:70%;vertical-align:top;"> 
+    	<td style="padding:8px;width:75%;vertical-align:top;"> 
         	<a href="https://ieeexplore.ieee.org/abstract/document/10508069"> 
             	<span class="papertitle">Transformable Inspection Robot Design and Implementation for Complex Pipeline Environment</span>
         	</a>
@@ -400,12 +400,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	<tr class="publication-entry" data-year="2023" data-topics="multirobot,reinforcementlearning,framework,opensource" data-selected="true"> 
-	    <td style="padding:16px;width:30%;vertical-align:top; text-align: right;"> 
+	    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
 	        <div class="one">
 	            <img src='/images/publications_image/robio2023_multirobolearn.jpg' alt="MultiRoboLearn Thumbnail"> 
 	            </div>
 	    </td>
-	    <td style="padding:8px;width:70%;vertical-align:top;"> 
+	    <td style="padding:8px;width:75%;vertical-align:top;"> 
 	        <a href="https://ieeexplore.ieee.org/abstract/document/10354600/"> 
 	            <span class="papertitle">MultiRoboLearn: An open-source framework for multi-robot deep reinforcement learning</span>
 	        </a>
@@ -435,6 +435,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
