@@ -184,39 +184,36 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 			<p></p>
 		</td>
 	</tr>
-	<tr onmouseover="balloon_robot_uist25_start()" onmouseout="balloon_robot_uist25_stop()" class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux" data-selected="true"> 
-		<td style="padding:16px;width:38%;vertical-align: top;text-align: right;">
-			<div class="one">
-				<div class="two" id='balloon_robot_uist25_video'>
-					<video width=100% height=100% muted autoplay loop>
-						<source src="/images/publications_video/balloon_robot_uist25.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</div>
-				<img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail">
-			</div>
-			<script type="text/javascript">
-				function balloon_robot_uist25_start() {
-					document.getElementById('balloon_robot_uist25_video').style.opacity = "1";
-				}
-				function balloon_robot_uist25_stop() {
-					document.getElementById('balloon_robot_uist25_video').style.opacity = "0";
-				}
-				balloon_robot_uist25_stop() // 页面加载时默认停止（隐藏）视频
-			</script>
-		</td>
-		<td style="padding:8px;width:62%;vertical-align:top;">
-			<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666"> 
-				<span class="papertitle">Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study</span>
-			</a>
-			<br>
-			<strong>Authors:</strong>Chongyang Wang, Tianyi Xia, Yifan Wang, Gang Yu, Zixuan Zhao, Siqi Zheng, Manqiu Liao, Chen Liang, <b>Yuan Gao</b>, Chun Yu<sup>#</sup>, Yuntao Wang, Yuanchun Shi
-			<br>
-			<strong>Conference:</strong><em>UIST '25: Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology</em>, 2025 
-			<br>
-			<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666">[Paper]</a> 
-			<p></p>
-		</td>
+	<tr onmouseover="balloon_robot_uist25_gif_start()" onmouseout="balloon_robot_uist25_gif_stop()" class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux" data-selected="true"> 
+	    <td style="padding:16px;width:38%;vertical-align: top;text-align: right;">
+	        <div class="one">
+	            <div class="two" id='balloon_robot_uist25_gif'> 
+	                <img src="/images/publications_gif/balloon_robot_uist25_anim.gif" style="width:100%; height:100%; object-fit: contain;" alt="Social Balloon Robot Animation"> 
+	            </div>
+	            <img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail">
+	        </div>
+	        <script type="text/javascript">
+	            function balloon_robot_uist25_gif_start() {
+	                document.getElementById('balloon_robot_uist25_gif').style.opacity = "1";
+	            }
+	            function balloon_robot_uist25_gif_stop() {
+	                document.getElementById('balloon_robot_uist25_gif').style.opacity = "0";
+	            }
+	            balloon_robot_uist25_gif_stop(); // 页面加载时默认隐藏 GIF
+	        </script>
+	    </td>
+	    <td style="padding:8px;width:62%;vertical-align:top;">
+	        <a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666"> 
+	            <span class="papertitle">Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study</span>
+	        </a>
+	        <br>
+	        <strong>Authors:</strong> Chongyang Wang, Tianyi Xia, Yifan Wang, Gang Yu, Zixuan Zhao, Siqi Zheng, Manqiu Liao, Chen Liang, <b>Yuan Gao</b>, Chun Yu<sup>#</sup>, Yuntao Wang, Yuanchun Shi
+	        <br>
+	        <strong>Conference:</strong><em>UIST '25: Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology</em>, 2025 
+	        <br>
+	        <a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666">[Paper]</a> 
+	        <p></p>
+	    </td>
 	</tr>
 	<tr class="publication-entry" data-year="2025" data-topics="nlp,llm,slm,selfreflection" data-selected="true"> 
 		<td style="padding:16px;width:38%;vertical-align:top; text-align: right;">
@@ -415,6 +412,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
