@@ -18,10 +18,14 @@ html {
 .one {
   position: relative; 
   display: inline-block; 
-  width: 300px; /* 预览宽度 (请根据需要调整) */
-  aspect-ratio: 16 / 9; /* 预览宽高比 (请根据需要调整) */
+  /* width: 300px; /* 删除或注释掉这一行，让宽度自适应 */
+  width: 100%; /* 让 .one 容器填充其父级 td 的可用宽度 */
+  max-width: 300px; /* 设定最大宽度，避免图片在超宽屏下过大 */
+  /* aspect-ratio: 16 / 9; /* 删除或注释掉这一行，让高度由图片内容决定 */
+  height: auto; /* 让高度根据内容自动调整 */
   overflow: hidden; 
-  background-color: #f0f0f0; /* 图片/视频未加载时的背景色 */
+  background-color: #f0f0f0; 
+  box-sizing: border-box; /* 确保 padding/border 不会增加总宽度 */
 }
 
 .two {
@@ -37,16 +41,16 @@ html {
 .two video { 
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: contain; 
 }
 
 .one img {
     display: block; 
     max-width: 100%; 
     width: 100%; 
-    height: 100%; 
-    object-fit: cover; /* 如果图片比例不符会被裁剪 */
-    /* object-fit: contain; */ /* 如果不想裁剪但想完整显示图片，可以用这个，可能留白 */
+    height: auto; /* 关键：让高度自动调整以保持图片比例 */
+    object-fit: contain; /* 关键：让图片完全包含在容器内，不裁剪，可能留白 */
+    /* object-fit: cover; */ /* 如果需要裁剪并填满，则使用这个 */
 }
 /* --- 效果控制结束 --- */
 
@@ -297,6 +301,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
