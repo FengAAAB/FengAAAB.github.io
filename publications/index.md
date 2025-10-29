@@ -224,7 +224,7 @@ classes: wide
 		    </td>
 		</tr>
 		<tr class="publication-entry" data-year="2025" data-topics="nlp,llm,slm,selfreflection" data-selected="true"> 
-			<td style="padding:16px;width:30%;vertical-align:top; text-align: right;">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
 				<div class="one">
 					<img src='/images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
 				</div>
@@ -420,6 +420,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
