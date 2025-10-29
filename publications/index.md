@@ -355,6 +355,25 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
         	<p></p> 
     	</td>
 	</tr>
+	<tr class="publication-entry" data-year="2024" data-topics="robotics,inspectionrobot,pipelinerobot,transformable" data-selected="true"> 
+    	<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+       		<div class="one">
+            	<img src='/images/publications_image/ral2024_transformablerobot.jpg' alt="Transformable Inspection Robot Thumbnail"> 
+            </div>
+    	</td>
+    	<td style="padding:8px;width:62%;vertical-align:top;"> 
+        	<a href="https://ieeexplore.ieee.org/abstract/document/10508069"> 
+            	<span class="papertitle">Transformable Inspection Robot Design and Implementation for Complex Pipeline Environment</span>
+        	</a>
+        	<br>
+        	<strong>Authors:</strong> Jianlin Wang, Yixiang Wang, Lining Peng, Haixiang Zhang, Hang Gao, Chengjiang Wang, <b>Yuan Gao</b>, Huanliang Luo, Yongquan Chen
+        	<br>
+        	<strong>Journal:</strong> <em>IEEE Robotics and Automation Letters</em>, 2024 
+        	<br>
+        	<a href="https://ieeexplore.ieee.org/abstract/document/10508069">[Paper]</a> 
+        	<p></p> 
+    	</td>
+	</tr>
 </tbody></table>
 
 <h3 id="year-2023" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2023</h3>
@@ -377,6 +396,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
