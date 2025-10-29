@@ -251,6 +251,25 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 			<p></p>
 		</td>
 	</tr>
+	<tr class="publication-entry" data-year="2025" data-topics="robotics,localization,smrs" data-selected="true"> 
+    	<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+        	<div class="one">
+            	<img src='/images/publications_image/icra2025_smrslocalization.jpg' alt="SMSR Localization Thumbnail"> 
+            </div>
+    	</td>
+    	<td style="padding:8px;width:62%;vertical-align:top;"> 
+        	<a href="https://ieeexplore.ieee.org/abstract/document/11127871"> 
+            	<span class="papertitle">Configuration-Adaptive Visual Relative Localization for Spherical Modular Self-Reconfigurable Robots</span>
+        	</a>
+        	<br>
+        	Yuming Liu, Qiu Zheng, Yuxiao Tu, <b>Yuan Gao</b>, Guanqi Liang, and Tin Lun Lam
+        	<br>
+       	 	<em>2025 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025 
+        	<br>
+        	<a href="#">[Paper]</a> 
+        <p></p> 
+    	</td>
+	</tr>
 </tbody></table>
 
 <h3 id="year-2024" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2024</h3>
@@ -278,6 +297,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
