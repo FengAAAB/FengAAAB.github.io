@@ -230,21 +230,22 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 			<p></p>
 		</td>
 	</tr>
-	<tr class="publication-entry" data-year="2025" data-topics="nlp,llm,slm,selfreflection" data-selected="true"> 
-		<td style="padding:16px;width:38%;vertical-align:top">
+	<tr class="publication-entry" data-year="2025" data-topics="droneperception,semisupervisedlearning,knowledgetransfer" data-selected="true"> 
+		<td style="padding:16px;width:38%;vertical-align:top;"> 
 			<div class="one">
-				<img src='/images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
+				<img src='/images/publications_image/placeholder.png' alt="Drone Perception T-ITS Thumbnail"> 
 			</div>
 		</td>
-		<td style="padding:8px;width:62%;vertical-align:top;"> <a href="https://aclanthology.org/2025.findings-acl.1261/"> 
-			<span class="papertitle">Entrospect: Information-Theoretic Self-Reflection Elicits Better Response Refinement of Small Language Models</span>
-		</a>
+		<td style="padding:8px;width:62%;vertical-align:top;"> 
+			<a href="https://ieeexplore.ieee.org/abstract/document/11005613"> 
+				<span class="papertitle">Unlocking Drone Perception in Low AGL Heights: Progressive Semi-Supervised Learning for Ground-to-Aerial Perception Knowledge Transfer</span>
+			</a>
+        <br>
+			Junjie Hu, Chenyou Fan, Mete Ozay, Hua Feng, <b>Yuan Gao</b>, Tin Lun Lam
 			<br>
-			Tianqiang Yan, Ziqiao Lin, Lin Zhang, Zhenglong Sun, <b>Yuan Gao</b><sup>#</sup>
+			<em>IEEE Transactions on Intelligent Transportation Systems</em>, 2025 
 			<br>
-			<em>Findings of the Association for Computational Linguistics: ACL 2025</em>, 2025 
-			<br>
-			<a href="https://aclanthology.org/2025.findings-acl.1261/">[Paper]</a> 
+			<a href="https://ieeexplore.ieee.org/abstract/document/11005613">[Paper]</a> 
 			<p></p>
 		</td>
 	</tr>
@@ -275,6 +276,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
