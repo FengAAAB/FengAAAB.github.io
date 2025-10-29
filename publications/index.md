@@ -378,8 +378,27 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 
 <h3 id="year-2023" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2023</h3>
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
-    </tbody></table>
+<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	<tr class="publication-entry" data-year="2023" data-topics="multirobot,reinforcementlearning,framework,opensource" data-selected="true"> 
+	    <td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+	        <div class="one">
+	            <img src='/images/publications_image/robio2023_multirobolearn.jpg' alt="MultiRoboLearn Thumbnail"> 
+	            </div>
+	    </td>
+	    <td style="padding:8px;width:62%;vertical-align:top;"> 
+	        <a href="https://ieeexplore.ieee.org/abstract/document/10354600/"> 
+	            <span class="papertitle">MultiRoboLearn: An open-source framework for multi-robot deep reinforcement learning</span>
+	        </a>
+	        <br>
+	        <strong>Authors:</strong> Junfeng Chen, Fuqin Deng, <b>Yuan Gao</b>, Junjie Hu, Xiyue Guo, Guanqi Liang, Tin Lun Lam
+	        <br>
+	        <strong>Conference:</strong> <em>2023 IEEE International Conference on Robotics and Biomimetics (ROBIO)</em>, 2023 
+	        <br>
+	        <a href="https://arxiv.org/abs/2209.13760">[Paper]</a> 
+	        <p></p> 
+	    </td>
+	</tr>	
+</tbody></table>
 
 <h3 id="year-2022" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2022</h3>
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
@@ -396,6 +415,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
