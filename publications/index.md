@@ -317,7 +317,26 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
         	<p></p> 
     	</td>
 	</tr>
-    </tbody></table>
+	<tr class="publication-entry" data-year="2024" data-topics="robotics,metarl,inspection,multirobot" data-selected="true"> 
+		<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+        	<div class="one">
+            	<img src='/images/publications_image/icra2024_metarlinspection.jpg' alt="Meta-RL Inspection Thumbnail"> 
+            </div>
+    	</td>
+    	<td style="padding:8px;width:62%;vertical-align:top;"> 
+        	<a href="https://ieeexplore.ieee.org/abstract/document/10610420"> 
+            	<span class="papertitle">Meta-Reinforcement Learning Based Cooperative Surface Inspection of 3D Uncertain Structures using Multi-robot Systems</span>
+        	</a>
+        	<br>
+        	<strong>Authors:</strong> Junfeng Chen, <b>Yuan Gao</b>, Junjie Hu, Fuqin Deng, and Tin Lun Lam
+        	<br>
+        	<strong>Conference:</strong> <em>2024 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024 
+        	<br>
+        	<a href="https://freeformrobotics.org/wp-content/uploads/2024/03/ICRA24_Chen.pdf">[Paper]</a> 
+        	<p></p> 
+    	</td>
+	</tr>
+</tbody></table>
 
 <h3 id="year-2023" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2023</h3>
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
@@ -339,6 +358,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
