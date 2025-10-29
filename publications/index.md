@@ -175,9 +175,9 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 				<span class="papertitle">Multimodal Deformation Estimation of Soft Pneumatic Gripper During Operation</span>
 			</a>
 			<br>
-			Changheng Cai, Fei Xiao, Marcellus Vanzai, Taoyang Wang, Fangbing Zhou, Xuanyang Xu, Jian Zhu<sup>#</sup>, and <b>Yuan Gao</b><sup>#</sup>
+			<strong>Authors:</strong>Changheng Cai, Fei Xiao, Marcellus Vanzai, Taoyang Wang, Fangbing Zhou, Xuanyang Xu, Jian Zhu<sup>#</sup>, and <b>Yuan Gao</b><sup>#</sup>
 			<br>
-			<em>International Conference on Intelligent Robots and Systems(IROS)</em>, 2025 
+			<strong>Conference:</strong><em>International Conference on Intelligent Robots and Systems(IROS)</em>, 2025 
 			<br>
 			<a href="https://your_domain.com/path/to/paper.pdf">[Paper]</a> / 
 			<a href="https://github.com/your_username/your_repo">[Code]</a>
@@ -210,9 +210,9 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 				<span class="papertitle">Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study</span>
 			</a>
 			<br>
-			Chongyang Wang, Tianyi Xia, Yifan Wang, Gang Yu, Zixuan Zhao, Siqi Zheng, Manqiu Liao, Chen Liang, <b>Yuan Gao</b>, Chun Yu<sup>#</sup>, Yuntao Wang, Yuanchun Shi
+			<strong>Authors:</strong>Chongyang Wang, Tianyi Xia, Yifan Wang, Gang Yu, Zixuan Zhao, Siqi Zheng, Manqiu Liao, Chen Liang, <b>Yuan Gao</b>, Chun Yu<sup>#</sup>, Yuntao Wang, Yuanchun Shi
 			<br>
-			<em>UIST '25: Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology</em>, 2025 
+			<strong>Conference:</strong><em>UIST '25: Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology</em>, 2025 
 			<br>
 			<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666">[Paper]</a> 
 			<p></p>
@@ -228,9 +228,9 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 			<span class="papertitle">Entrospect: Information-Theoretic Self-Reflection Elicits Better Response Refinement of Small Language Models</span>
 		</a>
 			<br>
-			Tianqiang Yan, Ziqiao Lin, Lin Zhang, Zhenglong Sun, <b>Yuan Gao</b><sup>#</sup>
+			<strong>Authors:</strong>Tianqiang Yan, Ziqiao Lin, Lin Zhang, Zhenglong Sun, <b>Yuan Gao</b><sup>#</sup>
 			<br>
-			<em>Findings of the Association for Computational Linguistics: ACL 2025</em>, 2025 
+			<strong>Conference:</strong><em>Findings of the Association for Computational Linguistics: ACL 2025</em>, 2025 
 			<br>
 			<a href="https://aclanthology.org/2025.findings-acl.1261/">[Paper]</a> 
 			<p></p>
@@ -247,9 +247,9 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 				<span class="papertitle">Unlocking Drone Perception in Low AGL Heights: Progressive Semi-Supervised Learning for Ground-to-Aerial Perception Knowledge Transfer</span>
 			</a>
         <br>
-			Junjie Hu, Chenyou Fan, Mete Ozay, Hua Feng, <b>Yuan Gao</b>, Tin Lun Lam
+			<strong>Authors:</strong>Junjie Hu, Chenyou Fan, Mete Ozay, Hua Feng, <b>Yuan Gao</b>, Tin Lun Lam
 			<br>
-			<em>IEEE Transactions on Intelligent Transportation Systems</em>, 2025 
+			<strong>Journal:</strong><em>IEEE Transactions on Intelligent Transportation Systems</em>, 2025 
 			<br>
 			<a href="https://ieeexplore.ieee.org/abstract/document/11005613">[Paper]</a> 
 			<p></p>
@@ -266,9 +266,9 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
             	<span class="papertitle">Configuration-Adaptive Visual Relative Localization for Spherical Modular Self-Reconfigurable Robots</span>
         	</a>
         	<br>
-        	Yuming Liu, Qiu Zheng, Yuxiao Tu, <b>Yuan Gao</b>, Guanqi Liang, and Tin Lun Lam
+        	<strong>Authors:</strong>Yuming Liu, Qiu Zheng, Yuxiao Tu, <b>Yuan Gao</b>, Guanqi Liang, and Tin Lun Lam
         	<br>
-       	 	<em>2025 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025 
+       	 	<strong>Conference:</strong><em>2025 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025 
         	<br>
         	<a href="#">[Paper]</a> 
         <p></p> 
@@ -285,9 +285,9 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
             <span class="papertitle">OC-HMAS: Dynamic Self-Organization and Self-Correction in Heterogeneous Multiagent Systems Using Multimodal Large Models</span>
         </a>
         <br>
-        Ping Feng, Tingting Yang, Mingyang Liang, Lin Wang, and <b>Yuan Gao</b>
+        <strong>Authors:</strong>Ping Feng, Tingting Yang, Mingyang Liang, Lin Wang, and <b>Yuan Gao</b>
         <br>
-        <em>IEEE Internet of Things Journal</em>, 2025 
+        <strong>Journal:</strong><em>IEEE Internet of Things Journal</em>, 2025 
         <br>
         <a href="#">[Paper]</a> 
         <p></p> 
@@ -320,6 +320,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
