@@ -162,7 +162,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
 	<tr class="publication-entry" data-year="2025" data-topics="softrobotics,deformationestimation" data-selected="true"> 
 		<td style="padding:16px;width:38%;vertical-align:top">
-			<img src='images/publications_image/iros2025_gripper.jpg' width="160" alt="Multimodal Deformation Estimation Thumbnail"> 
+			<img src='/images/publications_image/iros2025_gripper.jpg' width="160" alt="Multimodal Deformation Estimation Thumbnail"> 
 		</td>
 		<td style="padding:8px;width:62%;vertical-align:top">
 			<a href="https://your_domain.com/path/to/paper.pdf"> 
@@ -183,7 +183,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 			<div class="one">
 				<div class="two" id='balloon_robot_uist25_video'>
 					<video width=100% height=100% muted autoplay loop>
-						<source src="images/publications_video/balloon_robot_uist25.mp4" type="video/mp4">
+						<source src="/images/publications_video/balloon_robot_uist25.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
 				</div>
@@ -215,7 +215,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 	<tr class="publication-entry" data-year="2025" data-topics="nlp,llm,slm,selfreflection" data-selected="true"> 
 		<td style="padding:16px;width:38%;vertical-align:top">
 			<div class="one">
-				<img src='images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
+				<img src='/images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
 			</div>
 		</td>
 		<td style="padding:8px;width:62%;vertical-align:top;"> <a href="https://aclanthology.org/2025.findings-acl.1261/"> 
@@ -233,7 +233,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 	<tr class="publication-entry" data-year="2025" data-topics="nlp,llm,slm,selfreflection" data-selected="true"> 
 		<td style="padding:16px;width:38%;vertical-align:top">
 			<div class="one">
-				<img src='images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
+				<img src='/images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
 			</div>
 		</td>
 		<td style="padding:8px;width:62%;vertical-align:top;"> <a href="https://aclanthology.org/2025.findings-acl.1261/"> 
@@ -275,6 +275,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
