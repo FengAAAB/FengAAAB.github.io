@@ -25,9 +25,9 @@ classes: wide
 	  overflow: hidden; 
 	  background-color: #FFFFFF; 
 	  box-sizing: border-box; /* 确保 padding/border 不会增加总宽度 */
-	  display: flex; /* 使用 Flexbox 布局 */
-	  justify-content: center; /* 水平居中 */
-	  align-items: flex-start; /* 垂直居中 */
+	  /*display: flex; /* 使用 Flexbox 布局 */
+	  /*justify-content: center; /* 水平居中 */
+	  /*align-items: flex-start; /* 垂直居中 */
 	}
 	.two {
 	  position: absolute; 
@@ -38,9 +38,9 @@ classes: wide
 	  opacity: 0; 
 	  transition: opacity .2s ease-in-out; 
 		/* 新增：确保 .two 容器也使用Flexbox居中其内容（如果需要的话，但通常GIF会填满） */
-	  display: flex;
-	  justify-content: center;
-	  align-items: flex-start;
+	  /*display: flex;*/
+	  /*justify-content: center;*/
+	  /*align-items: flex-start;*/
 	}
 	.two video { 
 		display: block;
@@ -56,6 +56,8 @@ classes: wide
 	    height: auto; /* 关键：让高度自动调整以保持图片比例 */
 	    object-fit: contain; /* 关键：让图片完全包含在容器内，不裁剪，可能留白 */
 	    /* object-fit: cover; */ /* 如果需要裁剪并填满，则使用这个 */
+		margin-left: auto;
+    	margin-right: auto;
 	}
 	/* --- 效果控制结束 --- */
 	/* --- 年份标题跳转偏移 --- */
@@ -420,6 +422,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
