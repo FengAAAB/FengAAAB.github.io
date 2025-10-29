@@ -22,9 +22,9 @@ html {
   width: 100%; /* 让 .one 容器填充其父级 td 的可用宽度 */
   max-width: 300px; /* 设定最大宽度，避免图片在超宽屏下过大 */
   /* aspect-ratio: 16 / 9; /* 删除或注释掉这一行，让高度由图片内容决定 */
-  height: 300px; /* 让高度根据内容自动调整 */
+  height: 200px; /* 让高度根据内容自动调整 */
   overflow: hidden; 
-  background-color: #000000; 
+  background-color: #FFFFFF; 
   box-sizing: border-box; /* 确保 padding/border 不会增加总宽度 */
 }
 
@@ -339,6 +339,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
