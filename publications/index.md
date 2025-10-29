@@ -181,15 +181,14 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
         <td style="padding:8px;width:62%;vertical-align:top;"> 
             </td>
     </tr> 
-
-    <tr class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux"> 
-        <td style="padding:16px;width:38%;vertical-align:top;"> 
-            <div class="one">
-                 <img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail"> 
-            </div>
-        </td>
-        <td style="padding:8px;width:62%;vertical-align:top;"> 
-             </td>
+	<tr class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux"> 
+		<td style="padding:16px;width:38%;vertical-align:top;"> 
+			<div class="one">
+				<img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail"> 
+			</div>
+		</td>
+		<td style="padding:8px;width:62%;vertical-align:top;"> 
+		</td>
     </tr> 
 	
 </tbody></table>
@@ -219,5 +218,6 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
