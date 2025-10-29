@@ -3,6 +3,7 @@ layout: single
 title: Recent Publications
 classes: wide
 ---
+<div class="publications-wrapper">
 <style>
 	/* --- 基本页面样式 (检查是否已存在或冲突) --- */
 body {
@@ -154,6 +155,12 @@ h4 {
     background-color: #555555;
     color: white;
 }
+
+.publications-wrapper {
+    padding-left: 40px;  /* 增加左内边距 */
+    padding-right: 40px; /* 同时增加右内边距，保持对称 */
+    /* 如果只想增加左边距，可以只写 padding-left: 40px; */
+    box-sizing: border-box; /* 确保 padding 不会撑大容器 */
 </style>
 
 <script>
@@ -435,6 +442,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+</div>
 
 
 
