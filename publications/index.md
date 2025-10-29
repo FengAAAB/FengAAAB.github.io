@@ -163,7 +163,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 	<tr class="publication-entry" data-year="2025" data-topics="softrobotics,deformationestimation" data-selected="true"> 
 		<td style="padding:16px;width:38%;vertical-align:top">
 			<div class="one">
-				<img src='/images/publications_image/iros2025_gripper.jpg' width="160" alt="Multimodal Deformation Estimation Thumbnail"> 
+				<img src='/images/publications_image/iros2025_gripper.jpg' alt="Multimodal Deformation Estimation Thumbnail"> 
 			</div>
 		</td>
 		<td style="padding:8px;width:62%;vertical-align:top">
@@ -189,7 +189,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 						Your browser does not support the video tag.
 					</video>
 				</div>
-				<img src='/images/publications_image/balloon_robot_uist25.jpg' width="160" alt="Social Balloon Robot Thumbnail">
+				<img src='/images/publications_image/balloon_robot_uist25.jpg'alt="Social Balloon Robot Thumbnail">
 			</div>
 			<script type="text/javascript">
 				function balloon_robot_uist25_start() {
@@ -278,6 +278,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
