@@ -138,8 +138,8 @@ classes: wide
 	    color: white;
 	}
 	.publications-wrapper {
-	    padding-left: 40px;  /* 增加左内边距 */
-	    padding-right: 40px; /* 同时增加右内边距，保持对称 */
+	    padding-left: 80px;  /* 增加左内边距 */
+	    padding-right: 80px; /* 同时增加右内边距，保持对称 */
 	    /* 如果只想增加左边距，可以只写 padding-left: 40px; */
 	    box-sizing: border-box; /* 确保 padding 不会撑大容器 */
 	</style>
@@ -420,6 +420,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
