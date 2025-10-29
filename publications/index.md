@@ -27,7 +27,7 @@ classes: wide
 	  box-sizing: border-box; /* 确保 padding/border 不会增加总宽度 */
 	  display: flex; /* 使用 Flexbox 布局 */
 	  justify-content: center; /* 水平居中 */
-	  align-items: top; /* 垂直居中 */
+	  align-items: flex-start; /* 垂直居中 */
 	}
 	.two {
 	  position: absolute; 
@@ -379,6 +379,7 @@ classes: wide
 	    	</td>
 		</tr>
 	</tbody></table>
+		<!--添加23年论文-->
 	<h3 id="year-2023" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2023</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -402,20 +403,24 @@ classes: wide
 		    </td>
 		</tr>	
 	</tbody></table>
+		<!--添加22年论文-->
 	<h3 id="year-2022" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2022</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
 	    </tbody></table>
+		<!--添加21年论文-->
 	<h3 id="year-2021" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2021</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
 	    </tbody></table>
+		<!--添加20年论文-->
 	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
