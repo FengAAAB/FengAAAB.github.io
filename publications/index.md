@@ -27,7 +27,7 @@ classes: wide
 	  box-sizing: border-box; /* 确保 padding/border 不会增加总宽度 */
 	  display: flex; /* 使用 Flexbox 布局 */
 	  justify-content: center; /* 水平居中 */
-	  align-items: flex-start; /* 垂直居中 */
+	  align-items: center; /* 垂直居中 */
 	}
 	.two {
 	  position: absolute; 
@@ -40,7 +40,7 @@ classes: wide
 		/* 新增：确保 .two 容器也使用Flexbox居中其内容（如果需要的话，但通常GIF会填满） */
 	  display: flex;
 	  justify-content: center;
-	  align-items: flex-start;
+	  align-items: center;
 	}
 	.two video { 
 		display: block;
@@ -420,6 +420,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
