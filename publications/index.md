@@ -188,7 +188,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 	    <td style="padding:16px;width:38%;vertical-align: top;text-align: right;">
 	        <div class="one">
 	            <div class="two" id='balloon_robot_uist25_gif'> 
-	                <img src="/images/publications_gif/balloon_robot_uist25_anim.gif" style="width:100%; height:100%; object-fit: contain;" alt="Social Balloon Robot Animation"> 
+	                <img src="images/publications_gif/balloon_robot_uist25.gif" style="width:100%; height:100%; object-fit: contain;" alt="Social Balloon Robot Animation"> 
 	            </div>
 	            <img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail">
 	        </div>
@@ -412,6 +412,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
