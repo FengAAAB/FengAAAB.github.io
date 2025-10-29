@@ -274,6 +274,25 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
         <p></p> 
     	</td>
 	</tr>
+	<tr class="publication-entry" data-year="2025" data-topics="multiagent,selforganization,llm,multimodal" data-selected="true"> 
+    <td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+        <div class="one">
+            <img src='/images/publications_image/placeholder.png' alt="OC-HMAS Thumbnail"> 
+            </div>
+    </td>
+    <td style="padding:8px;width:62%;vertical-align:top;"> 
+        <a href="#"> 
+            <span class="papertitle">OC-HMAS: Dynamic Self-Organization and Self-Correction in Heterogeneous Multiagent Systems Using Multimodal Large Models</span>
+        </a>
+        <br>
+        Ping Feng, Tingting Yang, Mingyang Liang, Lin Wang, and <b>Yuan Gao</b>
+        <br>
+        <em>IEEE Internet of Things Journal</em>, 2025 
+        <br>
+        <a href="#">[Paper]</a> 
+        <p></p> 
+    </td>
+</tr>
 </tbody></table>
 
 <h3 id="year-2024" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2024</h3>
@@ -301,6 +320,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
