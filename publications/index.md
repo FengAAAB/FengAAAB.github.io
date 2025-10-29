@@ -275,29 +275,48 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
     	</td>
 	</tr>
 	<tr class="publication-entry" data-year="2025" data-topics="multiagent,selforganization,llm,multimodal" data-selected="true"> 
-    <td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
-        <div class="one">
-            <img src='/images/publications_image/iotj2025_ochmas.jpg' alt="OC-HMAS Thumbnail"> 
+		<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+			<div class="one">
+				<img src='/images/publications_image/iotj2025_ochmas.jpg' alt="OC-HMAS Thumbnail"> 
             </div>
-    </td>
-    <td style="padding:8px;width:62%;vertical-align:top;"> 
-        <a href="#"> 
-            <span class="papertitle">OC-HMAS: Dynamic Self-Organization and Self-Correction in Heterogeneous Multiagent Systems Using Multimodal Large Models</span>
-        </a>
-        <br>
-        <strong>Authors:</strong>Ping Feng, Tingting Yang, Mingyang Liang, Lin Wang, and <b>Yuan Gao</b>
-        <br>
-        <strong>Journal:</strong><em>IEEE Internet of Things Journal</em>, 2025 
-        <br>
-        <a href="#">[Paper]</a> 
-        <p></p> 
-    </td>
-</tr>
+		</td>
+		<td style="padding:8px;width:62%;vertical-align:top;"> 
+			<a href="#"> 
+            	<span class="papertitle">OC-HMAS: Dynamic Self-Organization and Self-Correction in Heterogeneous Multiagent Systems Using Multimodal Large Models</span>
+        	</a>
+        	<br>
+        	<strong>Authors:</strong>Ping Feng, Tingting Yang, Mingyang Liang, Lin Wang, and <b>Yuan Gao</b>
+        	<br>
+        	<strong>Journal:</strong><em>IEEE Internet of Things Journal</em>, 2025 
+        	<br>
+        	<a href="#">[Paper]</a> 
+        	<p></p> 
+    	</td>
+	</tr>
 </tbody></table>
 
 <h3 id="year-2024" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2024</h3>
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	<tr class="publication-entry" data-year="2024" data-topics="robotics,llm,vlm,perception,reasoning" data-selected="true"> 
+    	<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+        	<div class="one">
+            	<img src='/images/publications_image/iros2024_liquidperception.jpg' alt="Robot Liquid Perception Thumbnail"> 
+            </div>
+    	</td>
+    	<td style="padding:8px;width:62%;vertical-align:top;"> 
+        	<a href="https://ieeexplore.ieee.org/abstract/document/10801833"> 
+            	<span class="papertitle">Vision-Language Model-based Physical Reasoning for Robot Liquid Perception</span>
+        	</a>
+        	<br>
+        	<strong>Authors:</strong> Wenqiang Lai, Tianwei Zhang, Tin Lun Lam, <b>Yuan Gao</b> 
+        	<br>
+        	<strong>Conference:</strong> <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2024 
+        	<br>
+        	<a href="https://arxiv.org/pdf/2404.06904">[Paper]</a> 
+        	<p></p> 
+    	</td>
+	</tr>
     </tbody></table>
 
 <h3 id="year-2023" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2023</h3>
@@ -320,6 +339,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
