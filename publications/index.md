@@ -162,35 +162,75 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <h3 id="year-2025" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2025</h3>
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
-    <tr onmouseover="iros2025_gripper_start()" onmouseout="iros2025_gripper_stop()" class="publication-entry" data-year="2025" data-topics="softrobotics,deformationestimation"> 
-        <td style="padding:16px;width:38%;vertical-align:top;"> 
-            <div class="one">
-                <div class="two" id="iros2025_gripper_video">
-                    <video width=100% height=100% muted autoplay loop>
-                        <source src="/images/publications_video/iros2025_gripper.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-                <img src='/images/publications_image/iros2025_gripper.jpg' alt="Multimodal Deformation Thumbnail"> 
-            </div>
-            <script type="text/javascript">
-                function iros2025_gripper_start() { document.getElementById('iros2025_gripper_video').style.opacity = "1"; }
-                function iros2025_gripper_stop() { document.getElementById('iros2025_gripper_video').style.opacity = "0"; }
-                iros2025_gripper_stop();
-            </script>
-        </td>
-        <td style="padding:8px;width:62%;vertical-align:top;"> 
-            </td>
-    </tr> 
-	<tr class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux"> 
-		<td style="padding:16px;width:38%;vertical-align:top;"> 
+	<tr class="publication-entry" data-year="2025" data-topics="softrobotics,deformationestimation" data-selected="true"> 
+		<td style="padding:16px;width:38%;vertical-align:top">
+			<img src='images/publications_image/iros2025_gripper.jpg' width="160" alt="Multimodal Deformation Estimation Thumbnail"> 
+		</td>
+		<td style="padding:8px;width:62%;vertical-align:top">
+			<a href="https://your_domain.com/path/to/paper.pdf"> 
+				<span class="papertitle">Multimodal Deformation Estimation of Soft Pneumatic Gripper During Operation</span>
+			</a>
+			<br>
+			Changheng Cai, Fei Xiao, Marcellus Vanzai, Taoyang Wang, Fangbing Zhou, Xuanyang Xu, Jian Zhu<sup>#</sup>, and <b>Yuan Gao</b><sup>#</sup>
+			<br>
+			<em>International Conference on Intelligent Robots and Systems(IROS)</em>, 2025 
+			<br>
+			<a href="https://your_domain.com/path/to/paper.pdf">[Paper]</a> / 
+			<a href="https://github.com/your_username/your_repo">[Code]</a>
+			<p></p>
+		</td>
+	</tr>
+	<tr onmouseover="balloon_robot_uist25_start()" onmouseout="balloon_robot_uist25_stop()" class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux" data-selected="true"> 
+		<td style="padding:16px;width:38%;vertical-align:top">
 			<div class="one">
-				<img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail"> 
+				<div class="two" id='balloon_robot_uist25_video'>
+					<video width=100% height=100% muted autoplay loop>
+						<source src="images/publications_video/balloon_robot_uist25.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<img src='images/publications_image/balloon_robot_uist25.jpg' width="160" alt="Social Balloon Robot Thumbnail">
+			</div>
+			<script type="text/javascript">
+				function balloon_robot_uist25_start() {
+					document.getElementById('balloon_robot_uist25_video').style.opacity = "1";
+				}
+				function balloon_robot_uist25_stop() {
+					document.getElementById('balloon_robot_uist25_video').style.opacity = "0";
+				}
+				balloon_robot_uist25_stop() // 页面加载时默认停止（隐藏）视频
+			</script>
+		</td>
+		<td style="padding:8px;width:62%;vertical-align:top">
+			<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666"> 
+				<span class="papertitle">Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study</span>
+			</a>
+			<br>
+			Chongyang Wang, Tianyi Xia, Yifan Wang, Gang Yu, Zixuan Zhao, Siqi Zheng, Manqiu Liao, Chen Liang, <b>Yuan Gao</b>, Chun Yu<sup>#</sup>, Yuntao Wang, Yuanchun Shi
+			<br>
+			<em>UIST '25: Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology</em>, 2025 
+			<br>
+			<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666">[Paper]</a> 
+			<p></p>
+		</td>
+	</tr>
+	<tr class="publication-entry" data-year="2025" data-topics="nlp,llm,slm,selfreflection" data-selected="true"> 
+		<td style="padding:16px;width:38%;vertical-align:top">
+			<div class="one">
+				<img src='images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
 			</div>
 		</td>
-		<td style="padding:8px;width:62%;vertical-align:top;"> 
-		</td>
-    </tr> 
-	
+		<td style="padding:8px;width:62%;vertical-align:top;"> <a href="https://aclanthology.org/2025.findings-acl.1261/"> 
+			<span class="papertitle">Entrospect: Information-Theoretic Self-Reflection Elicits Better Response Refinement of Small Language Models</span>
+		</a>
+			<br>
+			Tianqiang Yan, Ziqiao Lin, Lin Zhang, Zhenglong Sun, <b>Yuan Gao</b><sup>#</sup>
+			<br>
+			<em>Findings of the Association for Computational Linguistics: ACL 2025</em>, 2025 
+			<br>
+			<a href="https://aclanthology.org/2025.findings-acl.1261/">[Paper]</a> 
+			<p></p>
+		</td></tr>
 </tbody></table>
 
 <h3 id="year-2024" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2024</h3>
@@ -218,6 +258,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
