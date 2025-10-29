@@ -281,7 +281,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
             </div>
 		</td>
 		<td style="padding:8px;width:62%;vertical-align:top;"> 
-			<a href="#"> 
+			<a href="https://ieeexplore.ieee.org/abstract/document/10909066"> 
             	<span class="papertitle">OC-HMAS: Dynamic Self-Organization and Self-Correction in Heterogeneous Multiagent Systems Using Multimodal Large Models</span>
         	</a>
         	<br>
@@ -289,7 +289,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
         	<br>
         	<strong>Journal:</strong><em>IEEE Internet of Things Journal</em>, 2025 
         	<br>
-        	<a href="#">[Paper]</a> 
+        	<a href="https://ieeexplore.ieee.org/abstract/document/10909066">[Paper]</a> 
         	<p></p> 
     	</td>
 	</tr>
@@ -339,6 +339,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
