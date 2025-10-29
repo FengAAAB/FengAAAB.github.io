@@ -339,7 +339,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 	<tr class="publication-entry" data-year="2024" data-topics="hri,poseestimation,companionrobot,chi" data-selected="true"> 
     	<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
         	<div class="one">
-            	<img src='/images/publications_image/placeholder.png' alt="PepperPose Thumbnail"> 
+            	<img src='/images/publications_image/chi2024_pepperpose.jpg' alt="PepperPose Thumbnail"> 
             </div>
     	</td>
     	<td style="padding:8px;width:62%;vertical-align:top;"> 
@@ -377,6 +377,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
