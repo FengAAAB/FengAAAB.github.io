@@ -26,6 +26,9 @@ html {
   overflow: hidden; 
   background-color: #FFFFFF; 
   box-sizing: border-box; /* 确保 padding/border 不会增加总宽度 */
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
 }
 
 .two {
@@ -36,18 +39,24 @@ html {
   bottom: 0; 
   opacity: 0; 
   transition: opacity .2s ease-in-out; 
+	/* 新增：确保 .two 容器也使用Flexbox居中其内容（如果需要的话，但通常GIF会填满） */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .two video { 
+	display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain; 
+    object-fit: cover; 
 }
 
 .one img {
     display: block; 
     max-width: 100%; 
-    width: 100%; 
+    width: auto;
+	max-height: 100%;
     height: auto; /* 关键：让高度自动调整以保持图片比例 */
     object-fit: contain; /* 关键：让图片完全包含在容器内，不裁剪，可能留白 */
     /* object-fit: cover; */ /* 如果需要裁剪并填满，则使用这个 */
@@ -426,6 +435,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
