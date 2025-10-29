@@ -40,7 +40,7 @@ classes: wide
 		/* 新增：确保 .two 容器也使用Flexbox居中其内容（如果需要的话，但通常GIF会填满） */
 	  display: flex;
 	  justify-content: center;
-	  align-items: center;
+	  align-items: flex-start;
 	}
 	.two video { 
 		display: block;
@@ -420,6 +420,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
