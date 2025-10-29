@@ -161,12 +161,12 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
 	<tr class="publication-entry" data-year="2025" data-topics="softrobotics,deformationestimation" data-selected="true"> 
-		<td style="padding:16px;width:38%;vertical-align:top">
+		<td style="padding:16px;width:38%;vertical-align:top;text-align: right;">
 			<div class="one">
 				<img src='/images/publications_image/iros2025_gripper.jpg' alt="Multimodal Deformation Estimation Thumbnail"> 
 			</div>
 		</td>
-		<td style="padding:8px;width:62%;vertical-align:top">
+		<td style="padding:8px;width:62%;vertical-align:top;">
 			<a href="https://your_domain.com/path/to/paper.pdf"> 
 				<span class="papertitle">Multimodal Deformation Estimation of Soft Pneumatic Gripper During Operation</span>
 			</a>
@@ -181,7 +181,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 		</td>
 	</tr>
 	<tr onmouseover="balloon_robot_uist25_start()" onmouseout="balloon_robot_uist25_stop()" class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux" data-selected="true"> 
-		<td style="padding:16px;width:38%;vertical-align:top">
+		<td style="padding:16px;width:38%;vertical-align: top;text-align: right;">
 			<div class="one">
 				<div class="two" id='balloon_robot_uist25_video'>
 					<video width=100% height=100% muted autoplay loop>
@@ -189,7 +189,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 						Your browser does not support the video tag.
 					</video>
 				</div>
-				<img src='/images/publications_image/balloon_robot_uist25.jpg'alt="Social Balloon Robot Thumbnail">
+				<img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail">
 			</div>
 			<script type="text/javascript">
 				function balloon_robot_uist25_start() {
@@ -201,7 +201,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 				balloon_robot_uist25_stop() // 页面加载时默认停止（隐藏）视频
 			</script>
 		</td>
-		<td style="padding:8px;width:62%;vertical-align:top">
+		<td style="padding:8px;width:62%;vertical-align:top;">
 			<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666"> 
 				<span class="papertitle">Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study</span>
 			</a>
@@ -215,7 +215,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 		</td>
 	</tr>
 	<tr class="publication-entry" data-year="2025" data-topics="nlp,llm,slm,selfreflection" data-selected="true"> 
-		<td style="padding:16px;width:38%;vertical-align:top">
+		<td style="padding:16px;width:38%;vertical-align:top; text-align: right;">
 			<div class="one">
 				<img src='/images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
 			</div>
@@ -233,7 +233,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 		</td>
 	</tr>
 	<tr class="publication-entry" data-year="2025" data-topics="droneperception,semisupervisedlearning,knowledgetransfer" data-selected="true"> 
-		<td style="padding:16px;width:38%;vertical-align:top;"> 
+		<td style="padding:16px;width:38%;vertical-align:top;text-align: right;"> 
 			<div class="one">
 				<img src='/images/publications_image/tits2025_droneperception.jpg' alt="Drone Perception T-ITS Thumbnail"> 
 			</div>
@@ -278,6 +278,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
