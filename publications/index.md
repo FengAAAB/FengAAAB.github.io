@@ -336,6 +336,25 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
         	<p></p> 
     	</td>
 	</tr>
+	<tr class="publication-entry" data-year="2024" data-topics="hri,poseestimation,companionrobot,chi" data-selected="true"> 
+    	<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+        	<div class="one">
+            	<img src='/images/publications_image/placeholder.png' alt="PepperPose Thumbnail"> 
+            </div>
+    	</td>
+    	<td style="padding:8px;width:62%;vertical-align:top;"> 
+        	<a href="https://dl.acm.org/doi/full/10.1145/3613904.3642231"> 
+            	<span class="papertitle">PepperPose: Full-Body Pose Estimation with a Companion Robot</span>
+        	</a>
+        	<br>
+        	<strong>Authors:</strong> Chongyang Wang, Siqi Zheng, Lingxiao Zhong, Chun Yu, Chen Liang, Yuntao Wang, <b>Yuan Gao</b>*, Tin Lun Lam, Yuanchun Shi 
+        	<br>
+        	<strong>Conference:</strong> <em>Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems</em>, 2024 
+        	<br>
+        	<a href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642231">[Paper]</a> 
+        	<p></p> 
+    	</td>
+	</tr>
 </tbody></table>
 
 <h3 id="year-2023" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2023</h3>
@@ -358,6 +377,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
