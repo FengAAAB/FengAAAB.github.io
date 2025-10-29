@@ -218,7 +218,7 @@ classes: wide
 		        <br>
 		        <strong>Conference:</strong><em>UIST '25: Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology</em>, 2025 
 		        <br>
-		        <a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666">[Paper]</a>
+		        <a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666">[Paper]</a> / 
 				<a href="/video/balloon_robot_uist25.mp4" target="_blank">[Video]</a>
 		        <p></p>
 		    </td>
@@ -420,6 +420,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
