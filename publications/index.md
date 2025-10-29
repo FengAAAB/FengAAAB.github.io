@@ -405,7 +405,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 	        <br>
 	        <strong>Conference:</strong> <em>2023 IEEE International Conference on Robotics and Biomimetics (ROBIO)</em>, 2023 
 	        <br>
-	        <a href="https://arxiv.org/abs/2209.13760">[Paper]</a> 
+	        <a href="https://arxiv.org/pdf/2209.13760">[Paper]</a> 
 	        <p></p> 
 	    </td>
 	</tr>	
@@ -426,6 +426,7 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
 
 
