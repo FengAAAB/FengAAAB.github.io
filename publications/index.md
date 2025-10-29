@@ -157,34 +157,8 @@ function toggleAbstract(btn) {
 
 My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ) profile.
 
-## References
-
-<h2 id="publications" style="scroll-margin-top: 80px;">Publications</h2> 
-[ <a href="#">Full List</a> ] <p style="margin-top: 5px; margin-bottom: 5px;">
-    <span style="font-weight: bold;">Filter:</span> 
-    <a href="#">Show selected</a> / 
-    <a href="#">Show by date</a> / 
-    <a href="#topics">Show by topic</a> 
-</p>
-<p style="margin-top: 5px; margin-bottom: 5px;">
-    <span style="font-weight: bold;">Year:</span> 
-    <a href="#year-2025">2025</a> / 
-    <a href="#year-2024">2024</a> / 
-    <a href="#year-2023">2023</a> / 
-    <a href="#year-2022">2022</a> / 
-    <a href="#year-2021">2021</a> / 
-    <a href="#year-2020">2020</a>
-</p>
-<p style="margin-top: 5px; margin-bottom: 15px;" id="topics"> 
-    <span style="font-weight: bold;">Research Topics:</span> 
-    <a href="#">Embodied agent</a> / 
-    <a href="#">Multimodal understanding</a> / 
-    <a href="#">Visual generation</a>
-    </p>
-<p style="font-size: small; color: #666; margin-bottom: 20px;">
-    (* Equal Contribution, # Corresponding Author)
-</p>
-
+<h2>References</h2> 
+<h2 id="publications" style="scroll-margin-top: 80px; display: inline-block; margin-right: 10px;">Publications</h2> [ <a href="#">Full List</a> ] 
 <h3 id="year-2025" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2025</h3>
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
@@ -196,7 +170,8 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
                         <source src="/images/publications_video/iros2025_gripper.mp4" type="video/mp4"> Your browser does not support the video tag.
                     </video>
                 </div>
-                <img src='/images/publications_image/iros2025_gripper.jpg' alt="Multimodal Deformation Thumbnail"> </div>
+                <img src='/images/publications_image/iros2025_gripper.jpg' alt="Multimodal Deformation Thumbnail"> 
+            </div>
             <script type="text/javascript">
                 function iros2025_gripper_start() { document.getElementById('iros2025_gripper_video').style.opacity = "1"; }
                 function iros2025_gripper_stop() { document.getElementById('iros2025_gripper_video').style.opacity = "0"; }
@@ -204,39 +179,20 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
             </script>
         </td>
         <td style="padding:8px;width:62%;vertical-align:top;"> 
-            <a href="论文链接"> 
-                <span class="papertitle">Multimodal Deformation Estimation of Soft Pneumatic Gripper During Operation</span>
-            </a>
-            <br>
-            Changheng Cai, Fei Xiao, Marcellus Vanzai, Taoyang Wang, Fangbing Zhou, Xuanyang Xu, Jian Zhu<sup>#</sup>, and <b>Yuan Gao</b><sup>#</sup>
-            <br>
-            <em>International Conference on Intelligent Robots and Systems(IROS)</em>, 2025 
-            <br>
-            <a href="论文链接">[Paper]</a> / <a href="代码链接">[Code]</a>
-            <p></p>
-        </td>
+            </td>
     </tr> 
 
     <tr class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux"> 
         <td style="padding:16px;width:38%;vertical-align:top;"> 
             <div class="one">
-                 <img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail"> </div>
+                 <img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail"> 
+            </div>
         </td>
         <td style="padding:8px;width:62%;vertical-align:top;"> 
-            <a href="https://doi.org/10.1145/3734509.3741666"> 
-              <span class="papertitle">Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study</span>
-            </a>
-            <br>
-            Chongyang Wang, Tianyi Xia, Yifan Wang, Gang Yu, Zixuan Zhao, Siqi Zheng, Manqiu Liao, Chen Liang, <b>Yuan Gao</b>, Chun Yu*, Yuntao Wang, Yuanchun Shi
-            <br>
-            <em>UIST '25: Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology</em>, 2025 
-            <br>
-            <a href="https://doi.org/10.1145/3734509.3741666">[Paper]</a> 
-            <p></p> 
-        </td>
+             </td>
     </tr> 
-    
-    </tbody></table>
+	
+</tbody></table>
 
 <h3 id="year-2024" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2024</h3>
 <hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
@@ -263,4 +219,5 @@ My [Google Scholar](https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ)
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
     </tbody></table>
 <br style/>
+
 
