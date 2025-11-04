@@ -614,6 +614,25 @@ classes: wide
 				<p></p>
 			</td>
 		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="multirobot,reinforcementlearning,coverageplanning" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/ral2022_workerstation.jpg' alt="Worker-Station Multi-robot Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/9918029">
+					<span class="papertitle">Learning to Coordinate for a Worker-Station Multi-robot System in Planar Coverage Tasks</span>
+				</a>
+				<br>
+		        <strong>Authors:</strong> Jingtao Tang, <b>Yuan Gao</b>, Tin Lun Lam<sup>#</sup>
+		        <br>
+		        <strong>Journal:</strong> <em>IEEE Robotics and Automation Letters</em>, 2022 
+		        <br>
+		        <a href="https://arxiv.org/pdf/2208.02993">[Paper]</a> 
+		        <p></p>
+			</td>
+		</tr>
 	</tbody>
 	</table>
 		<!--添加21年论文-->
@@ -628,6 +647,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
