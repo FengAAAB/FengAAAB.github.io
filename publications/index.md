@@ -709,6 +709,12 @@ classes: wide
         		<p></p> 
     		</td>
 		</tr>
+	</tbody>
+	</table>
+		<!--添加21年论文-->
+	<h3 id="year-2021" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2021</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		<tr class="publication-entry" data-year="2021" data-topics="metarl,robotics,sensorscanning,multirobot" data-selected="true">
 			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
 				<div class="one">
@@ -728,13 +734,7 @@ classes: wide
         		<p></p> 
     		</td>
 		</tr>
-	</tbody>
-	</table>
-		<!--添加21年论文-->
-	<h3 id="year-2021" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2021</h3>
-	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
-	    </tbody></table>
+	</tbody></table>
 		<!--添加20年论文-->
 	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
@@ -742,6 +742,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
