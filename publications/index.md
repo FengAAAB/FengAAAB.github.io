@@ -791,6 +791,25 @@ classes: wide
 		        <p></p> 
 		    </td>
 		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="activityrecognition,behavior,imwut" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/imwut2021_leveraging.jpg' alt="Leveraging Activity Recognition Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://arxiv.org/abs/2104.09117"> 
+		            <span class="papertitle">Leveraging Activity Recognition to Enable Protective Behavior Detection in Continuous Data</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> Chongyang Wang, <b>Yuan Gao</b>, Akhil Mathur, Amanda C De C. Williams, Nicholas D. Lane, and Nadia Bianchi-Berthouze
+		        <br>
+		        <strong>Journal:</strong> <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</em>, 2021 
+		        <br>
+		        <a href="https://arxiv.org/pdf/2104.09117">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
 	</tbody></table>
 		<!--添加20年论文-->
 	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
@@ -799,6 +818,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
