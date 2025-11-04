@@ -652,6 +652,25 @@ classes: wide
         		<p></p> 
     		</td>
 		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="occupancygrid,attentionnetwork,robotics" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/icra2022_abnormaloccupancy.jpg' alt="Abnormal Occupancy Grid Map Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://ieeexplore.ieee.org/abstract/document/9812106">
+					<span class="papertitle">Abnormal Occupancy Grid Map Recognition using Attention Network</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Fuqin Deng<sup>*</sup>, Hua Feng<sup>*</sup>, Mingjian Liang, Qi Feng, Ningbo Yi, Yong Yang, <b>Yuan Gao</b>, Junfeng Chen, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Conference:</strong> <em>2022 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2022 
+				<br>
+				<a href="https://arxiv.org/pdf/2110.09047">[Paper]</a>
+				<p></p> 
+			</td>
+		</tr>
 	</tbody>
 	</table>
 		<!--添加21年论文-->
@@ -666,6 +685,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
