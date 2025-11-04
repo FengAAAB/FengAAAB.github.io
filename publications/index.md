@@ -485,7 +485,7 @@ classes: wide
 	            </div>
     		</td>
     		<td style="padding:8px;width:62%;vertical-align:top;"> 
-        		<a href="https://books.google.com.tw/books?hl=en&lr=&id=4xrOEAAAQBAJ&oi=fnd&pg=PA147&dq=info:8cixzlkChsgJ:scholar.google.com&ots=wbK92Klu_r&sig=EMmIctuQ9mhmOkjyMwAkp-qKJ1w&redir_esc=y#v=onepage&q&f=false"> 
+        		<a href="https://link.springer.com/chapter/10.1007/978-3-031-39539-0_13"> 
             		<span class="papertitle">Learn2Agree: Fitting with Multiple Annotators Without Objective Ground Truth</span>
         		</a>
         		<br>
@@ -493,10 +493,48 @@ classes: wide
         		<br>
         		<strong>Conference:</strong> <em>Trustworthy Machine Learning for Healthcare: First International Workshop (TML4H)</em>, 2023 
         		<br>
-        		<a href="#">[Paper]</a> 
-        	<p></p> 
-    	</td>
-	</tr>
+        		<a href="https://arxiv.org/pdf/2109.03596">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2023" data-topics="robotics,localization,rangebased,mechatronics" data-selected="true"> 
+			<td style="padding:16px;width:38%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/tmech2023_localization.jpg' alt="Robot Relative Localization Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:62%;vertical-align:top;">
+				<a href="https://ieeexplore.ieee.org/abstract/document/10142210">
+					<span class="papertitle">Asymptotically efficient estimator for range-based robot relative localization</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Yue Wang, Muhan Lin, Xinyi Xie, <b>Yuan Gao</b>, Fuqin Deng, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Journal:</strong> <em>IEEE/ASME Transactions on Mechatronics</em>, 2023
+				<br>
+				<a href="https://freeformrobotics.org/wp-content/uploads/2023/03/TMECH-10-2022-14466.pdf">[Paper]</a> 
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2023" data-topics="robotics,multirobot,selfplay,reinforcementlearning" data-selected="true">
+			<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/tro2023_asymmetricselfplay.jpg' alt="Asymmetric Self-Play Thumbnail"> 
+            	</div>
+   			</td>
+    		<td style="padding:8px;width:62%;vertical-align:top;"> 
+        		<a href="https://ieeexplore.ieee.org/abstract/document/10101687"> 
+            		<span class="papertitle">Asymmetric Self-Play-Enabled Intelligent Heterogeneous Multirobot Catching System Using Deep Multiagent Reinforcement Learning</span>
+        		</a>
+        		<br>
+        		<strong>Authors:</strong> <b>Yuan Gao</b>, Junfeng Chen, Xi Chen, Chongyang Wang, Junjie Hu, Fuqin Deng, and Tin Lun Lam<sup>#</sup>
+        		<br>
+        		<strong>Journal:</strong> <em>IEEE Transactions on Robotics</em>, 2023 
+        		<br>
+        		<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10101687">[Paper]</a> 
+        		<p></p> 
+    		</td>
+		</tr>
 	</tbody></table>
 		<!--添加22年论文-->
 	<h3 id="year-2022" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2022</h3>
@@ -515,6 +553,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
