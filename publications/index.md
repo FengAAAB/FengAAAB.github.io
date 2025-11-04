@@ -14,49 +14,51 @@ classes: wide
 	  scroll-behavior: smooth; /* 可选: 平滑滚动效果 */
 	}
 	/* --- 出版物列表图片/视频预览样式 --- */
+	/* --- 出版物列表图片/视频预览样式 (修改后：小尺寸、裁剪) --- */
 	.one {
-	  position: relative; 
-	  display: inline-block; 
-	  /* width: 300px; /* 删除或注释掉这一行，让宽度自适应 */
-	  width: 100%; /* 让 .one 容器填充其父级 td 的可用宽度 */
-	  max-width: 426px; /* 设定最大宽度，避免图片在超宽屏下过大 */
-	  /* aspect-ratio: 16 / 9; /* 删除或注释掉这一行，让高度由图片内容决定 */
-	  height: 240px; /* 让高度根据内容自动调整 */
-	  overflow: hidden; 
-	  background-color: #FFFFFF; 
-	  box-sizing: border-box; /* 确保 padding/border 不会增加总宽度 */
-	  display: flex; /* 使用 Flexbox 布局 */
-	  justify-content: center; /* 水平居中 */
-	  align-items: center; /* 垂直居中 */
+	  position: relative; 
+	  display: inline-block; 
+	  width: 100%; /* 宽度占满父级 td */
+	  max-width: 220px; /* !!! 关键：将最大宽度改小 (您可以调整这个值) */
+	  aspect-ratio: 16 / 9; /* !!! 关键：恢复固定的宽高比 (您可以尝试 4 / 3) */
+	  height: auto; /* !!! 关键：让高度由宽度和比例自动决定 (删除 240px) */
+	  overflow: hidden; 
+	  background-color: #FFFFFF; 
+	  box-sizing: border-box; 
+	  /* display: flex; (删除 Flexbox 布局) */
+	  /* justify-content: center; (删除) */
+	  /* align-items: center; (删除) */
 	}
 	.two {
-	  position: absolute; 
-	  top: 0;
-	  left: 0;
-	  right: 0; 
-	  bottom: 0; 
-	  opacity: 0; 
-	  transition: opacity .2s ease-in-out; 
-		/* 新增：确保 .two 容器也使用Flexbox居中其内容（如果需要的话，但通常GIF会填满） */
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
+	  position: absolute; 
+	  top: 0;
+	  left: 0;
+	  right: 0; 
+	  bottom: 0; 
+	  opacity: 0; 
+	  transition: opacity .2s ease-in-out; 
+	  /* display: flex; (删除 Flexbox 布局) */
+	  /* justify-content: center; (删除) */
+	  /* align-items: center; (删除) */
 	}
-	.two video { 
+	/* 规则 1: 鼠标悬停时显示的内容 (GIF 或 视频) */
+	.two video,
+	.two img { /* 确保 .two 内部的 img (GIF) 也应用此规则 */
 		display: block;
-	    width: 100%;
-	    height: 100%;
-	    object-fit: cover; 
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover; /* !!! 关键：裁剪并填满 */
 	}
-	.one img {
-	    display: block; 
-	    max-width: 100%; 
-	    width: auto;
+	/* 规则 2: 默认显示的静态图片 (使用 > 选择器) */
+	.one > img {
+	    display: block; 
+	    max-width: 100%; 
+	    width: 100%; /* !!! 关键：宽度设为 100% */
 		max-height: 100%;
-	    height: auto; /* 关键：让高度自动调整以保持图片比例 */
-	    object-fit: contain; /* 关键：让图片完全包含在容器内，不裁剪，可能留白 */
-	    /* object-fit: cover; */ /* 如果需要裁剪并填满，则使用这个 */
+	    height: 100%; /* !!! 关键：高度设为 100% */
+	    object-fit: cover; /* !!! 关键：裁剪并填满 (不再使用 contain) */
 	}
+	/* --- 效果控制结束 --- */
 	/* --- 效果控制结束 --- */
 	/* --- 年份标题跳转偏移 --- */
 	h2[id^="publication"], 
@@ -553,6 +555,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
