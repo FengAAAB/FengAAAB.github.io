@@ -537,8 +537,47 @@ classes: wide
 		<!--添加22年论文-->
 	<h3 id="year-2022" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2022</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
-	    </tbody></table>
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2022" data-topics="reinforcementlearning,offlinelearning,policyoptimization" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/neurips2022_lapo.jpg' alt="LAPO Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/efb2072a358cefb75886a315a6fcf880-Abstract-Conference.html">
+					<span class="papertitle">LAPO: Latent-Variable Advantage-Weighted Policy Optimization for Offline Reinforcement Learning</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Xi Chen, Ali Ghadirzadeh, Tianhe Yu, Jianhao Wang, <b>Yuan Gao</b>, Wenzhe Li, Bin Liang, Chelsea Finn, Chongjie Zhang
+				<br>
+				<strong>Conference:</strong> <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2022 
+				<br>
+				<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/efb2072a358cefb75886a315a6fcf880-Paper-Conference.pdf">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="socialrobots,emotion,reinforcementlearning,behaviour" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/bit2022_emotionmemory.jpg' alt="Emotion and Memory Model Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://www.tandfonline.com/doi/abs/10.1080/0144929X.2021.1977389">
+					<span class="papertitle">Emotion and memory model for social robots: a reinforcement learning based behaviour selection</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Muneeb Imtiaz Ahmad<sup>#</sup>, <b>Yuan Gao</b>, Fady Alnajjar, Suleman Shahid, & Omar Mubin
+				<br>
+				<strong>Journal:</strong> <em>Behaviour & Information Technology</em>, 2022
+				<br>
+				<a href="https://doi.org/10.1080/0144929X.2021.1977389">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+	</tbody>
+	</table>
 		<!--添加21年论文-->
 	<h3 id="year-2021" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2021</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
@@ -551,6 +590,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
