@@ -633,6 +633,25 @@ classes: wide
 		        <p></p>
 			</td>
 		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="knowledgetransfer,perception,drones,semisupervised" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/arxiv2022_selfdistillation.jpg' alt="Progressive Self-Distillation Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+        		<a href="https://arxiv.org/abs/2208.13404"> 
+            		<span class="papertitle">Progressive Self-Distillation for Ground-to-Aerial Perception Knowledge Transfer</span>
+        		</a>
+        		<br>
+        		<strong>Authors:</strong> Junjie Hu, Chenyou Fan, Mete Ozay, Hua Feng, <b>Yuan Gao</b>, and Tin Lun Lam<sup>#</sup>
+        		<br>
+        		<strong>Preprint:</strong> <em>arXiv preprint arXiv:2208.13404</em>, 2022 
+        		<br>
+        		<a href="https://arxiv.org/pdf/2208.13404">[Paper]</a> 
+        		<p></p> 
+    		</td>
+		</tr>
 	</tbody>
 	</table>
 		<!--添加21年论文-->
@@ -647,6 +666,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
