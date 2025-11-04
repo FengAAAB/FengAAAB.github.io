@@ -572,7 +572,26 @@ classes: wide
 				<br>
 				<strong>Journal:</strong> <em>Behaviour & Information Technology</em>, 2022
 				<br>
-				<a href="https://doi.org/10.1080/0144929X.2021.1977389">[Paper]</a>
+				<a href="https://www.tandfonline.com/doi/epdf/10.1080/0144929X.2021.1977389?needAccess=true">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="multiagent,pathplanning,attention" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/iros2022_abmapper.jpg' alt="AB-Mapper Thumbnail"> 
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://ieeexplore.ieee.org/abstract/document/9981513">
+					<span class="papertitle">AB-Mapper: Attention and BicNet based Multi-agent Path Planning for Dynamic Environment</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Huifeng Guan<sup>*</sup>, <b>Yuan Gao</b><sup>*</sup>, Min Zhao, Yong Yang, Fuqin Deng<sup>#</sup>, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Conference:</strong> <em>2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2022 
+				<br>
+				<a href="https://freeformrobotics.org/wp-content/uploads/2022/08/IROS22_3205_FI.pdf">[Paper]</a>
 				<p></p>
 			</td>
 		</tr>
@@ -590,6 +609,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
