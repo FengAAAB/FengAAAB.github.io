@@ -1,4 +1,4 @@
----
+<img width="927" height="462" alt="image" src="https://github.com/user-attachments/assets/3980f903-b5b7-441d-9516-df3fbc914ff0" />---
 layout: single
 title: Recent Publications
 classes: wide
@@ -753,6 +753,25 @@ classes: wide
 				<p></p>
 			</td>
 		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="vqa,multimodal,transformer" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/arxiv2021_temporalpyramid.jpg' alt="Temporal Pyramid Transformer Thumbnail"> 
+            	</div>
+    		</td>
+    		<td style="padding:8px;width:75%;vertical-align:top;"> 
+        		<a href="https://arxiv.org/abs/2109.04735"> 
+            		<span class="papertitle">Temporal Pyramid Transformer with Multimodal Interaction for Video Question Answering</span>
+        		</a>
+        		<br>
+        		<strong>Authors:</strong> Min Peng<sup>*</sup>, Chongyang Wang<sup>*</sup>, <b>Yuan Gao</b>, Yu Shi, and Xiang-Dong Zhou
+        		<br>
+        		<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.04735</em>, 2021 
+        		<br>
+        		<a href="https://arxiv.org/pdf/2109.04735">[Paper]</a> 
+        		<p></p> 
+    		</td>
+		</tr>
 	</tbody></table>
 		<!--添加20年论文-->
 	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
@@ -761,6 +780,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
