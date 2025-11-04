@@ -1,3 +1,4 @@
+---
 layout: single
 title: Recent Publications
 classes: wide
@@ -779,6 +780,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
