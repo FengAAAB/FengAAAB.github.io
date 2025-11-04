@@ -52,7 +52,7 @@ classes: wide
 	.one img {
 	    display: block; 
 	    max-width: 100%; 
-	    width: auto;
+	    width: 100%;
 		max-height: 100%;
 	    height: auto; /* 关键：让高度自动调整以保持图片比例 */
 	    object-fit: contain; /* 关键：让图片完全包含在容器内，不裁剪，可能留白 */
@@ -324,12 +324,12 @@ classes: wide
 	    	</td>
 		</tr>
 		<tr class="publication-entry" data-year="2024" data-topics="humanoid,robotics,control,walking" data-selected="true"> 
-    		<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+    		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
         		<div class="one">
             		<img src='/images/publications_image/arxiv2024_footplacement.jpg' alt="Time-Varying Foot-Placement Control Thumbnail"> 
 				</div>
 			</td>
-			<td style="padding:8px;width:62%;vertical-align:top;"> 
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
 				<a href="https://arxiv.org/abs/2409.08371"> 
 					<span class="papertitle">Time-Varying Foot-Placement Control for Underactuated Humanoid Walking on Swaying Rigid Surfaces</span>
 				</a>
@@ -400,12 +400,12 @@ classes: wide
 	    	</td>
 		</tr>
 		<tr class="publication-entry" data-year="2024" data-topics="robotics,bipedal,control,stateestimation" data-selected="true"> 
-			<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
 				<div class="one">
 					<img src='/images/publications_image/report2024_bipedalcontrol.jpg' alt="Time-varying control thumbnail"> 
 				</div>
 			</td>
-			<td style="padding:8px;width:62%;vertical-align:top;"> 
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
 				<a href="https://www.proquest.com/openview/67536fb4c6d715b4b06c328d710159fa/1?pq-origsite=gscholar&cbl=18750&diss=y"> 
 					<span class="papertitle">Time-varying control and state estimation for bipedal locomotion</span>
 				</a>
@@ -443,12 +443,12 @@ classes: wide
 		    </td>
 		</tr>	
 		<tr class="publication-entry" data-year="2023" data-topics="space,intentioninference,bigru,selfattention" data-selected="true"> 
-			<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
 				<div class="one">
 					<img src='/images/publications_image/advancesinspace2023_intentioninference.jpg' alt="Intention Inference Thumbnail"> 
 				</div>
 			</td>
-			<td style="padding:8px;width:62%;vertical-align:top;"> 
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
 				<a href="https://www.sciencedirect.com/science/article/pii/S0273117723003101">
 					<span class="papertitle">An intention inference method for the space non-cooperative target based on BiGRU-Self Attention</span>
 				</a>
@@ -457,17 +457,17 @@ classes: wide
 				<br>
 				<strong>Journal:</strong> <em>Advances in Space Research</em>, 2023 
 				<br>
-				<a href="https://pdf.sciencedirectassets.com/271642/1-s2.0-S0273117723X00167/1-s2.0-S0273117723003101/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQCVGJVWnS1ZpvM54CS9O1Fi99TuLWipC1%2BnIyfrNTEA2AIhAMYZs28vEO9rO8U5BLto6xUemCCwLB0H0Pttl6E6AubZKrMFCGoQBRoMMDU5MDAzNTQ2ODY1IgzFszJ7FhlfQL1WLhYqkAWyRSw%2Bj85b8irYkQ16ju4aIKME62ROlQFsWNpZidrywbzWvv6Z1sVSsZARQOSIIkj1juQ8fPo7kCm3XIkYiL8GY1tXmwPY8BXsMtXvLMTsNGc2mYlBdq82XOKCDcxV%2FSWFS%2BLYGRoIQKh%2Fkw9xJoJVJLZT2wEd0O0hF%2FhEokLy8t5FKqL17cFQZpaKS%2BfLNaISorWPv%2Fsi6KD3jds%2BnRQc33bPThK4eilMzweG8P4si8y7TcMmrCHusTMjJDR1SJZuCiE2eOhZiVYm5S14G%2BisTNSCI5pLfH68XadENsBpMqoAf8DDm4aW94Jnvw1tIfde7DnH97G7YKUgAwJ4xMkeSZwqgNac34wk9nUTc4Mlp0gxCMu9xjIl0dV7eZMchs8LseBAYyzP2UwwEP%2F%2BgA9q5QAZvhlSk3Qh6CNrIDSxzi%2Frujv0UHGCoj4kVghISvfmNS48T9hxuvJ%2BNN5Fqk5lU7EBHqpHwQY5yv0%2BumgT8ph4mcOjgE3NicVLyKuRQkE67jGfQnaV4eEYStbv8CyB4hWzSzJf6NM7vUDLjo1aVrMKOLxhdONFNRETN8K%2FL7RtPO07dZmax0Q9qAREuWkjrRQ325DfcY%2BfQvs6ouVg8cqZCEgqiR68XRDgjX5v7WRdVwxM3T5DSgij0WJsO61KuMHhSd1JIXILD8lhC7lkFONj2VtcQfjKCbWZ889H%2FpA8xvKZXty%2FmO6713tT3lSYdwS8EgmE%2B6axRwvvcYNsGijrHPBPGAY%2FTYFb5IGEXecPLm%2FhqP392vsK7A6%2Bkmjoid9an2DQC%2FOCRtikN5Qj9kk1APaFZLJ9I0OSh5VH1%2Fi1mqNv5j%2FlRUm%2FL2J49jk9VKkz%2F2kZbCIvaFUNVDXd9DC5pKXIBjqwAdPB%2F3Y6LKPb36YwByFVzBiCGAPA4NOy9GEr4pjxxBdRqkcmaXD%2Fuzd7lRYgJqYMVTgOlEa26l28R5CbpWIKYK17lXjug38xTJWZCuN%2FKmwIOsMB%2Fvzxnm9VFr%2FjVIzIzRu%2Fry2TI9GrOSrOb20VhpHcoVgcS7uKJe4LQvpEFY4tSAflXX4VTfnr%2FZaOnauthUVj3wlvUSUlxRKNaq2zIqaSB0F5okH8Snz9sW0IxHWo&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20251104T023335Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY4WW76TOW%2F20251104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d882ccc8b0927b93306a3c6bf0ad6d6f09ee5dcb5840175c744227ed1ee1fa11&hash=3d778f0d66f79ab028420fc6f954c1313eecd44196f8f83692c6ec076cb9e6df&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0273117723003101&tid=spdf-d302cbc8-ea98-43c2-9afc-4863cf195c8c&sid=345998ac52389449b99bf490a7906d7bd696gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=120f5c5a565e0d525254&rr=9990b516691402d2&cc=hk">[Paper]</a> 
+				<a href="https://pdf.sciencedirectassets.com/271642/1-s2.0-S0273117723X00167/1-s2.0-S0273117723003101/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQCVGJVWnS1ZpvM54CS9O1Fi99TuLWipC1%2BnIyfrNTEA2AIhAMYZs28vEO9rO8U5BLto6xUemCCwLB0H0Pttl6E6AubZKrMFCGoQBRoMMDU5MDAzNTQ2ODY1IgzFszJ7FhlfQL1WLhYqkAWyRSw%2Bj85b8irYkQ16ju4aIKME75ROlQFsWNpZidrywbzWvv6Z1sVSsZARQOSIIkj1juQ8fPo7kCm3XIkYiL8GY1tXmwPY8BXsMtXvLMTsNGc2mYlBdq82XOKCDcxV%2FSWFS%2BLYGRoIQKh%2Fkw9xJoJVJLZT2wEd0O0hF%2FhEokLy8t5FKqL17cFQZpaKS%2BfLNaISorWPv%2Fsi6KD3jds%2BnRQc33bPThK4eilMzweG8P4si8y7TcMmrCHusTMjJDR1SJZuCiE2eOhZiVYm5S14G%2BisTNSCI5pLfH68XadENsBpMqoAf8DDm4aW94Jnvw1tIfde7DnH97G7YKUgAwJ4xMkeSZwqgNac34wk9nUTc4Mlp0gxCMu9xjIl0dV7eZMchs8LseBAYyzP2UwwEP%2F%2BgA9q5QAZvhlSk3Qh6CNrIDSxzi%2Frujv0UHGCoj4kVghISvfmNS48T9hxuvJ%2BNN5Fqk5lU7EBHqpHwQY5yv0%2BumgT8ph4mcOjgE3NicVLyKuRQkE67jGfQnaV4eEYStbv8CyB4hWzSzJf6NM7vUDLjo1aVrMKOLxhdONFNRETN8K%2FL7RtPO07dZmax0Q9qAREuWkjrRQ325DfcY%2BfQvs6ouVg8cqZCEgqiR68XRDgjX5v7WRdVwxM3T5DSgij0WJsO61KuMHhSd1JIXILD8lhC7lkFONj2VtcQfjKCbWZ889H%2FpA8xvKZXty%2FmO6713tT3lSYdwS8EgmE%2B6axRwvvcYNsGijrHPBPGAY%2FTYFb5IGEXecPLm%2FhqP392vsK7A6%2Bkmjoid9an2DQC%2FOCRtikN5Qj9kk1APaFZLJ9I0OSh5VH1%2Fi1mqNv5j%2FlRUm%2FL2J49jk9VKkz%2F2kZbCIvaFUNVDXd9DC5pKXIBjqwAdPB%2F3Y6LKPb36YwByFVzBiCGAPA4NOy9GEr4pjxxBdRqkcmaXD%2Fuzd7lRYgJqYMVTgOlEa26l28R5CbpWIKYK17lXjug75xTJWZCuN%2FKmwIOsMB%2Fvzxnm9VFr%2FjVIzIzRu%2Fry2TI9GrOSrOb20VhpHcoVgcS7uKJe4LQvpEFY4tSAflXX4VTfnr%2FZaOnauthUVj3wlvUSUlxRKNaq2zIqaSB0F5okH8Snz9sW0IxHWo&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20251104T023335Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY4WW76TOW%2F20251104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d882ccc8b0927b93306a3c6bf0ad6d6f09ee5dcb5840175c744227ed1ee1fa11&hash=3d778f0d66f79ab028420fc6f954c1313eecd44196f8f83692c6ec076cb9e6df&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0273117723003101&tid=spdf-d302cbc8-ea98-43c2-9afc-4863cf195c8c&sid=345998ac52389449b99bf490a7906d7bd696gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=120f5c5a565e0d525254&rr=9990b516691402d2&cc=hk">[Paper]</a> 
 				<p></p> 
 			</td>
 		</tr>
 		<tr class="publication-entry" data-year="2023" data-topics="knowledgedistillation,depthestimation,lightweight" data-selected="true"> 
-			<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
 				<div class="one">
 					<img src='/images/publications_image/ksem2023_depthdistillation.jpg' alt="Depth Distillation Thumbnail"> 
 				</div>
 			</td>
-			<td style="padding:8px;width:62%;vertical-align:top;">
+			<td style="padding:8px;width:75%;vertical-align:top;">
 				<a href="https://link.springer.com/chapter/10.1007/978-3-031-40283-8_3">
 					<span class="papertitle">Boosting Lightweight Depth Estimation via Knowledge Distillation</span>
 				</a>
@@ -481,12 +481,12 @@ classes: wide
 			</td>
 		</tr>
 		<tr class="publication-entry" data-year="2023" data-topics="machinelearning,healthcare,annotations" data-selected="true"> 
-    		<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+    		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
 	        	<div class="one">
 	            	<img src='/images/publications_image/tml4h2023_learn2agree.jpg' alt="Learn2Agree Thumbnail"> 
 	            </div>
     		</td>
-    		<td style="padding:8px;width:62%;vertical-align:top;"> 
+    		<td style="padding:8px;width:75%;vertical-align:top;"> 
         		<a href="https://link.springer.com/chapter/10.1007/978-3-031-39539-0_13"> 
             		<span class="papertitle">Learn2Agree: Fitting with Multiple Annotators Without Objective Ground Truth</span>
         		</a>
@@ -500,12 +500,12 @@ classes: wide
 			</td>
 		</tr>
 		<tr class="publication-entry" data-year="2023" data-topics="robotics,localization,rangebased,mechatronics" data-selected="true"> 
-			<td style="padding:16px;width:38%;vertical-align:top; text-align: right;">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
 				<div class="one">
 					<img src='/images/publications_image/tmech2023_localization.jpg' alt="Robot Relative Localization Thumbnail">
 				</div>
 			</td>
-			<td style="padding:8px;width:62%;vertical-align:top;">
+			<td style="padding:8px;width:75%;vertical-align:top;">
 				<a href="https://ieeexplore.ieee.org/abstract/document/10142210">
 					<span class="papertitle">Asymptotically efficient estimator for range-based robot relative localization</span>
 				</a>
@@ -519,12 +519,12 @@ classes: wide
 			</td>
 		</tr>
 		<tr class="publication-entry" data-year="2023" data-topics="robotics,multirobot,selfplay,reinforcementlearning" data-selected="true">
-			<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
 				<div class="one">
 					<img src='/images/publications_image/tro2023_asymmetricselfplay.jpg' alt="Asymmetric Self-Play Thumbnail"> 
             	</div>
    			</td>
-    		<td style="padding:8px;width:62%;vertical-align:top;"> 
+    		<td style="padding:8px;width:75%;vertical-align:top;"> 
         		<a href="https://ieeexplore.ieee.org/abstract/document/10101687"> 
             		<span class="papertitle">Asymmetric Self-Play-Enabled Intelligent Heterogeneous Multirobot Catching System Using Deep Multiagent Reinforcement Learning</span>
         		</a>
@@ -555,6 +555,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
