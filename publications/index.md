@@ -15,49 +15,45 @@ classes: wide
 	}
 	/* --- 出版物列表图片/视频预览样式 --- */
 	/* --- 出版物列表图片/视频预览样式 (修改后：小尺寸、裁剪) --- */
+	/* --- 出版物列表图片/视频预览样式 (修正版：固定小尺寸、裁剪) --- */
+/* .one 是图片/视频的容器 */
 	.one {
 	  position: relative; 
 	  display: inline-block; 
-	  /* width: 300px; /* 删除或注释掉这一行，让宽度自适应 */
-	  width: 100%; /* 让 .one 容器填充其父级 td 的可用宽度 */
-	  max-width: 426px; /* 设定最大宽度，避免图片在超宽屏下过大 */
-	  /* aspect-ratio: 16 / 9; /* 删除或注释掉这一行，让高度由图片内容决定 */
-	  height: 240px; /* 让高度根据内容自动调整 */
+	  width: 100%; /* 宽度占满父级 td */
+	  max-width: 220px; /* !!! 关键：设置一个较小的最大宽度 (您可以调整) */
+	  aspect-ratio: 16 / 9; /* !!! 关键：设置一个固定的宽高比 (例如 16:9) */
+	  height: auto; /* 高度由宽度和比例自动决定 */
 	  overflow: hidden; 
-	  background-color: #FFFFFF; 
-	  box-sizing: border-box; /* 确保 padding/border 不会增加总宽度 */
-	  display: flex; /* 使用 Flexbox 布局 */
-	  justify-content: center; /* 水平居中 */
-	  align-items: center; /* 垂直居中 */
+	  background-color: #f0f0f0; /* 裁剪时的背景色 */
+	  box-sizing: border-box; 
 	}
+/* .two 是悬停时显示的图层 (放 GIF 或 视频) */
 	.two {
 	  position: absolute; 
 	  top: 0;
 	  left: 0;
-	  right: 0; 
-	  bottom: 0; 
+	  width: 100%;  /* 填满 .one 容器 */
+	  height: 100%; /* 填满 .one 容器 */
 	  opacity: 0; 
 	  transition: opacity .2s ease-in-out; 
-	/* 新增：确保 .two 容器也使用Flexbox居中其内容（如果需要的话，但通常GIF会填满） */
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
 	}
-	.two video { 
-		display: block;
-	    width: 100%;
-	    height: 100%;
-	    object-fit: cover; 
+	/* 默认显示的静态图片 ( .one 的直接子元素 > img ) */
+	.one > img {
+	  display: block; 
+	  width: 100%; 
+	  height: 100%;
+	  object-fit: cover; /* !!! 关键：裁剪并填满 */
 	}
-	.one img {
-	    display: block; 
-	    max-width: 100%; 
-	    width: 100%;
-		max-height: 100%;
-	    height: auto; /* 关键：让高度自动调整以保持图片比例 */
-	    object-fit: contain; /* 关键：让图片完全包含在容器内，不裁剪，可能留白 */
-	    /* object-fit: cover; */ /* 如果需要裁剪并填满，则使用这个 */
+	/* 悬停时显示的内容 ( .two 内部的 video 或 img ) */
+	.two video,
+	.two img {
+	  display: block; 
+	  width: 100%; 
+	  height: 100%;
+	  object-fit: cover; /* !!! 关键：裁剪并填满 */
 	}
+	/* --- 效果控制结束 --- */
 	/* --- 效果控制结束 --- */
 	/* --- 效果控制结束 --- */
 	/* --- 年份标题跳转偏移 --- */
@@ -555,6 +551,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
