@@ -459,6 +459,44 @@ classes: wide
 				<p></p> 
 			</td>
 		</tr>
+		<tr class="publication-entry" data-year="2023" data-topics="knowledgedistillation,depthestimation,lightweight" data-selected="true"> 
+			<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/ksem2023_depthdistillation.jpg' alt="Depth Distillation Thumbnail"> 
+				</div>
+			</td>
+			<td style="padding:8px;width:62%;vertical-align:top;">
+				<a href="https://link.springer.com/chapter/10.1007/978-3-031-40283-8_3">
+					<span class="papertitle">Boosting Lightweight Depth Estimation via Knowledge Distillation</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Junjie Hu, Chenyou Fan, Hualie Jiang, Xiyue Guo, <b>Yuan Gao</b>, Xiangyong Lu, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Conference:</strong> <em>International Conference on Knowledge Science, Engineering and Management (KSEM)</em>, 2023 
+				<br>
+				<a href="https://arxiv.org/pdf/2105.06143">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2023" data-topics="machinelearning,healthcare,annotations" data-selected="true"> 
+    		<td style="padding:16px;width:38%;vertical-align:top; text-align: right;"> 
+	        	<div class="one">
+	            	<img src='/images/publications_image/tml4h2023_learn2agree.jpg' alt="Learn2Agree Thumbnail"> 
+	            </div>
+    		</td>
+    		<td style="padding:8px;width:62%;vertical-align:top;"> 
+        		<a href="https://books.google.com.tw/books?hl=en&lr=&id=4xrOEAAAQBAJ&oi=fnd&pg=PA147&dq=info:8cixzlkChsgJ:scholar.google.com&ots=wbK92Klu_r&sig=EMmIctuQ9mhmOkjyMwAkp-qKJ1w&redir_esc=y#v=onepage&q&f=false"> 
+            		<span class="papertitle">Learn2Agree: Fitting with Multiple Annotators Without Objective Ground Truth</span>
+        		</a>
+        		<br>
+        		<strong>Authors:</strong> Chongyang Wang<sup>#</sup>, <b>Yuan Gao</b>, Chenyou Fan, Junjie Hu, Tin Lun Lam, Nicholas D. Lane, and Nadia Bianchi-Berthouze
+        		<br>
+        		<strong>Conference:</strong> <em>Trustworthy Machine Learning for Healthcare: First International Workshop (TML4H)</em>, 2023 
+        		<br>
+        		<a href="#">[Paper]</a> 
+        	<p></p> 
+    	</td>
+	</tr>
 	</tbody></table>
 		<!--添加22年论文-->
 	<h3 id="year-2022" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2022</h3>
@@ -477,6 +515,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
