@@ -671,6 +671,25 @@ classes: wide
 				<p></p> 
 			</td>
 		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="vqa,multimodal,hierarchicalnetwork" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/arxiv2022_multilevelvqa.jpg' alt="Multilevel Hierarchical Network Thumbnail"> 
+            	</div>
+    		</td>
+    		<td style="padding:8px;width:75%;vertical-align:top;"> 
+        		<a href="https://arxiv.org/abs/2205.04061"> 
+            		<span class="papertitle">Multilevel Hierarchical Network with Multiscale Sampling for Video Question Answering</span>
+        		</a>
+        		<br>
+        		<strong>Authors:</strong> Min Peng<sup>*</sup>, Chongyang Wang<sup>*</sup>, <b>Yuan Gao</b>, Yu Shi, and Xiang-Dong Zhou
+        		<br>
+        		<strong>Preprint:</strong> <em>arXiv preprint arXiv:2205.04061</em>, 2022 
+        		<br>
+        		<a href="https://arxiv.org/pdf/2205.04061">[Paper]</a> 
+        		<p></p> 
+    		</td>
+		</tr>
 	</tbody>
 	</table>
 		<!--添加21年论文-->
@@ -685,6 +704,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
