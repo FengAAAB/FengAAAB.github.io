@@ -810,6 +810,25 @@ classes: wide
 		        <p></p> 
 		    </td>
 		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="hri,dataset,proxemics,behavior" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/plosone2021_dataset.jpg' alt="Human Robot Approach Dataset Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247364"> 
+		            <span class="papertitle">A dataset of human and robot approach behaviors into small free-standing conversational groups</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> Fangkai Yang, <b>Yuan Gao</b>, Ruiyang Ma, Sahba Zojaji, Ginevra Castellano, and Christopher Peters
+		        <br>
+		        <strong>Journal:</strong> <em>PloS One</em>, 2021 
+		        <br>
+		        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247364">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
 	</tbody></table>
 		<!--添加20年论文-->
 	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
@@ -818,6 +837,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
