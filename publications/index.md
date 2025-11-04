@@ -709,6 +709,25 @@ classes: wide
         		<p></p> 
     		</td>
 		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="metarl,robotics,sensorscanning,multirobot" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/arxiv2021_sensorscanning.jpg' alt="Meta-RL Sensor Scanning Thumbnail"> 
+            	</div>
+    		</td>
+    		<td style="padding:8px;width:75%;vertical-align:top;"> 
+        		<a href="https://arxiv.org/abs/2109.13617"> 
+            		<span class="papertitle">Meta Reinforcement Learning Based Sensor Scanning in 3D Uncertain Environments for Heterogeneous Multi-Robot Systems</span>
+        		</a>
+        		<br>
+        		<strong>Authors:</strong> Junfeng Chen, <b>Yuan Gao</b>, Junjie Hu, Fuqin Deng, and Tin Lun Lam<sup>#</sup>
+        		<br>
+        		<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.13617</em>, 2021 
+        		<br>
+        		<a href="https://arxiv.org/pdf/2109.13617">[Paper]</a> 
+        		<p></p> 
+    		</td>
+		</tr>
 	</tbody>
 	</table>
 		<!--添加21年论文-->
@@ -723,6 +742,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
