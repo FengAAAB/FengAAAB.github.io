@@ -798,7 +798,7 @@ classes: wide
 		            </div>
 		    </td>
 		    <td style="padding:8px;width:75%;vertical-align:top;"> 
-		        <a href="https://arxiv.org/abs/2104.09117"> 
+		        <a href="https://dl.acm.org/doi/abs/10.1145/3463508"> 
 		            <span class="papertitle">Leveraging Activity Recognition to Enable Protective Behavior Detection in Continuous Data</span>
 		        </a>
 		        <br>
@@ -806,7 +806,7 @@ classes: wide
 		        <br>
 		        <strong>Journal:</strong> <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</em>, 2021 
 		        <br>
-		        <a href="https://arxiv.org/pdf/2104.09117">[Paper]</a> 
+		        <a href="https://arxiv.org/pdf/2011.01776">[Paper]</a> 
 		        <p></p> 
 		    </td>
 		</tr>
@@ -818,6 +818,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
