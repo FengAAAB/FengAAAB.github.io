@@ -330,7 +330,7 @@ classes: wide
 					<span class="papertitle">Time-Varying Foot-Placement Control for Underactuated Humanoid Walking on Swaying Rigid Surfaces</span>
 				</a>
 				<br>
-				<strong>Authors:</strong> <b>Yuan Gao</b><sup>*,†</sup>, Victor Paredes<sup>*</sup>, Yukai Gong<sup>†</sup>, Zijian He<sup>†</sup>, Ayonga Hereid<sup>†</sup>, Yan Gu<sup>†</sup> 
+				<strong>Authors:</strong> <b>Yuan Gao</b><sup>*,#</sup>, Victor Paredes<sup>*</sup>, Yukai Gong<sup>#</sup>, Zijian He<sup>#</sup>, Ayonga Hereid<sup>#</sup>, Yan Gu<sup>#</sup> 
 				<br>
 				<strong>Preprint:</strong> <em>arXiv preprint arXiv:2409.08371</em>, 2024 
 				<br>
@@ -449,7 +449,7 @@ classes: wide
 					<span class="papertitle">An intention inference method for the space non-cooperative target based on BiGRU-Self Attention</span>
 				</a>
 				<br>
-				<strong>Authors:</strong> Honglin Zhang, Jianjun Luo<sup>†</sup>, <b>Yuan Gao</b><sup>*</sup>, Weihua Ma
+				<strong>Authors:</strong> Honglin Zhang, Jianjun Luo<sup>#</sup>, <b>Yuan Gao</b><sup>*</sup>, Weihua Ma
 				<br>
 				<strong>Journal:</strong> <em>Advances in Space Research</em>, 2023 
 				<br>
@@ -551,6 +551,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
