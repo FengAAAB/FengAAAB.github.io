@@ -595,6 +595,25 @@ classes: wide
 				<p></p>
 			</td>
 		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="neuroimage,metaanalysis,decisionmaking,emotionregulation" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/neuroimage2022_spatial.jpg' alt="Spatial-topographic nestedness Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://www.sciencedirect.com/science/article/pii/S1053811922006164">
+					<span class="papertitle">Spatial-topographic nestedness of interoceptive regions within the networks of decision making and emotion regulation: Combining ALE meta-analysis and MACM analysis</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Yafei Tan<sup>*,#</sup>, Ranran Yan<sup>*</sup>, <b>Yuan Gao</b><sup>*</sup>, Meng Zhang<sup>#</sup>, Georg Northoff<sup>#</sup>
+				<br>
+				<strong>Journal:</strong> <em>NeuroImage</em>, 2022
+				<br>
+				<a href="https://doi.org/10.1016/j.neuroimage.2022.119500">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
 	</tbody>
 	</table>
 		<!--添加21年论文-->
@@ -609,6 +628,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
