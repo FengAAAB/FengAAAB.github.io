@@ -734,6 +734,25 @@ classes: wide
         		<p></p> 
     		</td>
 		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="semanticsegmentation,rgbthermal,attentionnetwork" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/iros2021_feanet.jpg' alt="FEANet Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://arxiv.org/abs/2110.08881">
+					<span class="papertitle">FEANet: Feature-Enhanced Attention Network for RGB-Thermal Real-time Semantic Segmentation</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Fuqin Deng<sup>*</sup>, Hua Feng<sup>*</sup>, Mingjian Liang, Hongmin Wang, Yong Yang, <b>Yuan Gao</b>, Junfeng Chen, Junjie Hu, Xiyue Guo, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Conference:</strong> <em>2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021 
+				<br>
+				<a href="https://arxiv.org/pdf/2110.08881">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
 	</tbody></table>
 		<!--添加20年论文-->
 	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
@@ -742,6 +761,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
