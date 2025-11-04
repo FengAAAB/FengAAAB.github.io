@@ -772,6 +772,25 @@ classes: wide
         		<p></p> 
     		</td>
 		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="robotics,bipedal,control,filtering" data-selected="true"> 
+    		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+        		<div class="one">
+            		<img src='/images/publications_image/arxiv2021_invariantfiltering.jpg' alt="Invariant Filtering Thumbnail"> 
+            	</div>
+    		</td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://arxiv.org/abs/2109.01241"> 
+		            <span class="papertitle">Invariant Filtering for Bipedal Walking on Dynamic Rigid Surfaces with Orientation-based Measurement Model</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> <b>Yuan Gao</b> and Yan Gu
+		        <br>
+		        <strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.01241</em>, 2021 
+		        <br>
+		        <a href="https://arxiv.org/pdf/2109.01241">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
 	</tbody></table>
 		<!--添加20年论文-->
 	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
@@ -780,6 +799,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
