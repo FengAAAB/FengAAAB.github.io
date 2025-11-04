@@ -690,6 +690,25 @@ classes: wide
         		<p></p> 
     		</td>
 		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="hri,cooperative,coadaptive,robotics" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/unmannedsystems2022_coadaptive.jpg' alt="Co-adaptive Human-Robot Cooperation Thumbnail"> 
+            	</div>
+    		</td>
+    		<td style="padding:8px;width:75%;vertical-align:top;"> 
+        		<a href="https://www.worldscientific.com/doi/abs/10.1142/S230138502250011X"> 
+            		<span class="papertitle">Co-adaptive Human-Robot Cooperation: Summary and Challenges</span>
+        		</a>
+        		<br>
+        		<strong>Authors:</strong> Sofie Ahlberg, Agnes Axelsson, Pian Yu, Wenceslao Shaw Cortez, <b>Yuan Gao</b>, Ali Ghadirzadeh, Ginevra Castellano, Danica Kragic, Gabriel Skantze, and Dimos V. Dimarogonas
+        		<br>
+        		<strong>Journal:</strong> <em>Unmanned Systems</em>, 2022 
+        		<br>
+        		<a href="https://people.kth.se/~dimos/pdfs/COIN_Summary_Paper.pdf">[Paper]</a> 
+        		<p></p> 
+    		</td>
+		</tr>
 	</tbody>
 	</table>
 		<!--添加21年论文-->
@@ -704,6 +723,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
