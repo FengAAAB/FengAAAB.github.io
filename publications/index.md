@@ -1,4 +1,3 @@
-<img width="927" height="462" alt="image" src="https://github.com/user-attachments/assets/3980f903-b5b7-441d-9516-df3fbc914ff0" />---
 layout: single
 title: Recent Publications
 classes: wide
@@ -780,6 +779,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
