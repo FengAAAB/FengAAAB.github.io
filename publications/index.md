@@ -1083,13 +1083,33 @@ classes: wide
 	<h3 id="year-2016" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2016</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		</tbody></table>
+		<tr class="publication-entry" data-year="2016" data-topics="deeplearning,rnn,neuralnetworks" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/acml2016_deepgate.jpg' alt="Deep Gate RNN Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://proceedings.mlr.press/v63/gao30.html"> 
+		            <span class="papertitle">Deep Gate Recurrent Neural Network</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> <b>Yuan Gao</b> and Dorota Glowacka
+		        <br>
+		        <strong>Conference:</strong> <em>Asian Conference on Machine Learning (ACML)</em>, 2016 
+		        <br>
+		        <a href="https://proceedings.mlr.press/v63/gao30.pdf">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
+	</tbody></table>
 	<h3 id="year-2015" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2015</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		</tbody></table>
 		<br style/>
 </div>
+
 
 
 
