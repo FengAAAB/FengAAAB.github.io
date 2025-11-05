@@ -829,6 +829,25 @@ classes: wide
 		        <p></p> 
 		    </td>
 		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="machinelearning,annotations,framework" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/arxiv2021_agreementlearning.jpg' alt="AgreementLearning Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="[https://arxiv.org/abs/2109.03596](https://www.researchgate.net/profile/Junjie-Hu-7/publication/354460826_Learn2Agree_Fitting_with_Multiple_Annotators_without_Objective_Ground_Truth/links/616d192125467d2f0050436d/Learn2Agree-Fitting-with-Multiple-Annotators-without-Objective-Ground-Truth.pdf)"> 
+		            <span class="papertitle">AgreementLearning: An End-to-End Framework for Learning with Multiple Annotators Without Groundtruth</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> Chongyang Wang<sup>*</sup>, <b>Yuan Gao</b><sup>*</sup>, Chenyou Fan<sup>*</sup>, Junjie Hu, Tin Lun Lam, Nicholas D. Lane, and Nadia Bianchi-Berthouze
+		        <br>
+		        <strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.03596</em>, 2021 
+		        <br>
+		        <a href="https://www.researchgate.net/profile/Junjie-Hu-7/publication/354460826_Learn2Agree_Fitting_with_Multiple_Annotators_without_Objective_Ground_Truth/links/616d192125467d2f0050436d/Learn2Agree-Fitting-with-Multiple-Annotators-without-Objective-Ground-Truth.pdf">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
 	</tbody></table>
 		<!--添加20年论文-->
 	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
@@ -837,6 +856,7 @@ classes: wide
 	    </tbody></table>
 	<br style/>
 </div>
+
 
 
 
