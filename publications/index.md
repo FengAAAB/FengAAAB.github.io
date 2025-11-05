@@ -6,152 +6,151 @@ classes: wide
 <div class="publications-wrapper">
 	<style>
 		/* --- 基本页面样式 (检查是否已存在或冲突) --- */
-	body {
-	  margin: 0;
-	  padding: 0; 
-	}
-	html {
-	  scroll-behavior: smooth; /* 可选: 平滑滚动效果 */
-	}
-	/* --- 出版物列表图片/视频预览样式 --- */
-	/* --- 出版物列表图片/视频预览样式 (修改后：小尺寸、裁剪) --- */
-	/* --- 出版物列表图片/视频预览样式 (修正版：固定小尺寸、裁剪) --- */
-/* .one 是图片/视频的容器 */
-	.one {
-	  position: relative; 
-	  display: inline-block; 
-	  width: 100%; /* 宽度占满父级 td */
-	  max-width: 220px; /* !!! 关键：设置一个较小的最大宽度 (您可以调整) */
-	  aspect-ratio: 16 / 9; /* !!! 关键：设置一个固定的宽高比 (例如 16:9) */
-	  height: auto; /* 高度由宽度和比例自动决定 */
-	  overflow: hidden; 
-	  background-color: #f0f0f0; /* 裁剪时的背景色 */
-	  box-sizing: border-box; 
-	}
-/* .two 是悬停时显示的图层 (放 GIF 或 视频) */
-	.two {
-	  position: absolute; 
-	  top: 0;
-	  left: 0;
-	  width: 100%;  /* 填满 .one 容器 */
-	  height: 100%; /* 填满 .one 容器 */
-	  opacity: 0; 
-	  transition: opacity .2s ease-in-out; 
-	}
-	/* 默认显示的静态图片 ( .one 的直接子元素 > img ) */
-	.one > img {
-	  display: block; 
-	  width: 100%; 
-	  height: 100%;
-	  object-fit: cover; /* !!! 关键：裁剪并填满 */
-	}
-	/* 悬停时显示的内容 ( .two 内部的 video 或 img ) */
-	.two video,
-	.two img {
-	  display: block; 
-	  width: 100%; 
-	  height: 100%;
-	  object-fit: cover; /* !!! 关键：裁剪并填满 */
-	}
-	/* --- 效果控制结束 --- */
-	/* --- 效果控制结束 --- */
-	/* --- 效果控制结束 --- */
-	/* --- 年份标题跳转偏移 --- */
-	h2[id^="publication"], 
-	h3[id^="year-"] {
-	  scroll-margin-top: 80px; /* 防止被粘性导航栏遮挡 (请根据导航栏高度调整) */
-	}
-	.iconDetails {
-		clear: left;
-		float:left; 
-		width:20%;
-	    	height:20%;
-		max-height:140px;
-		max-width:140px; 
-	} 
-	.container {
-	    width:100%;
-	    height:24%;
-	    padding:1%;
-		margin-bottom: 20px;
-	}
-	h4 {
-	    margin:0px;
-	}
-	.button {
-	    clear: left;
-	    background-color: #4CAF50; /* Green */
-	    border: none;
-	    color: white;
-	    padding: 4px 20px;
-	    text-align: center;
-	    text-decoration: none;
-	    display: inline-block;
-	    font-size: 12px;
-	    margin: 4px 2px;
-	    -webkit-transition-duration: 0.4s; /* Safari */
-	    transition-duration: 0.4s;
-	    cursor: pointer;
-	}
-	.green {
-	    background-color: white; 
-	    color: black; 
-	    border: 2px solid #4CAF50;
-	}
-	.green:hover {
-	    background-color: #4CAF50;
-	    color: white;
-	}
-	.blue {
-	    background-color: white; 
-	    color: black; 
-	    border: 2px solid #008CBA;
-	}
-	.blue:hover {
-	    background-color: #008CBA;
-	    color: white;
-	}
-	.red {
-	    background-color: white; 
-	    color: black; 
-	    border: 2px solid #f44336;
-	}
-	.red:hover {
-	    background-color: #f44336;
-	    color: white;
-	}
-	.gray {
-	    background-color: white;
-	    color: black;
-	    border: 2px solid #e7e7e7;
-	}
-	.gray:hover {background-color: #e7e7e7;}
-	.black {
-	    background-color: white;
-	    color: black;
-	    border: 2px solid #555555;
-	}
-	.black:hover {
-	    background-color: #555555;
-	    color: white;
-	}
-	.publications-wrapper {
-	    padding-left: 80px;  /* 增加左内边距 */
-	    padding-right: 80px; /* 同时增加右内边距，保持对称 */
-	    /* 如果只想增加左边距，可以只写 padding-left: 40px; */
-	    box-sizing: border-box; /* 确保 padding 不会撑大容器 */
+		body {
+		  margin: 0;
+		  padding: 0; 
+		}
+		html {
+		  scroll-behavior: smooth; /* 可选: 平滑滚动效果 */
+		}
+		/* --- 出版物列表图片/视频预览样式 --- */
+		/* --- 出版物列表图片/视频预览样式 (修改后：小尺寸、裁剪) --- */
+		/* --- 出版物列表图片/视频预览样式 (修正版：固定小尺寸、裁剪) --- */
+	/* .one 是图片/视频的容器 */
+		.one {
+		  position: relative; 
+		  display: inline-block; 
+		  width: 100%; /* 宽度占满父级 td */
+		  max-width: 220px; /* !!! 关键：设置一个较小的最大宽度 (您可以调整) */
+		  aspect-ratio: 16 / 9; /* !!! 关键：设置一个固定的宽高比 (例如 16:9) */
+		  height: auto; /* 高度由宽度和比例自动决定 */
+		  overflow: hidden; 
+		  background-color: #f0f0f0; /* 裁剪时的背景色 */
+		  box-sizing: border-box; 
+		}
+	/* .two 是悬停时显示的图层 (放 GIF 或 视频) */
+		.two {
+		  position: absolute; 
+		  top: 0;
+		  left: 0;
+		  width: 100%;  /* 填满 .one 容器 */
+		  height: 100%; /* 填满 .one 容器 */
+		  opacity: 0; 
+		  transition: opacity .2s ease-in-out; 
+		}
+		/* 默认显示的静态图片 ( .one 的直接子元素 > img ) */
+		.one > img {
+		  display: block; 
+		  width: 100%; 
+		  height: 100%;
+		  object-fit: cover; /* !!! 关键：裁剪并填满 */
+		}
+		/* 悬停时显示的内容 ( .two 内部的 video 或 img ) */
+		.two video,
+		.two img {
+		  display: block; 
+		  width: 100%; 
+		  height: 100%;
+		  object-fit: cover; /* !!! 关键：裁剪并填满 */
+		}
+		/* --- 效果控制结束 --- */
+		/* --- 效果控制结束 --- */
+		/* --- 效果控制结束 --- */
+		/* --- 年份标题跳转偏移 --- */
+		h2[id^="publication"], 
+		h3[id^="year-"] {
+		  scroll-margin-top: 80px; /* 防止被粘性导航栏遮挡 (请根据导航栏高度调整) */
+		}
+		.iconDetails {
+			clear: left;
+			float:left; 
+			width:20%;
+		    	height:20%;
+			max-height:140px;
+			max-width:140px; 
+		} 
+		.container {
+		    width:100%;
+		    height:24%;
+		    padding:1%;
+			margin-bottom: 20px;
+		}
+		h4 {
+		    margin:0px;
+		}
+		.button {
+		    clear: left;
+		    background-color: #4CAF50; /* Green */
+		    border: none;
+		    color: white;
+		    padding: 4px 20px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 12px;
+		    margin: 4px 2px;
+		    -webkit-transition-duration: 0.4s; /* Safari */
+		    transition-duration: 0.4s;
+		    cursor: pointer;
+		}
+		.green {
+		    background-color: white; 
+		    color: black; 
+		    border: 2px solid #4CAF50;
+		}
+		.green:hover {
+		    background-color: #4CAF50;
+		    color: white;
+		}
+		.blue {
+		    background-color: white; 
+		    color: black; 
+		    border: 2px solid #008CBA;
+		}
+		.blue:hover {
+		    background-color: #008CBA;
+		    color: white;
+		}
+		.red {
+		    background-color: white; 
+		    color: black; 
+		    border: 2px solid #f44336;
+		}
+		.red:hover {
+		    background-color: #f44336;
+		    color: white;
+		}
+		.gray {
+		    background-color: white;
+		    color: black;
+		    border: 2px solid #e7e7e7;
+		}
+		.gray:hover {background-color: #e7e7e7;}
+		.black {
+		    background-color: white;
+		    color: black;
+		    border: 2px solid #555555;
+		}
+		.black:hover {
+		    background-color: #555555;
+		    color: white;
+		}
+		.publications-wrapper {
+		    padding-left: 80px;  /* 增加左内边距 */
+		    padding-right: 80px; /* 同时增加右内边距，保持对称 */
+		    /* 如果只想增加左边距，可以只写 padding-left: 40px; */
+		    box-sizing: border-box; /* 确保 padding 不会撑大容器 */
 	</style>
 	<script>
-	function toggleAbstract(btn) {
-	    var x = btn.nextElementSibling.nextElementSibling;
-	    if (x.innerHTML === "") {
-	        x.innerHTML = x.getAttribute("text");
-	    } else {
-	        x.innerHTML = "";
-	    }
-	}
+		function toggleAbstract(btn) {
+		    var x = btn.nextElementSibling.nextElementSibling;
+		    if (x.innerHTML === "") {
+		        x.innerHTML = x.getAttribute("text");
+		    } else {
+		        x.innerHTML = "";
+		    }
+		}
 	</script>
-	<td style="padding:16px;width:100%;vertical-align:middle">
 		<p>My <a href="https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ" target="_blank">Google Scholar</a> profile.</p>
 		<h2 id="publications" style="scroll-margin-top: 80px;">Publications</h2>
 		<p style="margin-top: 5px; margin-bottom: 5px;">
@@ -1113,7 +1112,7 @@ classes: wide
 		</tr>
 	</tbody></table>
 		<br style/>
-</div>
+
 
 
 
