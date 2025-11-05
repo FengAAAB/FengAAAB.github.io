@@ -915,9 +915,29 @@ classes: wide
 		        <p></p> 
 		    </td>
 		</tr>
+		<tr class="publication-entry" data-year="2019" data-topics="hri,socialrobotics,deepreinforcementlearning" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/roman2019_sociallyappropriate.jpg' alt="Socially Appropriate Robot Approaching Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://ieeexplore.ieee.org/abstract/document/8956444"> 
+		            <span class="papertitle">Learning Socially Appropriate Robot Approaching Behavior Toward Groups using Deep Reinforcement Learning</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> <b>Yuan Gao</b>, Fangkai Yang<sup>*</sup>, Martin Frisk<sup>*</sup>, Daniel Hernandez, Christopher Peters, and Ginevra Castellano
+		        <br>
+		        <strong>Conference:</strong> <em>2019 28th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</em>, 2019 
+		        <br>
+		        <a href="https://arxiv.org/pdf/1810.06979">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
 	</tbody></table>
 		<br style/>
 </div>
+
 
 
 
