@@ -980,6 +980,25 @@ classes: wide
 		        <p></p> 
 		    </td>
 		</tr>
+		<tr class="publication-entry" data-year="2018" data-topics="hri,proxemics,deeplearning" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/roman2018_deeplearningproxemics.jpg' alt="Deep Learning Proxemics Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://ieeexplore.ieee.org/abstract/document/8525731"> 
+		            <span class="papertitle">Investigating Deep Learning Approaches for Human-Robot Proxemics</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> <b>Yuan Gao</b>, Sebastian Wallkötter, Mohammad Obaid, and Ginevra Castellano
+		        <br>
+		        <strong>Conference:</strong> <em>2018 27th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)</em>, 2018 
+		        <br>
+		        <a href="https://www.diva-portal.org/smash/get/diva2:1263872/FULLTEXT02">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
 	</tbody></table>
 	<h3 id="year-2017" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2017</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
@@ -995,6 +1014,7 @@ classes: wide
 		</tbody></table>
 		<br style/>
 </div>
+
 
 
 
