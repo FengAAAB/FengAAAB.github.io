@@ -3,1114 +3,1116 @@ layout: page
 title: Recent Publications
 classes: wide
 ---
-<style>
-	/* --- 基本页面样式 (检查是否已存在或冲突) --- */
-	body {
-	  margin: 0;
-	  padding: 0; 
-	}
-	html {
-	  scroll-behavior: smooth; /* 可选: 平滑滚动效果 */
-	}
-	/* --- 出版物列表图片/视频预览样式 --- */
-	/* --- 出版物列表图片/视频预览样式 (修改后：小尺寸、裁剪) --- */
-	/* --- 出版物列表图片/视频预览样式 (修正版：固定小尺寸、裁剪) --- */
-/* .one 是图片/视频的容器 */
-	.one {
-	  position: relative; 
-	  display: inline-block; 
-	  width: 100%; /* 宽度占满父级 td */
-	  max-width: 220px; /* !!! 关键：设置一个较小的最大宽度 (您可以调整) */
-	  aspect-ratio: 16 / 9; /* !!! 关键：设置一个固定的宽高比 (例如 16:9) */
-	  height: auto; /* 高度由宽度和比例自动决定 */
-	  overflow: hidden; 
-	  background-color: #f0f0f0; /* 裁剪时的背景色 */
-	  box-sizing: border-box; 
-	}
-/* .two 是悬停时显示的图层 (放 GIF 或 视频) */
-	.two {
-	  position: absolute; 
-	  top: 0;
-	  left: 0;
-	  width: 100%;  /* 填满 .one 容器 */
-	  height: 100%; /* 填满 .one 容器 */
-	  opacity: 0; 
-	  transition: opacity .2s ease-in-out; 
-	}
-	/* 默认显示的静态图片 ( .one 的直接子元素 > img ) */
-	.one > img {
-	  display: block; 
-	  width: 100%; 
-	  height: 100%;
-	  object-fit: cover; /* !!! 关键：裁剪并填满 */
-	}
-	/* 悬停时显示的内容 ( .two 内部的 video 或 img ) */
-	.two video,
-	.two img {
-	  display: block; 
-	  width: 100%; 
-	  height: 100%;
-	  object-fit: cover; /* !!! 关键：裁剪并填满 */
-	}
-	/* --- 效果控制结束 --- */
-	/* --- 效果控制结束 --- */
-	/* --- 效果控制结束 --- */
-	/* --- 年份标题跳转偏移 --- */
-	h2[id^="publication"], 
-	h3[id^="year-"] {
-	  scroll-margin-top: 80px; /* 防止被粘性导航栏遮挡 (请根据导航栏高度调整) */
-	}
-	.iconDetails {
-		clear: left;
-		float:left; 
-		width:20%;
-			height:20%;
-		max-height:140px;
-		max-width:140px; 
-	} 
-	.container {
-		width:100%;
-		height:24%;
-		padding:1%;
-		margin-bottom: 20px;
-	}
-	h4 {
-		margin:0px;
-	}
-	.button {
-		clear: left;
-		background-color: #4CAF50; /* Green */
-		border: none;
-		color: white;
-		padding: 4px 20px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 12px;
-		margin: 4px 2px;
-		-webkit-transition-duration: 0.4s; /* Safari */
-		transition-duration: 0.4s;
-		cursor: pointer;
-	}
-	.green {
-		background-color: white; 
-		color: black; 
-		border: 2px solid #4CAF50;
-	}
-	.green:hover {
-		background-color: #4CAF50;
-		color: white;
-	}
-	.blue {
-		background-color: white; 
-		color: black; 
-		border: 2px solid #008CBA;
-	}
-	.blue:hover {
-		background-color: #008CBA;
-		color: white;
-	}
-	.red {
-		background-color: white; 
-		color: black; 
-		border: 2px solid #f44336;
-	}
-	.red:hover {
-		background-color: #f44336;
-		color: white;
-	}
-	.gray {
-		background-color: white;
-		color: black;
-		border: 2px solid #e7e7e7;
-	}
-	.gray:hover {background-color: #e7e7e7;}
-	.black {
-		background-color: white;
-		color: black;
-		border: 2px solid #555555;
-	}
-	.black:hover {
-		background-color: #555555;
-		color: white;
-	}
-	.publications-wrapper {
-		padding-left: 80px;  /* 增加左内边距 */
-		padding-right: 80px; /* 同时增加右内边距，保持对称 */
-		/* 如果只想增加左边距，可以只写 padding-left: 40px; */
-		box-sizing: border-box; /* 确保 padding 不会撑大容器 */
-</style>
-<script>
-	function toggleAbstract(btn) {
-		var x = btn.nextElementSibling.nextElementSibling;
-		if (x.innerHTML === "") {
-			x.innerHTML = x.getAttribute("text");
-		} else {
-			x.innerHTML = "";
+<div class="publications-wrapper">
+	<style>
+		/* --- 基本页面样式 (检查是否已存在或冲突) --- */
+		body {
+		  margin: 0;
+		  padding: 0; 
 		}
-	}
-</script>
-	<p>My <a href="https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ" target="_blank">Google Scholar</a> profile.</p>
-	<h2 id="publications" style="scroll-margin-top: 80px;">Publications</h2>
-	<p style="margin-top: 5px; margin-bottom: 5px;">
-		<span style="font-weight: bold;">Year:</span>
-		<a href="#year-2025">2025</a> / 
-		<a href="#year-2024">2024</a> / 
-		<a href="#year-2023">2023</a> / 
-		<a href="#year-2022">2022</a> / 
-		<a href="#year-2021">2021</a> / 
-		<a href="#year-2020">2020</a> /
-		<a href="#year-2019">2019</a> /
-		<a href="#year-2018">2018</a> /
-		<a href="#year-2017">2017</a> /
-		<a href="#year-2016">2016</a> /
-		<a href="#year-2015">2015</a>
-	</p>
-	<p style="font-size: small; color: #666; margin-bottom: 20px;">
-		(* Equal Contribution, # Corresponding Author)
-	</p>
-<h3 id="year-2025" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2025</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
-	<tr class="publication-entry" data-year="2025" data-topics="softrobotics,deformationestimation" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top;text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/iros2025_gripper.jpg' alt="Multimodal Deformation Estimation Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://your_domain.com/path/to/paper.pdf"> 
-				<span class="papertitle">Multimodal Deformation Estimation of Soft Pneumatic Gripper During Operation</span>
-			</a>
-			<br>
-			<strong>Authors:</strong>Changheng Cai, Fei Xiao, Marcellus Vanzai, Taoyang Wang, Fangbing Zhou, Xuanyang Xu, Jian Zhu<sup>#</sup>, and <b>Yuan Gao</b><sup>#</sup>
-			<br>
-			<strong>Conference:</strong><em>International Conference on Intelligent Robots and Systems(IROS)</em>, 2025 
-			<br>
-			<a href="https://your_domain.com/path/to/paper.pdf">[Paper]</a> / 
-			<a href="https://github.com/your_username/your_repo">[Code]</a>
-			<p></p>
-		</td>
-	</tr>
-	<tr onmouseover="balloon_robot_uist25_gif_start()" onmouseout="balloon_robot_uist25_gif_stop()" class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align: top;text-align: right;">
-			<div class="one">
-				<div class="two" id='balloon_robot_uist25_gif'> 
-					<img src="/images/publications_gif/balloon_robot_uist25.gif" style="width:100%; height:100%; object-fit: contain;" alt="Social Balloon Robot Animation"> 
+		html {
+		  scroll-behavior: smooth; /* 可选: 平滑滚动效果 */
+		}
+		/* --- 出版物列表图片/视频预览样式 --- */
+		/* --- 出版物列表图片/视频预览样式 (修改后：小尺寸、裁剪) --- */
+		/* --- 出版物列表图片/视频预览样式 (修正版：固定小尺寸、裁剪) --- */
+	/* .one 是图片/视频的容器 */
+		.one {
+		  position: relative; 
+		  display: inline-block; 
+		  width: 100%; /* 宽度占满父级 td */
+		  max-width: 220px; /* !!! 关键：设置一个较小的最大宽度 (您可以调整) */
+		  aspect-ratio: 16 / 9; /* !!! 关键：设置一个固定的宽高比 (例如 16:9) */
+		  height: auto; /* 高度由宽度和比例自动决定 */
+		  overflow: hidden; 
+		  background-color: #f0f0f0; /* 裁剪时的背景色 */
+		  box-sizing: border-box; 
+		}
+	/* .two 是悬停时显示的图层 (放 GIF 或 视频) */
+		.two {
+		  position: absolute; 
+		  top: 0;
+		  left: 0;
+		  width: 100%;  /* 填满 .one 容器 */
+		  height: 100%; /* 填满 .one 容器 */
+		  opacity: 0; 
+		  transition: opacity .2s ease-in-out; 
+		}
+		/* 默认显示的静态图片 ( .one 的直接子元素 > img ) */
+		.one > img {
+		  display: block; 
+		  width: 100%; 
+		  height: 100%;
+		  object-fit: cover; /* !!! 关键：裁剪并填满 */
+		}
+		/* 悬停时显示的内容 ( .two 内部的 video 或 img ) */
+		.two video,
+		.two img {
+		  display: block; 
+		  width: 100%; 
+		  height: 100%;
+		  object-fit: cover; /* !!! 关键：裁剪并填满 */
+		}
+		/* --- 效果控制结束 --- */
+		/* --- 效果控制结束 --- */
+		/* --- 效果控制结束 --- */
+		/* --- 年份标题跳转偏移 --- */
+		h2[id^="publication"], 
+		h3[id^="year-"] {
+		  scroll-margin-top: 80px; /* 防止被粘性导航栏遮挡 (请根据导航栏高度调整) */
+		}
+		.iconDetails {
+			clear: left;
+			float:left; 
+			width:20%;
+				height:20%;
+			max-height:140px;
+			max-width:140px; 
+		} 
+		.container {
+			width:100%;
+			height:24%;
+			padding:1%;
+			margin-bottom: 20px;
+		}
+		h4 {
+			margin:0px;
+		}
+		.button {
+			clear: left;
+			background-color: #4CAF50; /* Green */
+			border: none;
+			color: white;
+			padding: 4px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 12px;
+			margin: 4px 2px;
+			-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
+		.green {
+			background-color: white; 
+			color: black; 
+			border: 2px solid #4CAF50;
+		}
+		.green:hover {
+			background-color: #4CAF50;
+			color: white;
+		}
+		.blue {
+			background-color: white; 
+			color: black; 
+			border: 2px solid #008CBA;
+		}
+		.blue:hover {
+			background-color: #008CBA;
+			color: white;
+		}
+		.red {
+			background-color: white; 
+			color: black; 
+			border: 2px solid #f44336;
+		}
+		.red:hover {
+			background-color: #f44336;
+			color: white;
+		}
+		.gray {
+			background-color: white;
+			color: black;
+			border: 2px solid #e7e7e7;
+		}
+		.gray:hover {background-color: #e7e7e7;}
+		.black {
+			background-color: white;
+			color: black;
+			border: 2px solid #555555;
+		}
+		.black:hover {
+			background-color: #555555;
+			color: white;
+		}
+		.publications-wrapper {
+			padding-left: 80px;  /* 增加左内边距 */
+			padding-right: 80px; /* 同时增加右内边距，保持对称 */
+			/* 如果只想增加左边距，可以只写 padding-left: 40px; */
+			box-sizing: border-box; /* 确保 padding 不会撑大容器 */
+	</style>
+	<script>
+		function toggleAbstract(btn) {
+			var x = btn.nextElementSibling.nextElementSibling;
+			if (x.innerHTML === "") {
+				x.innerHTML = x.getAttribute("text");
+			} else {
+				x.innerHTML = "";
+			}
+		}
+	</script>
+		<p>My <a href="https://scholar.google.se/citations?hl=en&user=HgOAYUAAAAAJ" target="_blank">Google Scholar</a> profile.</p>
+		<h2 id="publications" style="scroll-margin-top: 80px;">Publications</h2>
+		<p style="margin-top: 5px; margin-bottom: 5px;">
+			<span style="font-weight: bold;">Year:</span>
+			<a href="#year-2025">2025</a> / 
+			<a href="#year-2024">2024</a> / 
+			<a href="#year-2023">2023</a> / 
+			<a href="#year-2022">2022</a> / 
+			<a href="#year-2021">2021</a> / 
+			<a href="#year-2020">2020</a> /
+			<a href="#year-2019">2019</a> /
+			<a href="#year-2018">2018</a> /
+			<a href="#year-2017">2017</a> /
+			<a href="#year-2016">2016</a> /
+			<a href="#year-2015">2015</a>
+		</p>
+		<p style="font-size: small; color: #666; margin-bottom: 20px;">
+			(* Equal Contribution, # Corresponding Author)
+		</p>
+	<h3 id="year-2025" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2025</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
+		<tr class="publication-entry" data-year="2025" data-topics="softrobotics,deformationestimation" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top;text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/iros2025_gripper.jpg' alt="Multimodal Deformation Estimation Thumbnail"> 
 				</div>
-				<img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail">
-			</div>
-			<script type="text/javascript">
-				function balloon_robot_uist25_gif_start() {
-					document.getElementById('balloon_robot_uist25_gif').style.opacity = "1";
-				}
-				function balloon_robot_uist25_gif_stop() {
-					document.getElementById('balloon_robot_uist25_gif').style.opacity = "0";
-				}
-				balloon_robot_uist25_gif_stop(); // 页面加载时默认隐藏 GIF
-			</script>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666"> 
-				<span class="papertitle">Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Chongyang Wang, Tianyi Xia, Yifan Wang, Gang Yu, Zixuan Zhao, Siqi Zheng, Manqiu Liao, Chen Liang, <b>Yuan Gao</b>, Chun Yu<sup>#</sup>, Yuntao Wang, Yuanchun Shi
-			<br>
-			<strong>Conference:</strong><em>UIST '25: Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology</em>, 2025 
-			<br>
-			<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666">[Paper]</a> / 
-			<a href="/video/balloon_robot_uist25.mp4" target="_blank">[Video]</a>
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2025" data-topics="nlp,llm,slm,selfreflection" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> <a href="https://aclanthology.org/2025.findings-acl.1261/"> 
-			<span class="papertitle">Entrospect: Information-Theoretic Self-Reflection Elicits Better Response Refinement of Small Language Models</span>
-		</a>
-			<br>
-			<strong>Authors:</strong>Tianqiang Yan, Ziqiao Lin, Lin Zhang, Zhenglong Sun, <b>Yuan Gao</b><sup>#</sup>
-			<br>
-			<strong>Conference:</strong><em>Findings of the Association for Computational Linguistics: ACL 2025</em>, 2025 
-			<br>
-			<a href="https://aclanthology.org/2025.findings-acl.1261/">[Paper]</a> 
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2025" data-topics="droneperception,semisupervisedlearning,knowledgetransfer" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top;text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/tits2025_droneperception.jpg' alt="Drone Perception T-ITS Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/11005613"> 
-				<span class="papertitle">Unlocking Drone Perception in Low AGL Heights: Progressive Semi-Supervised Learning for Ground-to-Aerial Perception Knowledge Transfer</span>
-			</a>
-		<br>
-			<strong>Authors:</strong>Junjie Hu, Chenyou Fan, Mete Ozay, Hua Feng, <b>Yuan Gao</b>, Tin Lun Lam
-			<br>
-			<strong>Journal:</strong><em>IEEE Transactions on Intelligent Transportation Systems</em>, 2025 
-			<br>
-			<a href="https://ieeexplore.ieee.org/abstract/document/11005613">[Paper]</a> 
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2025" data-topics="robotics,localization,smrs" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/icra2025_smrslocalization.jpg' alt="SMSR Localization Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/11127871"> 
-				<span class="papertitle">Configuration-Adaptive Visual Relative Localization for Spherical Modular Self-Reconfigurable Robots</span>
-			</a>
-			<br>
-			<strong>Authors:</strong>Yuming Liu, Qiu Zheng, Yuxiao Tu, <b>Yuan Gao</b>, Guanqi Liang, and Tin Lun Lam
-			<br>
-			<strong>Conference:</strong><em>2025 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025 
-			<br>
-			<a href="#">[Paper]</a> 
-		<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2025" data-topics="multiagent,selforganization,llm,multimodal" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/iotj2025_ochmas.jpg' alt="OC-HMAS Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/10909066"> 
-				<span class="papertitle">OC-HMAS: Dynamic Self-Organization and Self-Correction in Heterogeneous Multiagent Systems Using Multimodal Large Models</span>
-			</a>
-			<br>
-			<strong>Authors:</strong>Ping Feng, Tingting Yang, Mingyang Liang, Lin Wang, and <b>Yuan Gao</b>
-			<br>
-			<strong>Journal:</strong><em>IEEE Internet of Things Journal</em>, 2025 
-			<br>
-			<a href="https://ieeexplore.ieee.org/abstract/document/10909066">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
-<h3 id="year-2024" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2024</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2024" data-topics="robotics,llm,vlm,perception,reasoning" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/iros2024_liquidperception.jpg' alt="Robot Liquid Perception Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/10801833"> 
-				<span class="papertitle">Vision-Language Model-based Physical Reasoning for Robot Liquid Perception</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Wenqiang Lai, Tianwei Zhang, Tin Lun Lam, <b>Yuan Gao</b> 
-			<br>
-			<strong>Conference:</strong> <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2024 
-			<br>
-			<a href="https://arxiv.org/pdf/2404.06904">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2024" data-topics="humanoid,robotics,control,walking" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/arxiv2024_footplacement.jpg' alt="Time-Varying Foot-Placement Control Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://arxiv.org/abs/2409.08371"> 
-				<span class="papertitle">Time-Varying Foot-Placement Control for Underactuated Humanoid Walking on Swaying Rigid Surfaces</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b><sup>*,#</sup>, Victor Paredes<sup>*</sup>, Yukai Gong<sup>#</sup>, Zijian He<sup>#</sup>, Ayonga Hereid<sup>#</sup>, Yan Gu<sup>#</sup> 
-			<br>
-			<strong>Preprint:</strong> <em>arXiv preprint arXiv:2409.08371</em>, 2024 
-			<br>
-			<a href="https://arxiv.org/pdf/2409.08371">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2024" data-topics="robotics,metarl,inspection,multirobot" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/icra2024_metarlinspection.jpg' alt="Meta-RL Inspection Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/10610420"> 
-				<span class="papertitle">Meta-Reinforcement Learning Based Cooperative Surface Inspection of 3D Uncertain Structures using Multi-robot Systems</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Junfeng Chen, <b>Yuan Gao</b>, Junjie Hu, Fuqin Deng, and Tin Lun Lam
-			<br>
-			<strong>Conference:</strong> <em>2024 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024 
-			<br>
-			<a href="https://freeformrobotics.org/wp-content/uploads/2024/03/ICRA24_Chen.pdf">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2024" data-topics="hri,poseestimation,companionrobot,chi" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/chi2024_pepperpose.jpg' alt="PepperPose Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://dl.acm.org/doi/full/10.1145/3613904.3642231"> 
-				<span class="papertitle">PepperPose: Full-Body Pose Estimation with a Companion Robot</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Chongyang Wang, Siqi Zheng, Lingxiao Zhong, Chun Yu, Chen Liang, Yuntao Wang, <b>Yuan Gao</b>*, Tin Lun Lam, Yuanchun Shi 
-			<br>
-			<strong>Conference:</strong> <em>Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems</em>, 2024 
-			<br>
-			<a href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642231">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2024" data-topics="robotics,inspectionrobot,pipelinerobot,transformable" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/ral2024_transformablerobot.jpg' alt="Transformable Inspection Robot Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/10508069"> 
-				<span class="papertitle">Transformable Inspection Robot Design and Implementation for Complex Pipeline Environment</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Jianlin Wang, Yixiang Wang, Lining Peng, Haixiang Zhang, Hang Gao, Chengjiang Wang, <b>Yuan Gao</b>, Huanliang Luo, Yongquan Chen
-			<br>
-			<strong>Journal:</strong> <em>IEEE Robotics and Automation Letters</em>, 2024 
-			<br>
-			<a href="https://ieeexplore.ieee.org/abstract/document/10508069">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
-	<!--添加23年论文-->
-<h3 id="year-2023" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2023</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2023" data-topics="multirobot,reinforcementlearning,framework,opensource" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/robio2023_multirobolearn.jpg' alt="MultiRoboLearn Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://your_domain.com/path/to/paper.pdf"> 
+					<span class="papertitle">Multimodal Deformation Estimation of Soft Pneumatic Gripper During Operation</span>
+				</a>
+				<br>
+				<strong>Authors:</strong>Changheng Cai, Fei Xiao, Marcellus Vanzai, Taoyang Wang, Fangbing Zhou, Xuanyang Xu, Jian Zhu<sup>#</sup>, and <b>Yuan Gao</b><sup>#</sup>
+				<br>
+				<strong>Conference:</strong><em>International Conference on Intelligent Robots and Systems(IROS)</em>, 2025 
+				<br>
+				<a href="https://your_domain.com/path/to/paper.pdf">[Paper]</a> / 
+				<a href="https://github.com/your_username/your_repo">[Code]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr onmouseover="balloon_robot_uist25_gif_start()" onmouseout="balloon_robot_uist25_gif_stop()" class="publication-entry" data-year="2025" data-topics="socialrobotics,hri,ux" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align: top;text-align: right;">
+				<div class="one">
+					<div class="two" id='balloon_robot_uist25_gif'> 
+						<img src="/images/publications_gif/balloon_robot_uist25.gif" style="width:100%; height:100%; object-fit: contain;" alt="Social Balloon Robot Animation"> 
+					</div>
+					<img src='/images/publications_image/balloon_robot_uist25.jpg' alt="Social Balloon Robot Thumbnail">
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/10354600/"> 
-				<span class="papertitle">MultiRoboLearn: An open-source framework for multi-robot deep reinforcement learning</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Junfeng Chen, Fuqin Deng, <b>Yuan Gao</b>, Junjie Hu, Xiyue Guo, Guanqi Liang, Tin Lun Lam
-			<br>
-			<strong>Conference:</strong> <em>2023 IEEE International Conference on Robotics and Biomimetics (ROBIO)</em>, 2023 
-			<br>
-			<a href="https://arxiv.org/pdf/2209.13760">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>	
-	<tr class="publication-entry" data-year="2023" data-topics="space,intentioninference,bigru,selfattention" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/advancesinspace2023_intentioninference.jpg' alt="Intention Inference Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://www.sciencedirect.com/science/article/pii/S0273117723003101">
-				<span class="papertitle">An intention inference method for the space non-cooperative target based on BiGRU-Self Attention</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Honglin Zhang, Jianjun Luo<sup>#</sup>, <b>Yuan Gao</b><sup>*</sup>, Weihua Ma
-			<br>
-			<strong>Journal:</strong> <em>Advances in Space Research</em>, 2023 
-			<br>
-			<a href="https://pdf.sciencedirectassets.com/271642/1-s2.0-S0273117723X00167/1-s2.0-S0273117723003101/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQCVGJVWnS1ZpvM54CS9O1Fi99TuLWipC1%2BnIyfrNTEA2AIhAMYZs28vEO9rO8U5BLto6xUemCCwLB0H0Pttl6E6AubZKrMFCGoQBRoMMDU5MDAzNTQ2ODY1IgzFszJ7FhlfQL1WLhYqkAWyRSw%2Bj85b8irYkQ16ju4aIKME75ROlQFsWNpZidrywbzWvv6Z1sVSsZARQOSIIkj1juQ8fPo7kCm3XIkYiL8GY1tXmwPY8BXsMtXvLMTsNGc2mYlBdq82XOKCDcxV%2FSWFS%2BLYGRoIQKh%2Fkw9xJoJVJLZT2wEd0O0hF%2FhEokLy8t5FKqL17cFQZpaKS%2BfLNaISorWPv%2Fsi6KD3jds%2BnRQc33bPThK4eilMzweG8P4si8y7TcMmrCHusTMjJDR1SJZuCiE2eOhZiVYm5S14G%2BisTNSCI5pLfH68XadENsBpMqoAf8DDm4aW94Jnvw1tIfde7DnH97G7YKUgAwJ4xMkeSZwqgNac34wk9nUTc4Mlp0gxCMu9xjIl0dV7eZMchs8LseBAYyzP2UwwEP%2F%2BgA9q5QAZvhlSk3Qh6CNrIDSxzi%2Frujv0UHGCoj4kVghISvfmNS48T9hxuvJ%2BNN5Fqk5lU7EBHqpHwQY5yv0%2BumgT8ph4mcOjgE3NicVLyKuRQkE67jGfQnaV4eEYStbv8CyB4hWzSzJf6NM7vUDLjo1aVrMKOLxhdONFNRETN8K%2FL7RtPO07dZmax0Q9qAREuWkjrRQ325DfcY%2BfQvs6ouVg8cqZCEgqiR68XRDgjX5v7WRdVwxM3T5DSgij0WJsO61KuMHhSd1JIXILD8lhC7lkFONj2VtcQfjKCbWZ889H%2FpA8xvKZXty%2FmO6713tT3lSYdwS8EgmE%2B6axRwvvcYNsGijrHPBPGAY%2FTYFb5IGEXecPLm%2FhqP392vsK7A6%2Bkmjoid9an2DQC%2FOCRtikN5Qj9kk1APaFZLJ9I0OSh5VH1%2Fi1mqNv5j%2FlRUm%2FL2J49jk9VKkz%2F2kZbCIvaFUNVDXd9DC5pKXIBjqwAdPB%2F3Y6LKPb36YwByFVzBiCGAPA4NOy9GEr4pjxxBdRqkcmaXD%2Fuzd7lRYgJqYMVTgOlEa26l28R5CbpWIKYK17lXjug75xTJWZCuN%2FKmwIOsMB%2Fvzxnm9VFr%2FjVIzIzRu%2Fry2TI9GrOSrOb20VhpHcoVgcS7uKJe4LQvpEFY4tSAflXX4VTfnr%2FZaOnauthUVj3wlvUSUlxRKNaq2zIqaSB0F5okH8Snz9sW0IxHWo&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20251104T023335Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY4WW76TOW%2F20251104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d882ccc8b0927b93306a3c6bf0ad6d6f09ee5dcb5840175c744227ed1ee1fa11&hash=3d778f0d66f79ab028420fc6f954c1313eecd44196f8f83692c6ec076cb9e6df&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0273117723003101&tid=spdf-d302cbc8-ea98-43c2-9afc-4863cf195c8c&sid=345998ac52389449b99bf490a7906d7bd696gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=120f5c5a565e0d525254&rr=9990b516691402d2&cc=hk">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2023" data-topics="knowledgedistillation,depthestimation,lightweight" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/ksem2023_depthdistillation.jpg' alt="Depth Distillation Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://link.springer.com/chapter/10.1007/978-3-031-40283-8_3">
-				<span class="papertitle">Boosting Lightweight Depth Estimation via Knowledge Distillation</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Junjie Hu, Chenyou Fan, Hualie Jiang, Xiyue Guo, <b>Yuan Gao</b>, Xiangyong Lu, and Tin Lun Lam<sup>#</sup>
-			<br>
-			<strong>Conference:</strong> <em>International Conference on Knowledge Science, Engineering and Management (KSEM)</em>, 2023 
-			<br>
-			<a href="https://arxiv.org/pdf/2105.06143">[Paper]</a>
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2023" data-topics="machinelearning,healthcare,annotations" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/tml4h2023_learn2agree.jpg' alt="Learn2Agree Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://link.springer.com/chapter/10.1007/978-3-031-39539-0_13"> 
-				<span class="papertitle">Learn2Agree: Fitting with Multiple Annotators Without Objective Ground Truth</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Chongyang Wang<sup>#</sup>, <b>Yuan Gao</b>, Chenyou Fan, Junjie Hu, Tin Lun Lam, Nicholas D. Lane, and Nadia Bianchi-Berthouze
-			<br>
-			<strong>Conference:</strong> <em>Trustworthy Machine Learning for Healthcare: First International Workshop (TML4H)</em>, 2023 
-			<br>
-			<a href="https://arxiv.org/pdf/2109.03596">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2023" data-topics="robotics,localization,rangebased,mechatronics" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/tmech2023_localization.jpg' alt="Robot Relative Localization Thumbnail">
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://ieeexplore.ieee.org/abstract/document/10142210">
-				<span class="papertitle">Asymptotically efficient estimator for range-based robot relative localization</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Yue Wang, Muhan Lin, Xinyi Xie, <b>Yuan Gao</b>, Fuqin Deng, and Tin Lun Lam<sup>#</sup>
-			<br>
-			<strong>Journal:</strong> <em>IEEE/ASME Transactions on Mechatronics</em>, 2023
-			<br>
-			<a href="https://freeformrobotics.org/wp-content/uploads/2023/03/TMECH-10-2022-14466.pdf">[Paper]</a> 
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2023" data-topics="robotics,multirobot,selfplay,reinforcementlearning" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/tro2023_asymmetricselfplay.jpg' alt="Asymmetric Self-Play Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/10101687"> 
-				<span class="papertitle">Asymmetric Self-Play-Enabled Intelligent Heterogeneous Multirobot Catching System Using Deep Multiagent Reinforcement Learning</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b>, Junfeng Chen, Xi Chen, Chongyang Wang, Junjie Hu, Fuqin Deng, and Tin Lun Lam<sup>#</sup>
-			<br>
-			<strong>Journal:</strong> <em>IEEE Transactions on Robotics</em>, 2023 
-			<br>
-			<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10101687">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
-	<!--添加22年论文-->
-<h3 id="year-2022" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2022</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2022" data-topics="reinforcementlearning,offlinelearning,policyoptimization" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/neurips2022_lapo.jpg' alt="LAPO Thumbnail">
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/efb2072a358cefb75886a315a6fcf880-Abstract-Conference.html">
-				<span class="papertitle">LAPO: Latent-Variable Advantage-Weighted Policy Optimization for Offline Reinforcement Learning</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Xi Chen, Ali Ghadirzadeh, Tianhe Yu, Jianhao Wang, <b>Yuan Gao</b>, Wenzhe Li, Bin Liang, Chelsea Finn, Chongjie Zhang
-			<br>
-			<strong>Conference:</strong> <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2022 
-			<br>
-			<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/efb2072a358cefb75886a315a6fcf880-Paper-Conference.pdf">[Paper]</a>
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2022" data-topics="socialrobots,emotion,reinforcementlearning,behaviour" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/bit2022_emotionmemory.jpg' alt="Emotion and Memory Model Thumbnail">
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://www.tandfonline.com/doi/abs/10.1080/0144929X.2021.1977389">
-				<span class="papertitle">Emotion and memory model for social robots: a reinforcement learning based behaviour selection</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Muneeb Imtiaz Ahmad<sup>#</sup>, <b>Yuan Gao</b>, Fady Alnajjar, Suleman Shahid, & Omar Mubin
-			<br>
-			<strong>Journal:</strong> <em>Behaviour & Information Technology</em>, 2022
-			<br>
-			<a href="https://www.tandfonline.com/doi/epdf/10.1080/0144929X.2021.1977389?needAccess=true">[Paper]</a>
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2022" data-topics="multiagent,pathplanning,attention" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/iros2022_abmapper.jpg' alt="AB-Mapper Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://ieeexplore.ieee.org/abstract/document/9981513">
-				<span class="papertitle">AB-Mapper: Attention and BicNet based Multi-agent Path Planning for Dynamic Environment</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Huifeng Guan<sup>*</sup>, <b>Yuan Gao</b><sup>*</sup>, Min Zhao, Yong Yang, Fuqin Deng<sup>#</sup>, and Tin Lun Lam<sup>#</sup>
-			<br>
-			<strong>Conference:</strong> <em>2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2022 
-			<br>
-			<a href="https://freeformrobotics.org/wp-content/uploads/2022/08/IROS22_3205_FI.pdf">[Paper]</a>
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2022" data-topics="neuroimage,metaanalysis,decisionmaking,emotionregulation" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/neuroimage2022_spatial.jpg' alt="Spatial-topographic nestedness Thumbnail">
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://www.sciencedirect.com/science/article/pii/S1053811922006164">
-				<span class="papertitle">Spatial-topographic nestedness of interoceptive regions within the networks of decision making and emotion regulation: Combining ALE meta-analysis and MACM analysis</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Yafei Tan<sup>*,#</sup>, Ranran Yan<sup>*</sup>, <b>Yuan Gao</b><sup>*</sup>, Meng Zhang<sup>#</sup>, Georg Northoff<sup>#</sup>
-			<br>
-			<strong>Journal:</strong> <em>NeuroImage</em>, 2022
-			<br>
-			<a href="https://doi.org/10.1016/j.neuroimage.2022.119500">[Paper]</a>
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2022" data-topics="multirobot,reinforcementlearning,coverageplanning" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/ral2022_workerstation.jpg' alt="Worker-Station Multi-robot Thumbnail">
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/9918029">
-				<span class="papertitle">Learning to Coordinate for a Worker-Station Multi-robot System in Planar Coverage Tasks</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Jingtao Tang, <b>Yuan Gao</b>, Tin Lun Lam<sup>#</sup>
-			<br>
-			<strong>Journal:</strong> <em>IEEE Robotics and Automation Letters</em>, 2022 
-			<br>
-			<a href="https://arxiv.org/pdf/2208.02993">[Paper]</a> 
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2022" data-topics="knowledgetransfer,perception,drones,semisupervised" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/arxiv2022_selfdistillation.jpg' alt="Progressive Self-Distillation Thumbnail">
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://arxiv.org/abs/2208.13404"> 
-				<span class="papertitle">Progressive Self-Distillation for Ground-to-Aerial Perception Knowledge Transfer</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Junjie Hu, Chenyou Fan, Mete Ozay, Hua Feng, <b>Yuan Gao</b>, and Tin Lun Lam<sup>#</sup>
-			<br>
-			<strong>Preprint:</strong> <em>arXiv preprint arXiv:2208.13404</em>, 2022 
-			<br>
-			<a href="https://arxiv.org/pdf/2208.13404">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2022" data-topics="occupancygrid,attentionnetwork,robotics" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/icra2022_abnormaloccupancy.jpg' alt="Abnormal Occupancy Grid Map Thumbnail">
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://ieeexplore.ieee.org/abstract/document/9812106">
-				<span class="papertitle">Abnormal Occupancy Grid Map Recognition using Attention Network</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Fuqin Deng<sup>*</sup>, Hua Feng<sup>*</sup>, Mingjian Liang, Qi Feng, Ningbo Yi, Yong Yang, <b>Yuan Gao</b>, Junfeng Chen, and Tin Lun Lam<sup>#</sup>
-			<br>
-			<strong>Conference:</strong> <em>2022 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2022 
-			<br>
-			<a href="https://arxiv.org/pdf/2110.09047">[Paper]</a>
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2022" data-topics="vqa,multimodal,hierarchicalnetwork" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/arxiv2022_multilevelvqa.jpg' alt="Multilevel Hierarchical Network Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://arxiv.org/abs/2205.04061"> 
-				<span class="papertitle">Multilevel Hierarchical Network with Multiscale Sampling for Video Question Answering</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Min Peng<sup>*</sup>, Chongyang Wang<sup>*</sup>, <b>Yuan Gao</b>, Yu Shi, and Xiang-Dong Zhou
-			<br>
-			<strong>Preprint:</strong> <em>arXiv preprint arXiv:2205.04061</em>, 2022 
-			<br>
-			<a href="https://arxiv.org/pdf/2205.04061">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2022" data-topics="hri,cooperative,coadaptive,robotics" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/unmannedsystems2022_coadaptive.jpg' alt="Co-adaptive Human-Robot Cooperation Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://www.worldscientific.com/doi/abs/10.1142/S230138502250011X"> 
-				<span class="papertitle">Co-adaptive Human-Robot Cooperation: Summary and Challenges</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Sofie Ahlberg, Agnes Axelsson, Pian Yu, Wenceslao Shaw Cortez, <b>Yuan Gao</b>, Ali Ghadirzadeh, Ginevra Castellano, Danica Kragic, Gabriel Skantze, and Dimos V. Dimarogonas
-			<br>
-			<strong>Journal:</strong> <em>Unmanned Systems</em>, 2022 
-			<br>
-			<a href="https://people.kth.se/~dimos/pdfs/COIN_Summary_Paper.pdf">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody>
-</table>
-	<!--添加21年论文-->
-<h3 id="year-2021" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2021</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2021" data-topics="metarl,robotics,sensorscanning,multirobot" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/arxiv2021_sensorscanning.jpg' alt="Meta-RL Sensor Scanning Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://arxiv.org/abs/2109.13617"> 
-				<span class="papertitle">Meta Reinforcement Learning Based Sensor Scanning in 3D Uncertain Environments for Heterogeneous Multi-Robot Systems</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Junfeng Chen, <b>Yuan Gao</b>, Junjie Hu, Fuqin Deng, and Tin Lun Lam<sup>#</sup>
-			<br>
-			<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.13617</em>, 2021 
-			<br>
-			<a href="https://arxiv.org/pdf/2109.13617">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2021" data-topics="semanticsegmentation,rgbthermal,attentionnetwork" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/iros2021_feanet.jpg' alt="FEANet Thumbnail">
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;">
-			<a href="https://arxiv.org/abs/2110.08881">
-				<span class="papertitle">FEANet: Feature-Enhanced Attention Network for RGB-Thermal Real-time Semantic Segmentation</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Fuqin Deng<sup>*</sup>, Hua Feng<sup>*</sup>, Mingjian Liang, Hongmin Wang, Yong Yang, <b>Yuan Gao</b>, Junfeng Chen, Junjie Hu, Xiyue Guo, and Tin Lun Lam<sup>#</sup>
-			<br>
-			<strong>Conference:</strong> <em>2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021 
-			<br>
-			<a href="https://arxiv.org/pdf/2110.08881">[Paper]</a>
-			<p></p>
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2021" data-topics="vqa,multimodal,transformer" data-selected="true">
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
-			<div class="one">
-				<img src='/images/publications_image/arxiv2021_temporalpyramid.jpg' alt="Temporal Pyramid Transformer Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://arxiv.org/abs/2109.04735"> 
-				<span class="papertitle">Temporal Pyramid Transformer with Multimodal Interaction for Video Question Answering</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Min Peng<sup>*</sup>, Chongyang Wang<sup>*</sup>, <b>Yuan Gao</b>, Yu Shi, and Xiang-Dong Zhou
-			<br>
-			<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.04735</em>, 2021 
-			<br>
-			<a href="https://arxiv.org/pdf/2109.04735">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2021" data-topics="robotics,bipedal,control,filtering" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/arxiv2021_invariantfiltering.jpg' alt="Invariant Filtering Thumbnail"> 
-			</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://arxiv.org/abs/2109.01241"> 
-				<span class="papertitle">Invariant Filtering for Bipedal Walking on Dynamic Rigid Surfaces with Orientation-based Measurement Model</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b> and Yan Gu
-			<br>
-			<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.01241</em>, 2021 
-			<br>
-			<a href="https://arxiv.org/pdf/2109.01241">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2021" data-topics="activityrecognition,behavior,imwut" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/imwut2021_leveraging.jpg' alt="Leveraging Activity Recognition Thumbnail"> 
+				<script type="text/javascript">
+					function balloon_robot_uist25_gif_start() {
+						document.getElementById('balloon_robot_uist25_gif').style.opacity = "1";
+					}
+					function balloon_robot_uist25_gif_stop() {
+						document.getElementById('balloon_robot_uist25_gif').style.opacity = "0";
+					}
+					balloon_robot_uist25_gif_stop(); // 页面加载时默认隐藏 GIF
+				</script>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666"> 
+					<span class="papertitle">Understanding Users' Perceptions and Expectations toward a Social Balloon Robot via an Exploratory Study</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Chongyang Wang, Tianyi Xia, Yifan Wang, Gang Yu, Zixuan Zhao, Siqi Zheng, Manqiu Liao, Chen Liang, <b>Yuan Gao</b>, Chun Yu<sup>#</sup>, Yuntao Wang, Yuanchun Shi
+				<br>
+				<strong>Conference:</strong><em>UIST '25: Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology</em>, 2025 
+				<br>
+				<a href="https://dl.acm.org/doi/abs/10.1145/3746059.3747666">[Paper]</a> / 
+				<a href="/video/balloon_robot_uist25.mp4" target="_blank">[Video]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2025" data-topics="nlp,llm,slm,selfreflection" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/entrospect_acl25.jpg' alt="Entrospect Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://dl.acm.org/doi/abs/10.1145/3463508"> 
-				<span class="papertitle">Leveraging Activity Recognition to Enable Protective Behavior Detection in Continuous Data</span>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> <a href="https://aclanthology.org/2025.findings-acl.1261/"> 
+				<span class="papertitle">Entrospect: Information-Theoretic Self-Reflection Elicits Better Response Refinement of Small Language Models</span>
 			</a>
-			<br>
-			<strong>Authors:</strong> Chongyang Wang, <b>Yuan Gao</b>, Akhil Mathur, Amanda C De C. Williams, Nicholas D. Lane, and Nadia Bianchi-Berthouze
-			<br>
-			<strong>Journal:</strong> <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</em>, 2021 
-			<br>
-			<a href="https://arxiv.org/pdf/2011.01776">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2021" data-topics="hri,dataset,proxemics,behavior" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/plosone2021_dataset.jpg' alt="Human Robot Approach Dataset Thumbnail"> 
+				<br>
+				<strong>Authors:</strong>Tianqiang Yan, Ziqiao Lin, Lin Zhang, Zhenglong Sun, <b>Yuan Gao</b><sup>#</sup>
+				<br>
+				<strong>Conference:</strong><em>Findings of the Association for Computational Linguistics: ACL 2025</em>, 2025 
+				<br>
+				<a href="https://aclanthology.org/2025.findings-acl.1261/">[Paper]</a> 
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2025" data-topics="droneperception,semisupervisedlearning,knowledgetransfer" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top;text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/tits2025_droneperception.jpg' alt="Drone Perception T-ITS Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247364"> 
-				<span class="papertitle">A dataset of human and robot approach behaviors into small free-standing conversational groups</span>
-			</a>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/11005613"> 
+					<span class="papertitle">Unlocking Drone Perception in Low AGL Heights: Progressive Semi-Supervised Learning for Ground-to-Aerial Perception Knowledge Transfer</span>
+				</a>
 			<br>
-			<strong>Authors:</strong> Fangkai Yang, <b>Yuan Gao</b>, Ruiyang Ma, Sahba Zojaji, Ginevra Castellano, and Christopher Peters
-			<br>
-			<strong>Journal:</strong> <em>PloS One</em>, 2021 
-			<br>
-			<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247364">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2021" data-topics="machinelearning,annotations,framework" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/arxiv2021_agreementlearning.jpg' alt="AgreementLearning Thumbnail"> 
+				<strong>Authors:</strong>Junjie Hu, Chenyou Fan, Mete Ozay, Hua Feng, <b>Yuan Gao</b>, Tin Lun Lam
+				<br>
+				<strong>Journal:</strong><em>IEEE Transactions on Intelligent Transportation Systems</em>, 2025 
+				<br>
+				<a href="https://ieeexplore.ieee.org/abstract/document/11005613">[Paper]</a> 
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2025" data-topics="robotics,localization,smrs" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/icra2025_smrslocalization.jpg' alt="SMSR Localization Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="[https://arxiv.org/abs/2109.03596](https://www.researchgate.net/profile/Junjie-Hu-7/publication/354460826_Learn2Agree_Fitting_with_Multiple_Annotators_without_Objective_Ground_Truth/links/616d192125467d2f0050436d/Learn2Agree-Fitting-with-Multiple-Annotators-without-Objective-Ground-Truth.pdf)"> 
-				<span class="papertitle">AgreementLearning: An End-to-End Framework for Learning with Multiple Annotators Without Groundtruth</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Chongyang Wang<sup>*</sup>, <b>Yuan Gao</b><sup>*</sup>, Chenyou Fan<sup>*</sup>, Junjie Hu, Tin Lun Lam, Nicholas D. Lane, and Nadia Bianchi-Berthouze
-			<br>
-			<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.03596</em>, 2021 
-			<br>
-			<a href="https://www.researchgate.net/profile/Junjie-Hu-7/publication/354460826_Learn2Agree_Fitting_with_Multiple_Annotators_without_Objective_Ground_Truth/links/616d192125467d2f0050436d/Learn2Agree-Fitting-with-Multiple-Annotators-without-Objective-Ground-Truth.pdf">[Paper]</a> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/11127871"> 
+					<span class="papertitle">Configuration-Adaptive Visual Relative Localization for Spherical Modular Self-Reconfigurable Robots</span>
+				</a>
+				<br>
+				<strong>Authors:</strong>Yuming Liu, Qiu Zheng, Yuxiao Tu, <b>Yuan Gao</b>, Guanqi Liang, and Tin Lun Lam
+				<br>
+				<strong>Conference:</strong><em>2025 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025 
+				<br>
+				<a href="#">[Paper]</a> 
 			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
-	<!--添加20年论文-->
-<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2020" data-topics="microexpression,video,keyframe" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/arxiv2020_microexpression.jpg' alt="Micro-Expression Recognition Thumbnail"> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2025" data-topics="multiagent,selforganization,llm,multimodal" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/iotj2025_ochmas.jpg' alt="OC-HMAS Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://arxiv.org/abs/2009.09179"> 
-				<span class="papertitle">Recognizing Micro-Expression in Video Clip with Adaptive Key-Frame Mining</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Min Peng<sup>*</sup>, Chongyang Wang<sup>*,#</sup>, <b>Yuan Gao</b>, Tao Bi, Tong Chen, Yu Shi, Xiang-Dong Zhou
-			<br>
-			<strong>Preprint:</strong> <em>arXiv preprint arXiv:2009.09179</em>, 2020 
-			<br>
-			<a href="https://arxiv.org/pdf/2009.09179">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2020" data-topics="machinebehavior,reinforcementlearning,thesis" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/actauppsala2020_machinebehavior.jpg' alt="Machine Behavior Thesis Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/10909066"> 
+					<span class="papertitle">OC-HMAS: Dynamic Self-Organization and Self-Correction in Heterogeneous Multiagent Systems Using Multimodal Large Models</span>
+				</a>
+				<br>
+				<strong>Authors:</strong>Ping Feng, Tingting Yang, Mingyang Liang, Lin Wang, and <b>Yuan Gao</b>
+				<br>
+				<strong>Journal:</strong><em>IEEE Internet of Things Journal</em>, 2025 
+				<br>
+				<a href="https://ieeexplore.ieee.org/abstract/document/10909066">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
+	<h3 id="year-2024" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2024</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2024" data-topics="robotics,llm,vlm,perception,reasoning" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/iros2024_liquidperception.jpg' alt="Robot Liquid Perception Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://www.diva-portal.org/smash/record.jsf?dswid=5710&pid=diva2%3A1479082"> 
-				<span class="papertitle">Machine Behavior Development and Analysis using Reinforcement Learning</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b>
-			<br>
-			<strong>Publication:</strong> <em>Doctoral Thesis, Acta Universitatis Upsaliensis</em>, 2020 
-			<br>
-			<a href="https://www.diva-portal.org/smash/get/diva2:1479082/FULLTEXT01.pdf">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
-	<!--添加19年论文-->
-<h3 id="year-2019" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2019</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2019" data-topics="metarl,hri,trustmodelling" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/iros2019_fastadaptation.jpg' alt="Fast Adaptation Trust Modelling Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/10801833"> 
+					<span class="papertitle">Vision-Language Model-based Physical Reasoning for Robot Liquid Perception</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Wenqiang Lai, Tianwei Zhang, Tin Lun Lam, <b>Yuan Gao</b> 
+				<br>
+				<strong>Conference:</strong> <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2024 
+				<br>
+				<a href="https://arxiv.org/pdf/2404.06904">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2024" data-topics="humanoid,robotics,control,walking" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/arxiv2024_footplacement.jpg' alt="Time-Varying Foot-Placement Control Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/8967924"> 
-				<span class="papertitle">Fast Adaptation with Meta-Reinforcement Learning for Trust Modelling in Human-Robot Interaction</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b><sup>*</sup>, Elena Sibirtseva<sup>*</sup>, Ginevra Castellano, and Danica Kragic
-			<br>
-			<strong>Conference:</strong> <em>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2019 
-			<br>
-			<a href="https://arxiv.org/pdf/1908.04087">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2019" data-topics="hri,socialrobotics,deepreinforcementlearning" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/roman2019_sociallyappropriate.jpg' alt="Socially Appropriate Robot Approaching Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://arxiv.org/abs/2409.08371"> 
+					<span class="papertitle">Time-Varying Foot-Placement Control for Underactuated Humanoid Walking on Swaying Rigid Surfaces</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b><sup>*,#</sup>, Victor Paredes<sup>*</sup>, Yukai Gong<sup>#</sup>, Zijian He<sup>#</sup>, Ayonga Hereid<sup>#</sup>, Yan Gu<sup>#</sup> 
+				<br>
+				<strong>Preprint:</strong> <em>arXiv preprint arXiv:2409.08371</em>, 2024 
+				<br>
+				<a href="https://arxiv.org/pdf/2409.08371">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2024" data-topics="robotics,metarl,inspection,multirobot" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/icra2024_metarlinspection.jpg' alt="Meta-RL Inspection Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/8956444"> 
-				<span class="papertitle">Learning Socially Appropriate Robot Approaching Behavior Toward Groups using Deep Reinforcement Learning</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b>, Fangkai Yang<sup>*</sup>, Martin Frisk<sup>*</sup>, Daniel Hernandez, Christopher Peters, and Ginevra Castellano
-			<br>
-			<strong>Conference:</strong> <em>2019 28th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</em>, 2019 
-			<br>
-			<a href="https://arxiv.org/pdf/1810.06979">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2019" data-topics="selfplay,framework,reinforcementlearning" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/cog2019_selfplayframework.jpg' alt="Self-Play Training Framework Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/10610420"> 
+					<span class="papertitle">Meta-Reinforcement Learning Based Cooperative Surface Inspection of 3D Uncertain Structures using Multi-robot Systems</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Junfeng Chen, <b>Yuan Gao</b>, Junjie Hu, Fuqin Deng, and Tin Lun Lam
+				<br>
+				<strong>Conference:</strong> <em>2024 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024 
+				<br>
+				<a href="https://freeformrobotics.org/wp-content/uploads/2024/03/ICRA24_Chen.pdf">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2024" data-topics="hri,poseestimation,companionrobot,chi" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/chi2024_pepperpose.jpg' alt="PepperPose Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://arxiv.org/abs/1906.00185"> 
-				<span class="papertitle">A Generalized Framework for Self-Play Training</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Daniel Hernandez, Kevin Denamganai, <b>Yuan Gao</b>, Peter York, Sam Devlin, Spyridon Samothrakis, and James Alfred Walker
-			<br>
-			<strong>Conference:</strong> <em>2019 IEEE Conference on Games (CoG)</em>, 2019 
-			<br>
-			<a href="https://arxiv.org/pdf/1906.00185">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
-	<!--添加18年论文-->
-<h3 id="year-2018" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2018</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2018" data-topics="hri,socialdistance,mixedreality,iva" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/iva2018_posture.jpg' alt="Effects of Posture Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://dl.acm.org/doi/full/10.1145/3613904.3642231"> 
+					<span class="papertitle">PepperPose: Full-Body Pose Estimation with a Companion Robot</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Chongyang Wang, Siqi Zheng, Lingxiao Zhong, Chun Yu, Chen Liang, Yuntao Wang, <b>Yuan Gao</b>*, Tin Lun Lam, Yuanchun Shi 
+				<br>
+				<strong>Conference:</strong> <em>Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems</em>, 2024 
+				<br>
+				<a href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642231">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2024" data-topics="robotics,inspectionrobot,pipelinerobot,transformable" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/ral2024_transformablerobot.jpg' alt="Transformable Inspection Robot Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://dl.acm.org/doi/abs/10.1145/3267851.3267870"> 
-				<span class="papertitle">Effects of Posture and Embodiment on Social Distance in Human-Agent Interaction in Mixed Reality</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Chengjie Li, Theofronia Androulakaki, <b>Alex Yuan Gao</b>, Fangkai Yang, Himangshu Saikia, Christopher Peters, and Gabriel Skantze
-			<br>
-			<strong>Conference:</strong> <em>Proceedings of the 18th International Conference on Intelligent Virtual Agents (IVA)</em>, 2018 
-			<br>
-			<a href="https://www.researchgate.net/profile/Gabriel-Skantze/publication/329018118_Effects_of_Posture_and_Embodiment_on_Social_Distance_in_Human-Agent_Interaction_in_Mixed_Reality/links/5c4730b4299bf12be3db109f/Effects-of-Posture-and-Embodiment-on-Social-Distance-in-Human-Agent-Interaction-in-Mixed-Reality.pdf0">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2018" data-topics="hri,proxemics,deeplearning" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/roman2018_deeplearningproxemics.jpg' alt="Deep Learning Proxemics Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/10508069"> 
+					<span class="papertitle">Transformable Inspection Robot Design and Implementation for Complex Pipeline Environment</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Jianlin Wang, Yixiang Wang, Lining Peng, Haixiang Zhang, Hang Gao, Chengjiang Wang, <b>Yuan Gao</b>, Huanliang Luo, Yongquan Chen
+				<br>
+				<strong>Journal:</strong> <em>IEEE Robotics and Automation Letters</em>, 2024 
+				<br>
+				<a href="https://ieeexplore.ieee.org/abstract/document/10508069">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
+		<!--添加23年论文-->
+	<h3 id="year-2023" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2023</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2023" data-topics="multirobot,reinforcementlearning,framework,opensource" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/robio2023_multirobolearn.jpg' alt="MultiRoboLearn Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/10354600/"> 
+					<span class="papertitle">MultiRoboLearn: An open-source framework for multi-robot deep reinforcement learning</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Junfeng Chen, Fuqin Deng, <b>Yuan Gao</b>, Junjie Hu, Xiyue Guo, Guanqi Liang, Tin Lun Lam
+				<br>
+				<strong>Conference:</strong> <em>2023 IEEE International Conference on Robotics and Biomimetics (ROBIO)</em>, 2023 
+				<br>
+				<a href="https://arxiv.org/pdf/2209.13760">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>	
+		<tr class="publication-entry" data-year="2023" data-topics="space,intentioninference,bigru,selfattention" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/advancesinspace2023_intentioninference.jpg' alt="Intention Inference Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/8525731"> 
-				<span class="papertitle">Investigating Deep Learning Approaches for Human-Robot Proxemics</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b>, Sebastian Wallkötter, Mohammad Obaid, and Ginevra Castellano
-			<br>
-			<strong>Conference:</strong> <em>2018 27th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)</em>, 2018 
-			<br>
-			<a href="https://www.diva-portal.org/smash/get/diva2:1263872/FULLTEXT02">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2018" data-topics="hri,personalisation,learning,roman" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/roman2018_personalisation.jpg' alt="Robot Personalisation Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://www.sciencedirect.com/science/article/pii/S0273117723003101">
+					<span class="papertitle">An intention inference method for the space non-cooperative target based on BiGRU-Self Attention</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Honglin Zhang, Jianjun Luo<sup>#</sup>, <b>Yuan Gao</b><sup>*</sup>, Weihua Ma
+				<br>
+				<strong>Journal:</strong> <em>Advances in Space Research</em>, 2023 
+				<br>
+				<a href="https://pdf.sciencedirectassets.com/271642/1-s2.0-S0273117723X00167/1-s2.0-S0273117723003101/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQCVGJVWnS1ZpvM54CS9O1Fi99TuLWipC1%2BnIyfrNTEA2AIhAMYZs28vEO9rO8U5BLto6xUemCCwLB0H0Pttl6E6AubZKrMFCGoQBRoMMDU5MDAzNTQ2ODY1IgzFszJ7FhlfQL1WLhYqkAWyRSw%2Bj85b8irYkQ16ju4aIKME75ROlQFsWNpZidrywbzWvv6Z1sVSsZARQOSIIkj1juQ8fPo7kCm3XIkYiL8GY1tXmwPY8BXsMtXvLMTsNGc2mYlBdq82XOKCDcxV%2FSWFS%2BLYGRoIQKh%2Fkw9xJoJVJLZT2wEd0O0hF%2FhEokLy8t5FKqL17cFQZpaKS%2BfLNaISorWPv%2Fsi6KD3jds%2BnRQc33bPThK4eilMzweG8P4si8y7TcMmrCHusTMjJDR1SJZuCiE2eOhZiVYm5S14G%2BisTNSCI5pLfH68XadENsBpMqoAf8DDm4aW94Jnvw1tIfde7DnH97G7YKUgAwJ4xMkeSZwqgNac34wk9nUTc4Mlp0gxCMu9xjIl0dV7eZMchs8LseBAYyzP2UwwEP%2F%2BgA9q5QAZvhlSk3Qh6CNrIDSxzi%2Frujv0UHGCoj4kVghISvfmNS48T9hxuvJ%2BNN5Fqk5lU7EBHqpHwQY5yv0%2BumgT8ph4mcOjgE3NicVLyKuRQkE67jGfQnaV4eEYStbv8CyB4hWzSzJf6NM7vUDLjo1aVrMKOLxhdONFNRETN8K%2FL7RtPO07dZmax0Q9qAREuWkjrRQ325DfcY%2BfQvs6ouVg8cqZCEgqiR68XRDgjX5v7WRdVwxM3T5DSgij0WJsO61KuMHhSd1JIXILD8lhC7lkFONj2VtcQfjKCbWZ889H%2FpA8xvKZXty%2FmO6713tT3lSYdwS8EgmE%2B6axRwvvcYNsGijrHPBPGAY%2FTYFb5IGEXecPLm%2FhqP392vsK7A6%2Bkmjoid9an2DQC%2FOCRtikN5Qj9kk1APaFZLJ9I0OSh5VH1%2Fi1mqNv5j%2FlRUm%2FL2J49jk9VKkz%2F2kZbCIvaFUNVDXd9DC5pKXIBjqwAdPB%2F3Y6LKPb36YwByFVzBiCGAPA4NOy9GEr4pjxxBdRqkcmaXD%2Fuzd7lRYgJqYMVTgOlEa26l28R5CbpWIKYK17lXjug75xTJWZCuN%2FKmwIOsMB%2Fvzxnm9VFr%2FjVIzIzRu%2Fry2TI9GrOSrOb20VhpHcoVgcS7uKJe4LQvpEFY4tSAflXX4VTfnr%2FZaOnauthUVj3wlvUSUlxRKNaq2zIqaSB0F5okH8Snz9sW0IxHWo&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20251104T023335Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY4WW76TOW%2F20251104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d882ccc8b0927b93306a3c6bf0ad6d6f09ee5dcb5840175c744227ed1ee1fa11&hash=3d778f0d66f79ab028420fc6f954c1313eecd44196f8f83692c6ec076cb9e6df&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0273117723003101&tid=spdf-d302cbc8-ea98-43c2-9afc-4863cf195c8c&sid=345998ac52389449b99bf490a7906d7bd696gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=120f5c5a565e0d525254&rr=9990b516691402d2&cc=hk">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2023" data-topics="knowledgedistillation,depthestimation,lightweight" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/ksem2023_depthdistillation.jpg' alt="Depth Distillation Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://ieeexplore.ieee.org/abstract/document/8525832"> 
-				<span class="papertitle">When robot personalisation does not help: Insights from a robot-supported learning study</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b>, Wolmet Barendregt, Mohammad Obaid, and Ginevra Castellano
-			<br>
-			<strong>Conference:</strong> <em>2018 27th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)</em>, 2018 
-			<br>
-			<a href="https://www.diva-portal.org/smash/get/diva2:1263873/FULLTEXT01.pdf">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2018" data-topics="banditlearning,sensornetworks,flooding" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/eai2018_banditlearning.jpg' alt="Bandit Learning Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://link.springer.com/chapter/10.1007/978-3-031-40283-8_3">
+					<span class="papertitle">Boosting Lightweight Depth Estimation via Knowledge Distillation</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Junjie Hu, Chenyou Fan, Hualie Jiang, Xiyue Guo, <b>Yuan Gao</b>, Xiangyong Lu, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Conference:</strong> <em>International Conference on Knowledge Science, Engineering and Management (KSEM)</em>, 2023 
+				<br>
+				<a href="https://arxiv.org/pdf/2105.06143">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2023" data-topics="machinelearning,healthcare,annotations" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/tml4h2023_learn2agree.jpg' alt="Learn2Agree Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://pdfs.semanticscholar.org/91c6/451e9a6a0c4e6a4aed4424703e9721d0b237.pdf"> 
-				<span class="papertitle">Bandit Learning with Concurrent Transmissions for Energy-Efficient Flooding in Sensor Networks</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Peilin Zhang<sup>#</sup>, <b>Alex Yuan Gao</b>, and Oliver Theel
-			<br>
-			<strong>Journal:</strong> <em>EAI Endorsed Transactions on Industrial Networks and Intelligent Systems</em>, 2018 
-			<br>
-			<a href="https://pdfs.semanticscholar.org/91c6/451e9a6a0c4e6a4aed4424703e9721d0b237.pdf">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
-	<!--添加17年论文-->
-<h3 id="year-2017" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2017</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2017" data-topics="hri,socialengagement,implicitprobes" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/icsr2017_implicitprobes.jpg' alt="Tangible Implicit Probes Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://link.springer.com/chapter/10.1007/978-3-031-39539-0_13"> 
+					<span class="papertitle">Learn2Agree: Fitting with Multiple Annotators Without Objective Ground Truth</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Chongyang Wang<sup>#</sup>, <b>Yuan Gao</b>, Chenyou Fan, Junjie Hu, Tin Lun Lam, Nicholas D. Lane, and Nadia Bianchi-Berthouze
+				<br>
+				<strong>Conference:</strong> <em>Trustworthy Machine Learning for Healthcare: First International Workshop (TML4H)</em>, 2023 
+				<br>
+				<a href="https://arxiv.org/pdf/2109.03596">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2023" data-topics="robotics,localization,rangebased,mechatronics" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/tmech2023_localization.jpg' alt="Robot Relative Localization Thumbnail">
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://link.springer.com/chapter/10.1007/978-3-319-70022-9_40"> 
-				<span class="papertitle">Exploring users' reactions towards tangible implicit probes for measuring human-robot engagement</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Mohammad Obaid, <b>Yuan Gao</b>, Wolmet Barendregt, and Ginevra Castellano
-			<br>
-			<strong>Conference:</strong> <em>International Conference on Social Robotics (ICSR)</em>, 2017 
-			<br>
-			<a href="https://www.diva-portal.org/smash/get/diva2:1162394/FULLTEXT01.pdf">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-	<tr class="publication-entry" data-year="2017" data-topics="agronomy,epicmodel,winterwheat,parameters" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/agronomy2017_winterwheat.jpg' alt="Winter Wheat Parameters Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://ieeexplore.ieee.org/abstract/document/10142210">
+					<span class="papertitle">Asymptotically efficient estimator for range-based robot relative localization</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Yue Wang, Muhan Lin, Xinyi Xie, <b>Yuan Gao</b>, Fuqin Deng, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Journal:</strong> <em>IEEE/ASME Transactions on Mechatronics</em>, 2023
+				<br>
+				<a href="https://freeformrobotics.org/wp-content/uploads/2023/03/TMECH-10-2022-14466.pdf">[Paper]</a> 
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2023" data-topics="robotics,multirobot,selfplay,reinforcementlearning" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/tro2023_asymmetricselfplay.jpg' alt="Asymmetric Self-Play Thumbnail"> 
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2134/agronj2016.06.0347"> 
-				<span class="papertitle">Identification of the Most Sensitive Parameters of Winter Wheat on a Global Scale for Use in the EPIC Model</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> Xingming Zhang, Hao Guo, Ran Wang, Degen Lin, <b>Yuan Gao</b>, Fang Lian, and Jing'ai Wang<sup>#</sup>
-			<br>
-			<strong>Journal:</strong> <em>Agronomy Journal</em>, 2017 
-			<br>
-			<a href="https://www.researchgate.net/profile/Yuan-Gao-61/publication/310391546_Identification_of_the_Most_Sensitive_Parameters_of_Winter_Wheat_on_a_Global_Scale_for_Use_in_the_EPIC_Model/links/5c86ba27a6fdcc88c39bea21/Identification-of-the-Most-Sensitive-Parameters-of-Winter-Wheat-on-a-Global-Scale-for-Use-in-the-EPIC-Model.pdf">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
-	<!--添加16年论文-->
-<h3 id="year-2016" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2016</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2016" data-topics="deeplearning,rnn,neuralnetworks" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/acml2016_deepgate.jpg' alt="Deep Gate RNN Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/10101687"> 
+					<span class="papertitle">Asymmetric Self-Play-Enabled Intelligent Heterogeneous Multirobot Catching System Using Deep Multiagent Reinforcement Learning</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b>, Junfeng Chen, Xi Chen, Chongyang Wang, Junjie Hu, Fuqin Deng, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Journal:</strong> <em>IEEE Transactions on Robotics</em>, 2023 
+				<br>
+				<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10101687">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
+		<!--添加22年论文-->
+	<h3 id="year-2022" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2022</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2022" data-topics="reinforcementlearning,offlinelearning,policyoptimization" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/neurips2022_lapo.jpg' alt="LAPO Thumbnail">
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://proceedings.mlr.press/v63/gao30.html"> 
-				<span class="papertitle">Deep Gate Recurrent Neural Network</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b> and Dorota Glowacka
-			<br>
-			<strong>Conference:</strong> <em>Asian Conference on Machine Learning (ACML)</em>, 2016 
-			<br>
-			<a href="https://proceedings.mlr.press/v63/gao30.pdf">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
-	<!--添加15年论文-->
-<h3 id="year-2015" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2015</h3>
-<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr class="publication-entry" data-year="2015" data-topics="reinforcementlearning,recommendationsystem,iui" data-selected="true"> 
-		<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-			<div class="one">
-				<img src='/images/publications_image/iui2015_officehours.jpg' alt="OfficeHours Thumbnail"> 
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/efb2072a358cefb75886a315a6fcf880-Abstract-Conference.html">
+					<span class="papertitle">LAPO: Latent-Variable Advantage-Weighted Policy Optimization for Offline Reinforcement Learning</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Xi Chen, Ali Ghadirzadeh, Tianhe Yu, Jianhao Wang, <b>Yuan Gao</b>, Wenzhe Li, Bin Liang, Chelsea Finn, Chongjie Zhang
+				<br>
+				<strong>Conference:</strong> <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2022 
+				<br>
+				<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/efb2072a358cefb75886a315a6fcf880-Paper-Conference.pdf">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="socialrobots,emotion,reinforcementlearning,behaviour" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/bit2022_emotionmemory.jpg' alt="Emotion and Memory Model Thumbnail">
 				</div>
-		</td>
-		<td style="padding:8px;width:75%;vertical-align:top;"> 
-			<a href="https://dl.acm.org/doi/abs/10.1145/2732158.2732189"> 
-				<span class="papertitle">OfficeHours: A system for student supervisor matching through reinforcement learning</span>
-			</a>
-			<br>
-			<strong>Authors:</strong> <b>Yuan Gao</b>, Kalle Ilves, and Dorota Glowacka
-			<br>
-			<strong>Conference:</strong> <em>Companion Proceedings of the 20th International Conference on Intelligent User Interfaces (IUI)</em>, 2015 
-			<br>
-			<a href="https://dl.acm.org/doi/pdf/10.1145/2732158.2732189">[Paper]</a> 
-			<p></p> 
-		</td>
-	</tr>
-</tbody></table>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://www.tandfonline.com/doi/abs/10.1080/0144929X.2021.1977389">
+					<span class="papertitle">Emotion and memory model for social robots: a reinforcement learning based behaviour selection</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Muneeb Imtiaz Ahmad<sup>#</sup>, <b>Yuan Gao</b>, Fady Alnajjar, Suleman Shahid, & Omar Mubin
+				<br>
+				<strong>Journal:</strong> <em>Behaviour & Information Technology</em>, 2022
+				<br>
+				<a href="https://www.tandfonline.com/doi/epdf/10.1080/0144929X.2021.1977389?needAccess=true">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="multiagent,pathplanning,attention" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/iros2022_abmapper.jpg' alt="AB-Mapper Thumbnail"> 
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://ieeexplore.ieee.org/abstract/document/9981513">
+					<span class="papertitle">AB-Mapper: Attention and BicNet based Multi-agent Path Planning for Dynamic Environment</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Huifeng Guan<sup>*</sup>, <b>Yuan Gao</b><sup>*</sup>, Min Zhao, Yong Yang, Fuqin Deng<sup>#</sup>, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Conference:</strong> <em>2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2022 
+				<br>
+				<a href="https://freeformrobotics.org/wp-content/uploads/2022/08/IROS22_3205_FI.pdf">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="neuroimage,metaanalysis,decisionmaking,emotionregulation" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/neuroimage2022_spatial.jpg' alt="Spatial-topographic nestedness Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://www.sciencedirect.com/science/article/pii/S1053811922006164">
+					<span class="papertitle">Spatial-topographic nestedness of interoceptive regions within the networks of decision making and emotion regulation: Combining ALE meta-analysis and MACM analysis</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Yafei Tan<sup>*,#</sup>, Ranran Yan<sup>*</sup>, <b>Yuan Gao</b><sup>*</sup>, Meng Zhang<sup>#</sup>, Georg Northoff<sup>#</sup>
+				<br>
+				<strong>Journal:</strong> <em>NeuroImage</em>, 2022
+				<br>
+				<a href="https://doi.org/10.1016/j.neuroimage.2022.119500">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="multirobot,reinforcementlearning,coverageplanning" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/ral2022_workerstation.jpg' alt="Worker-Station Multi-robot Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/9918029">
+					<span class="papertitle">Learning to Coordinate for a Worker-Station Multi-robot System in Planar Coverage Tasks</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Jingtao Tang, <b>Yuan Gao</b>, Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Journal:</strong> <em>IEEE Robotics and Automation Letters</em>, 2022 
+				<br>
+				<a href="https://arxiv.org/pdf/2208.02993">[Paper]</a> 
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="knowledgetransfer,perception,drones,semisupervised" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/arxiv2022_selfdistillation.jpg' alt="Progressive Self-Distillation Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://arxiv.org/abs/2208.13404"> 
+					<span class="papertitle">Progressive Self-Distillation for Ground-to-Aerial Perception Knowledge Transfer</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Junjie Hu, Chenyou Fan, Mete Ozay, Hua Feng, <b>Yuan Gao</b>, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Preprint:</strong> <em>arXiv preprint arXiv:2208.13404</em>, 2022 
+				<br>
+				<a href="https://arxiv.org/pdf/2208.13404">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="occupancygrid,attentionnetwork,robotics" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/icra2022_abnormaloccupancy.jpg' alt="Abnormal Occupancy Grid Map Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://ieeexplore.ieee.org/abstract/document/9812106">
+					<span class="papertitle">Abnormal Occupancy Grid Map Recognition using Attention Network</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Fuqin Deng<sup>*</sup>, Hua Feng<sup>*</sup>, Mingjian Liang, Qi Feng, Ningbo Yi, Yong Yang, <b>Yuan Gao</b>, Junfeng Chen, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Conference:</strong> <em>2022 IEEE International Conference on Robotics and Automation (ICRA)</em>, 2022 
+				<br>
+				<a href="https://arxiv.org/pdf/2110.09047">[Paper]</a>
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="vqa,multimodal,hierarchicalnetwork" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/arxiv2022_multilevelvqa.jpg' alt="Multilevel Hierarchical Network Thumbnail"> 
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://arxiv.org/abs/2205.04061"> 
+					<span class="papertitle">Multilevel Hierarchical Network with Multiscale Sampling for Video Question Answering</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Min Peng<sup>*</sup>, Chongyang Wang<sup>*</sup>, <b>Yuan Gao</b>, Yu Shi, and Xiang-Dong Zhou
+				<br>
+				<strong>Preprint:</strong> <em>arXiv preprint arXiv:2205.04061</em>, 2022 
+				<br>
+				<a href="https://arxiv.org/pdf/2205.04061">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2022" data-topics="hri,cooperative,coadaptive,robotics" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/unmannedsystems2022_coadaptive.jpg' alt="Co-adaptive Human-Robot Cooperation Thumbnail"> 
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://www.worldscientific.com/doi/abs/10.1142/S230138502250011X"> 
+					<span class="papertitle">Co-adaptive Human-Robot Cooperation: Summary and Challenges</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Sofie Ahlberg, Agnes Axelsson, Pian Yu, Wenceslao Shaw Cortez, <b>Yuan Gao</b>, Ali Ghadirzadeh, Ginevra Castellano, Danica Kragic, Gabriel Skantze, and Dimos V. Dimarogonas
+				<br>
+				<strong>Journal:</strong> <em>Unmanned Systems</em>, 2022 
+				<br>
+				<a href="https://people.kth.se/~dimos/pdfs/COIN_Summary_Paper.pdf">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody>
+	</table>
+		<!--添加21年论文-->
+	<h3 id="year-2021" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2021</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2021" data-topics="metarl,robotics,sensorscanning,multirobot" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/arxiv2021_sensorscanning.jpg' alt="Meta-RL Sensor Scanning Thumbnail"> 
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://arxiv.org/abs/2109.13617"> 
+					<span class="papertitle">Meta Reinforcement Learning Based Sensor Scanning in 3D Uncertain Environments for Heterogeneous Multi-Robot Systems</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Junfeng Chen, <b>Yuan Gao</b>, Junjie Hu, Fuqin Deng, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.13617</em>, 2021 
+				<br>
+				<a href="https://arxiv.org/pdf/2109.13617">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="semanticsegmentation,rgbthermal,attentionnetwork" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/iros2021_feanet.jpg' alt="FEANet Thumbnail">
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;">
+				<a href="https://arxiv.org/abs/2110.08881">
+					<span class="papertitle">FEANet: Feature-Enhanced Attention Network for RGB-Thermal Real-time Semantic Segmentation</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Fuqin Deng<sup>*</sup>, Hua Feng<sup>*</sup>, Mingjian Liang, Hongmin Wang, Yong Yang, <b>Yuan Gao</b>, Junfeng Chen, Junjie Hu, Xiyue Guo, and Tin Lun Lam<sup>#</sup>
+				<br>
+				<strong>Conference:</strong> <em>2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021 
+				<br>
+				<a href="https://arxiv.org/pdf/2110.08881">[Paper]</a>
+				<p></p>
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="vqa,multimodal,transformer" data-selected="true">
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;">
+				<div class="one">
+					<img src='/images/publications_image/arxiv2021_temporalpyramid.jpg' alt="Temporal Pyramid Transformer Thumbnail"> 
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://arxiv.org/abs/2109.04735"> 
+					<span class="papertitle">Temporal Pyramid Transformer with Multimodal Interaction for Video Question Answering</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Min Peng<sup>*</sup>, Chongyang Wang<sup>*</sup>, <b>Yuan Gao</b>, Yu Shi, and Xiang-Dong Zhou
+				<br>
+				<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.04735</em>, 2021 
+				<br>
+				<a href="https://arxiv.org/pdf/2109.04735">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="robotics,bipedal,control,filtering" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/arxiv2021_invariantfiltering.jpg' alt="Invariant Filtering Thumbnail"> 
+				</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://arxiv.org/abs/2109.01241"> 
+					<span class="papertitle">Invariant Filtering for Bipedal Walking on Dynamic Rigid Surfaces with Orientation-based Measurement Model</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b> and Yan Gu
+				<br>
+				<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.01241</em>, 2021 
+				<br>
+				<a href="https://arxiv.org/pdf/2109.01241">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="activityrecognition,behavior,imwut" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/imwut2021_leveraging.jpg' alt="Leveraging Activity Recognition Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://dl.acm.org/doi/abs/10.1145/3463508"> 
+					<span class="papertitle">Leveraging Activity Recognition to Enable Protective Behavior Detection in Continuous Data</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Chongyang Wang, <b>Yuan Gao</b>, Akhil Mathur, Amanda C De C. Williams, Nicholas D. Lane, and Nadia Bianchi-Berthouze
+				<br>
+				<strong>Journal:</strong> <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</em>, 2021 
+				<br>
+				<a href="https://arxiv.org/pdf/2011.01776">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="hri,dataset,proxemics,behavior" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/plosone2021_dataset.jpg' alt="Human Robot Approach Dataset Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247364"> 
+					<span class="papertitle">A dataset of human and robot approach behaviors into small free-standing conversational groups</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Fangkai Yang, <b>Yuan Gao</b>, Ruiyang Ma, Sahba Zojaji, Ginevra Castellano, and Christopher Peters
+				<br>
+				<strong>Journal:</strong> <em>PloS One</em>, 2021 
+				<br>
+				<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0247364">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2021" data-topics="machinelearning,annotations,framework" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/arxiv2021_agreementlearning.jpg' alt="AgreementLearning Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="[https://arxiv.org/abs/2109.03596](https://www.researchgate.net/profile/Junjie-Hu-7/publication/354460826_Learn2Agree_Fitting_with_Multiple_Annotators_without_Objective_Ground_Truth/links/616d192125467d2f0050436d/Learn2Agree-Fitting-with-Multiple-Annotators-without-Objective-Ground-Truth.pdf)"> 
+					<span class="papertitle">AgreementLearning: An End-to-End Framework for Learning with Multiple Annotators Without Groundtruth</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Chongyang Wang<sup>*</sup>, <b>Yuan Gao</b><sup>*</sup>, Chenyou Fan<sup>*</sup>, Junjie Hu, Tin Lun Lam, Nicholas D. Lane, and Nadia Bianchi-Berthouze
+				<br>
+				<strong>Preprint:</strong> <em>arXiv preprint arXiv:2109.03596</em>, 2021 
+				<br>
+				<a href="https://www.researchgate.net/profile/Junjie-Hu-7/publication/354460826_Learn2Agree_Fitting_with_Multiple_Annotators_without_Objective_Ground_Truth/links/616d192125467d2f0050436d/Learn2Agree-Fitting-with-Multiple-Annotators-without-Objective-Ground-Truth.pdf">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
+		<!--添加20年论文-->
+	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2020" data-topics="microexpression,video,keyframe" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/arxiv2020_microexpression.jpg' alt="Micro-Expression Recognition Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://arxiv.org/abs/2009.09179"> 
+					<span class="papertitle">Recognizing Micro-Expression in Video Clip with Adaptive Key-Frame Mining</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Min Peng<sup>*</sup>, Chongyang Wang<sup>*,#</sup>, <b>Yuan Gao</b>, Tao Bi, Tong Chen, Yu Shi, Xiang-Dong Zhou
+				<br>
+				<strong>Preprint:</strong> <em>arXiv preprint arXiv:2009.09179</em>, 2020 
+				<br>
+				<a href="https://arxiv.org/pdf/2009.09179">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2020" data-topics="machinebehavior,reinforcementlearning,thesis" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/actauppsala2020_machinebehavior.jpg' alt="Machine Behavior Thesis Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://www.diva-portal.org/smash/record.jsf?dswid=5710&pid=diva2%3A1479082"> 
+					<span class="papertitle">Machine Behavior Development and Analysis using Reinforcement Learning</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b>
+				<br>
+				<strong>Publication:</strong> <em>Doctoral Thesis, Acta Universitatis Upsaliensis</em>, 2020 
+				<br>
+				<a href="https://www.diva-portal.org/smash/get/diva2:1479082/FULLTEXT01.pdf">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
+		<!--添加19年论文-->
+	<h3 id="year-2019" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2019</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2019" data-topics="metarl,hri,trustmodelling" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/iros2019_fastadaptation.jpg' alt="Fast Adaptation Trust Modelling Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/8967924"> 
+					<span class="papertitle">Fast Adaptation with Meta-Reinforcement Learning for Trust Modelling in Human-Robot Interaction</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b><sup>*</sup>, Elena Sibirtseva<sup>*</sup>, Ginevra Castellano, and Danica Kragic
+				<br>
+				<strong>Conference:</strong> <em>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2019 
+				<br>
+				<a href="https://arxiv.org/pdf/1908.04087">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2019" data-topics="hri,socialrobotics,deepreinforcementlearning" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/roman2019_sociallyappropriate.jpg' alt="Socially Appropriate Robot Approaching Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/8956444"> 
+					<span class="papertitle">Learning Socially Appropriate Robot Approaching Behavior Toward Groups using Deep Reinforcement Learning</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b>, Fangkai Yang<sup>*</sup>, Martin Frisk<sup>*</sup>, Daniel Hernandez, Christopher Peters, and Ginevra Castellano
+				<br>
+				<strong>Conference:</strong> <em>2019 28th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</em>, 2019 
+				<br>
+				<a href="https://arxiv.org/pdf/1810.06979">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2019" data-topics="selfplay,framework,reinforcementlearning" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/cog2019_selfplayframework.jpg' alt="Self-Play Training Framework Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://arxiv.org/abs/1906.00185"> 
+					<span class="papertitle">A Generalized Framework for Self-Play Training</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Daniel Hernandez, Kevin Denamganai, <b>Yuan Gao</b>, Peter York, Sam Devlin, Spyridon Samothrakis, and James Alfred Walker
+				<br>
+				<strong>Conference:</strong> <em>2019 IEEE Conference on Games (CoG)</em>, 2019 
+				<br>
+				<a href="https://arxiv.org/pdf/1906.00185">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
+		<!--添加18年论文-->
+	<h3 id="year-2018" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2018</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2018" data-topics="hri,socialdistance,mixedreality,iva" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/iva2018_posture.jpg' alt="Effects of Posture Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://dl.acm.org/doi/abs/10.1145/3267851.3267870"> 
+					<span class="papertitle">Effects of Posture and Embodiment on Social Distance in Human-Agent Interaction in Mixed Reality</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Chengjie Li, Theofronia Androulakaki, <b>Alex Yuan Gao</b>, Fangkai Yang, Himangshu Saikia, Christopher Peters, and Gabriel Skantze
+				<br>
+				<strong>Conference:</strong> <em>Proceedings of the 18th International Conference on Intelligent Virtual Agents (IVA)</em>, 2018 
+				<br>
+				<a href="https://www.researchgate.net/profile/Gabriel-Skantze/publication/329018118_Effects_of_Posture_and_Embodiment_on_Social_Distance_in_Human-Agent_Interaction_in_Mixed_Reality/links/5c4730b4299bf12be3db109f/Effects-of-Posture-and-Embodiment-on-Social-Distance-in-Human-Agent-Interaction-in-Mixed-Reality.pdf0">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2018" data-topics="hri,proxemics,deeplearning" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/roman2018_deeplearningproxemics.jpg' alt="Deep Learning Proxemics Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/8525731"> 
+					<span class="papertitle">Investigating Deep Learning Approaches for Human-Robot Proxemics</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b>, Sebastian Wallkötter, Mohammad Obaid, and Ginevra Castellano
+				<br>
+				<strong>Conference:</strong> <em>2018 27th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)</em>, 2018 
+				<br>
+				<a href="https://www.diva-portal.org/smash/get/diva2:1263872/FULLTEXT02">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2018" data-topics="hri,personalisation,learning,roman" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/roman2018_personalisation.jpg' alt="Robot Personalisation Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://ieeexplore.ieee.org/abstract/document/8525832"> 
+					<span class="papertitle">When robot personalisation does not help: Insights from a robot-supported learning study</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b>, Wolmet Barendregt, Mohammad Obaid, and Ginevra Castellano
+				<br>
+				<strong>Conference:</strong> <em>2018 27th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)</em>, 2018 
+				<br>
+				<a href="https://www.diva-portal.org/smash/get/diva2:1263873/FULLTEXT01.pdf">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2018" data-topics="banditlearning,sensornetworks,flooding" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/eai2018_banditlearning.jpg' alt="Bandit Learning Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://pdfs.semanticscholar.org/91c6/451e9a6a0c4e6a4aed4424703e9721d0b237.pdf"> 
+					<span class="papertitle">Bandit Learning with Concurrent Transmissions for Energy-Efficient Flooding in Sensor Networks</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Peilin Zhang<sup>#</sup>, <b>Alex Yuan Gao</b>, and Oliver Theel
+				<br>
+				<strong>Journal:</strong> <em>EAI Endorsed Transactions on Industrial Networks and Intelligent Systems</em>, 2018 
+				<br>
+				<a href="https://pdfs.semanticscholar.org/91c6/451e9a6a0c4e6a4aed4424703e9721d0b237.pdf">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
+		<!--添加17年论文-->
+	<h3 id="year-2017" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2017</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2017" data-topics="hri,socialengagement,implicitprobes" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/icsr2017_implicitprobes.jpg' alt="Tangible Implicit Probes Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://link.springer.com/chapter/10.1007/978-3-319-70022-9_40"> 
+					<span class="papertitle">Exploring users' reactions towards tangible implicit probes for measuring human-robot engagement</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Mohammad Obaid, <b>Yuan Gao</b>, Wolmet Barendregt, and Ginevra Castellano
+				<br>
+				<strong>Conference:</strong> <em>International Conference on Social Robotics (ICSR)</em>, 2017 
+				<br>
+				<a href="https://www.diva-portal.org/smash/get/diva2:1162394/FULLTEXT01.pdf">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+		<tr class="publication-entry" data-year="2017" data-topics="agronomy,epicmodel,winterwheat,parameters" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/agronomy2017_winterwheat.jpg' alt="Winter Wheat Parameters Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2134/agronj2016.06.0347"> 
+					<span class="papertitle">Identification of the Most Sensitive Parameters of Winter Wheat on a Global Scale for Use in the EPIC Model</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> Xingming Zhang, Hao Guo, Ran Wang, Degen Lin, <b>Yuan Gao</b>, Fang Lian, and Jing'ai Wang<sup>#</sup>
+				<br>
+				<strong>Journal:</strong> <em>Agronomy Journal</em>, 2017 
+				<br>
+				<a href="https://www.researchgate.net/profile/Yuan-Gao-61/publication/310391546_Identification_of_the_Most_Sensitive_Parameters_of_Winter_Wheat_on_a_Global_Scale_for_Use_in_the_EPIC_Model/links/5c86ba27a6fdcc88c39bea21/Identification-of-the-Most-Sensitive-Parameters-of-Winter-Wheat-on-a-Global-Scale-for-Use-in-the-EPIC-Model.pdf">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
+		<!--添加16年论文-->
+	<h3 id="year-2016" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2016</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2016" data-topics="deeplearning,rnn,neuralnetworks" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/acml2016_deepgate.jpg' alt="Deep Gate RNN Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://proceedings.mlr.press/v63/gao30.html"> 
+					<span class="papertitle">Deep Gate Recurrent Neural Network</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b> and Dorota Glowacka
+				<br>
+				<strong>Conference:</strong> <em>Asian Conference on Machine Learning (ACML)</em>, 2016 
+				<br>
+				<a href="https://proceedings.mlr.press/v63/gao30.pdf">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
+		<!--添加15年论文-->
+	<h3 id="year-2015" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2015</h3>
+	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2015" data-topics="reinforcementlearning,recommendationsystem,iui" data-selected="true"> 
+			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+				<div class="one">
+					<img src='/images/publications_image/iui2015_officehours.jpg' alt="OfficeHours Thumbnail"> 
+					</div>
+			</td>
+			<td style="padding:8px;width:75%;vertical-align:top;"> 
+				<a href="https://dl.acm.org/doi/abs/10.1145/2732158.2732189"> 
+					<span class="papertitle">OfficeHours: A system for student supervisor matching through reinforcement learning</span>
+				</a>
+				<br>
+				<strong>Authors:</strong> <b>Yuan Gao</b>, Kalle Ilves, and Dorota Glowacka
+				<br>
+				<strong>Conference:</strong> <em>Companion Proceedings of the 20th International Conference on Intelligent User Interfaces (IUI)</em>, 2015 
+				<br>
+				<a href="https://dl.acm.org/doi/pdf/10.1145/2732158.2732189">[Paper]</a> 
+				<p></p> 
+			</td>
+		</tr>
+	</tbody></table>
 	<br style/>
+</div>
 
 
 
