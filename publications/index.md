@@ -852,10 +852,49 @@ classes: wide
 		<!--添加20年论文-->
 	<h3 id="year-2020" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2020</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
-	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
-	    </tbody></table>
-	<br style/>
+	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2020" data-topics="microexpression,video,keyframe" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/arxiv2020_microexpression.jpg' alt="Micro-Expression Recognition Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://arxiv.org/abs/2009.09179"> 
+		            <span class="papertitle">Recognizing Micro-Expression in Video Clip with Adaptive Key-Frame Mining</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> Min Peng<sup>*</sup>, Chongyang Wang<sup>*,#</sup>, <b>Yuan Gao</b>, Tao Bi, Tong Chen, Yu Shi, Xiang-Dong Zhou
+		        <br>
+		        <strong>Preprint:</strong> <em>arXiv preprint arXiv:2009.09179</em>, 2020 
+		        <br>
+		        <a href="https://arxiv.org/pdf/2009.09179">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
+		<tr class="publication-entry" data-year="2020" data-topics="machinebehavior,reinforcementlearning,thesis" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/actauppsala2020_machinebehavior.jpg' alt="Machine Behavior Thesis Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://www.diva-portal.org/smash/record.jsf?dswid=5710&pid=diva2%3A1479082"> 
+		            <span class="papertitle">Machine Behavior Development and Analysis using Reinforcement Learning</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> <b>Yuan Gao</b>
+		        <br>
+		        <strong>Publication:</strong> <em>Doctoral Thesis, Acta Universitatis Upsaliensis</em>, 2020 
+		        <br>
+		        <a href="https://www.diva-portal.org/smash/get/diva2:1479082/FULLTEXT01.pdf">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
+	</tbody></table>
+		<br style/>
 </div>
+
 
 
 
