@@ -1041,6 +1041,25 @@ classes: wide
 	<h3 id="year-2017" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2017</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<tr class="publication-entry" data-year="2017" data-topics="hri,socialengagement,implicitprobes" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/icsr2017_implicitprobes.jpg' alt="Tangible Implicit Probes Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://link.springer.com/chapter/10.1007/978-3-319-70022-9_40"> 
+		            <span class="papertitle">Exploring users' reactions towards tangible implicit probes for measuring human-robot engagement</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> Mohammad Obaid, <b>Yuan Gao</b>, Wolmet Barendregt, and Ginevra Castellano
+		        <br>
+		        <strong>Conference:</strong> <em>International Conference on Social Robotics (ICSR)</em>, 2017 
+		        <br>
+		        <a href="https://www.diva-portal.org/smash/get/diva2:1162394/FULLTEXT01.pdf">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
 		</tbody></table>
 	<h3 id="year-2016" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2016</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
@@ -1052,6 +1071,7 @@ classes: wide
 		</tbody></table>
 		<br style/>
 </div>
+
 
 
 
