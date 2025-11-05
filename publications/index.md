@@ -934,9 +934,29 @@ classes: wide
 		        <p></p> 
 		    </td>
 		</tr>
+		<tr class="publication-entry" data-year="2019" data-topics="selfplay,framework,reinforcementlearning" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/cog2019_selfplayframework.jpg' alt="Self-Play Training Framework Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://arxiv.org/abs/1906.00185"> 
+		            <span class="papertitle">A Generalized Framework for Self-Play Training</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> Daniel Hernandez, Kevin Denamganai, <b>Yuan Gao</b>, Peter York, Sam Devlin, Spyridon Samothrakis, and James Alfred Walker
+		        <br>
+		        <strong>Conference:</strong> <em>2019 IEEE Conference on Games (CoG)</em>, 2019 
+		        <br>
+		        <a href="https://arxiv.org/pdf/1906.00185">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
 	</tbody></table>
 		<br style/>
 </div>
+
 
 
 
