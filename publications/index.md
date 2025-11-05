@@ -400,25 +400,6 @@ classes: wide
 	        	<p></p> 
 	    	</td>
 		</tr>
-		<tr class="publication-entry" data-year="2024" data-topics="robotics,bipedal,control,stateestimation" data-selected="true"> 
-			<td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
-				<div class="one">
-					<img src='/images/publications_image/report2024_bipedalcontrol.jpg' alt="Time-varying control thumbnail"> 
-				</div>
-			</td>
-			<td style="padding:8px;width:75%;vertical-align:top;"> 
-				<a href="https://www.proquest.com/openview/67536fb4c6d715b4b06c328d710159fa/1?pq-origsite=gscholar&cbl=18750&diss=y"> 
-					<span class="papertitle">Time-varying control and state estimation for bipedal locomotion</span>
-				</a>
-				<br>
-				<strong>Authors:</strong> <b>Yuan Gao</b>
-				<br>
-				<strong>Publication:</strong> <em>University of Massachusetts Lowell</em>, 2024 
-				<br>
-				<a href="#">[Paper]</a> 
-				<p></p>
-			</td>
-		</tr>
 	</tbody></table>
 		<!--添加23年论文-->
 	<h3 id="year-2023" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2023</h3>
@@ -897,6 +878,7 @@ classes: wide
 		    </td>
 		</tr>
 	</tbody></table>
+		<!--添加19年论文-->
 	<h3 id="year-2019" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2019</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -958,6 +940,7 @@ classes: wide
 		    </td>
 		</tr>
 	</tbody></table>
+		<!--添加18年论文-->
 	<h3 id="year-2018" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2018</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -1038,6 +1021,7 @@ classes: wide
 		    </td>
 		</tr>
 	</tbody></table>
+		<!--添加17年论文-->
 	<h3 id="year-2017" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2017</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -1080,6 +1064,7 @@ classes: wide
 		    </td>
 		</tr>
 	</tbody></table>
+		<!--添加16年论文-->
 	<h3 id="year-2016" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2016</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -1103,6 +1088,7 @@ classes: wide
 		    </td>
 		</tr>
 	</tbody></table>
+		<!--添加15年论文-->
 	<h3 id="year-2015" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2015</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -1128,6 +1114,7 @@ classes: wide
 	</tbody></table>
 		<br style/>
 </div>
+
 
 
 
