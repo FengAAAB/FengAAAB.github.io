@@ -1106,9 +1106,29 @@ classes: wide
 	<h3 id="year-2015" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2015</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		</tbody></table>
+		<tr class="publication-entry" data-year="2015" data-topics="reinforcementlearning,recommendationsystem,iui" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/iui2015_officehours.jpg' alt="OfficeHours Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://dl.acm.org/doi/abs/10.1145/2732158.2732189"> 
+		            <span class="papertitle">OfficeHours: A system for student supervisor matching through reinforcement learning</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> <b>Yuan Gao</b>, Kalle Ilves, and Dorota Glowacka
+		        <br>
+		        <strong>Conference:</strong> <em>Companion Proceedings of the 20th International Conference on Intelligent User Interfaces (IUI)</em>, 2015 
+		        <br>
+		        <a href="https://dl.acm.org/doi/pdf/10.1145/2732158.2732189">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
+	</tbody></table>
 		<br style/>
 </div>
+
 
 
 
