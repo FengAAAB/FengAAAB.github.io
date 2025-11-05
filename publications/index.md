@@ -1060,7 +1060,26 @@ classes: wide
 		        <p></p> 
 		    </td>
 		</tr>
-		</tbody></table>
+		<tr class="publication-entry" data-year="2017" data-topics="agronomy,epicmodel,winterwheat,parameters" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/agronomy2017_winterwheat.jpg' alt="Winter Wheat Parameters Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2134/agronj2016.06.0347"> 
+		            <span class="papertitle">Identification of the Most Sensitive Parameters of Winter Wheat on a Global Scale for Use in the EPIC Model</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> Xingming Zhang, Hao Guo, Ran Wang, Degen Lin, <b>Yuan Gao</b>, Fang Lian, and Jing'ai Wang<sup>#</sup>
+		        <br>
+		        <strong>Journal:</strong> <em>Agronomy Journal</em>, 2017 
+		        <br>
+		        <a href="https://www.researchgate.net/profile/Yuan-Gao-61/publication/310391546_Identification_of_the_Most_Sensitive_Parameters_of_Winter_Wheat_on_a_Global_Scale_for_Use_in_the_EPIC_Model/links/5c86ba27a6fdcc88c39bea21/Identification-of-the-Most-Sensitive-Parameters-of-Winter-Wheat-on-a-Global-Scale-for-Use-in-the-EPIC-Model.pdf">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
+	</tbody></table>
 	<h3 id="year-2016" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2016</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -1071,6 +1090,7 @@ classes: wide
 		</tbody></table>
 		<br style/>
 </div>
+
 
 
 
