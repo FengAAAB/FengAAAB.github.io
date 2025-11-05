@@ -896,9 +896,29 @@ classes: wide
 	<h3 id="year-2019" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2019</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		</tbody></table>
+		<tr class="publication-entry" data-year="2019" data-topics="metarl,hri,trustmodelling" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/iros2019_fastadaptation.jpg' alt="Fast Adaptation Trust Modelling Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://ieeexplore.ieee.org/abstract/document/8967924"> 
+		            <span class="papertitle">Fast Adaptation with Meta-Reinforcement Learning for Trust Modelling in Human-Robot Interaction</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> <b>Yuan Gao</b><sup>*</sup>, Elena Sibirtseva<sup>*</sup>, Ginevra Castellano, and Danica Kragic
+		        <br>
+		        <strong>Conference:</strong> <em>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2019 
+		        <br>
+		        <a href="https://arxiv.org/pdf/1908.04087">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
+	</tbody></table>
 		<br style/>
 </div>
+
 
 
 
