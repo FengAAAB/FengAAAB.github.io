@@ -961,7 +961,26 @@ classes: wide
 	<h3 id="year-2018" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2018</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		</tbody></table>
+		<tr class="publication-entry" data-year="2018" data-topics="hri,socialdistance,mixedreality,iva" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/iva2018_posture.jpg' alt="Effects of Posture Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://dl.acm.org/doi/abs/10.1145/3267851.3267870"> 
+		            <span class="papertitle">Effects of Posture and Embodiment on Social Distance in Human-Agent Interaction in Mixed Reality</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> Chengjie Li, Theofronia Androulakaki, <b>Alex Yuan Gao</b>, Fangkai Yang, Himangshu Saikia, Christopher Peters, and Gabriel Skantze
+		        <br>
+		        <strong>Conference:</strong> <em>Proceedings of the 18th International Conference on Intelligent Virtual Agents (IVA)</em>, 2018 
+		        <br>
+		        <a href="https://www.researchgate.net/profile/Gabriel-Skantze/publication/329018118_Effects_of_Posture_and_Embodiment_on_Social_Distance_in_Human-Agent_Interaction_in_Mixed_Reality/links/5c4730b4299bf12be3db109f/Effects-of-Posture-and-Embodiment-on-Social-Distance-in-Human-Agent-Interaction-in-Mixed-Reality.pdf0">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
+	</tbody></table>
 	<h3 id="year-2017" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2017</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
 	<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -976,6 +995,7 @@ classes: wide
 		</tbody></table>
 		<br style/>
 </div>
+
 
 
 
