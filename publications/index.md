@@ -1018,6 +1018,25 @@ classes: wide
 		        <p></p> 
 		    </td>
 		</tr>
+		<tr class="publication-entry" data-year="2018" data-topics="banditlearning,sensornetworks,flooding" data-selected="true"> 
+		    <td style="padding:16px;width:25%;vertical-align:top; text-align: right;"> 
+		        <div class="one">
+		            <img src='/images/publications_image/eai2018_banditlearning.jpg' alt="Bandit Learning Thumbnail"> 
+		            </div>
+		    </td>
+		    <td style="padding:8px;width:75%;vertical-align:top;"> 
+		        <a href="https://pdfs.semanticscholar.org/91c6/451e9a6a0c4e6a4aed4424703e9721d0b237.pdf"> 
+		            <span class="papertitle">Bandit Learning with Concurrent Transmissions for Energy-Efficient Flooding in Sensor Networks</span>
+		        </a>
+		        <br>
+		        <strong>Authors:</strong> Peilin Zhang<sup>#</sup>, <b>Alex Yuan Gao</b>, and Oliver Theel
+		        <br>
+		        <strong>Journal:</strong> <em>EAI Endorsed Transactions on Industrial Networks and Intelligent Systems</em>, 2018 
+		        <br>
+		        <a href="https://pdfs.semanticscholar.org/91c6/451e9a6a0c4e6a4aed4424703e9721d0b237.pdf">[Paper]</a> 
+		        <p></p> 
+		    </td>
+		</tr>
 	</tbody></table>
 	<h3 id="year-2017" style="text-align: left; margin-top: 2em; margin-bottom: 0.5em; scroll-margin-top: 80px;">2017</h3>
 	<hr style="border: 0; border-top: 1px solid #eee; margin: 0 0 1em 0;"> 
@@ -1033,6 +1052,7 @@ classes: wide
 		</tbody></table>
 		<br style/>
 </div>
+
 
 
 
